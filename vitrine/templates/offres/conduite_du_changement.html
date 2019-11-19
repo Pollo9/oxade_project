@@ -1,0 +1,110 @@
+{% extends 'base_vitrine.html' %}
+{% load staticfiles %}
+
+{% block seo %}
+<meta name="Description" content="Conseil stratégique et opérationnel en systèmes d'information">
+<meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
+<meta property="og:title" content="Oxade | Conduite du changement">
+<title>Oxade | Conduite du changement</title>
+{% endblock %}
+
+{% block content %}
+
+
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/fond_defense.jpg' %});">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+			<div class="col-md-9 ftco-animate text-center">
+				<h1 class="mb-2 bread">Conduite du changement</h1>
+				<p class="breadcrumbs">
+					<span class="mr-2">
+						<a href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
+					</span>
+					<span>Conduite du changement <i class="fas fa-chevron-right"></i></span>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ftco-section ftco-no-pb" style="margin-bottom: 115px;">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-5 order-md-last wrap-about align-items-stretch">
+				<div class="wrap-about-border ftco-animate">
+					<img src="{% static 'vitrine/img/logo_conduite.png' %}" alt="logo_conduite" style="width: 235px;margin-left: 75px;margin-bottom: 59px;margin-top: 33px;"> 
+					<div class="text">
+						<h3>Notre vision et notre ambition</h3>
+						<p>
+							Ces expertises permettent à Oxade de s’adapter et de personnaliser la conduite du changement dans le cadre d’une transformation organisationnelle, métier et/ou digitale, à l’échelle de l’entreprise, d’une région ou à l’international. 
+						</p>
+						<p>
+							Cette agilité permet à Oxade d’accompagner de nombreux clients grands comptes.
+						</p>
+						<p>
+							<a href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 wrap-about pr-md-4 ftco-animate">
+				<h2 class="mb-4">Domaines d’intervention</h2>
+				<p>
+					Les entreprises sont constamment confrontées à des changements, qu’ils soient organisationnels ou technologiques. La fusion de deux entités, l’implémentation d’un nouveau SI, une transformation digitale, la réorganisation d’un service… autant de mises à l’épreuve pour les collaborateurs.
+				</p>
+				<div class="row mt-5">
+					<div class="col-lg-6">
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<img src="{% static 'vitrine/img/logo_analyse.png' %}" alt="logo_analyse" style="width: 89px;"> 
+							</div>
+							<div class="text media-body">
+								<h3>Analyse</h3>
+								<p>
+									Analyser les risques et préparer une étude d'impact
+								</p>
+							</div>
+						</div>
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<img src="{% static 'vitrine/img/logo_strategie.png' %}" alt="logo_strategie" style="width: 89px;"> 
+							</div>
+							<div class="text media-body">
+								<h3>Stratégie</h3>
+								<p>
+									Définir une startégie de conduite de changement 
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<img src="{% static 'vitrine/img/logo_communication.png' %}" alt="logo_communication" style="width: 144px;margin-top: -20px; margin-bottom: -28px;"> 
+							</div>
+							<div class="text media-body">
+								<h3>Communication</h3>
+								<p>
+									Donner de la visibilité avec des actions de communication
+								</p>
+							</div>
+						</div>
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<img src="{% static 'vitrine/img/logo_deploiement.png' %}" alt="logo_deploiement" style="width: 89px;"> 
+							</div>
+							<div class="text media-body">
+								<h3>Deploiement</h3>
+								<p>
+									Accompagner le déploiement et assister les utilisateurs
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}
