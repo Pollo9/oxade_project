@@ -1,11 +1,20 @@
 {% extends 'base_vitrine.html' %}
-
 {% load staticfiles %}
+{% block seo %}
+<meta name="Description" content="Conseil stratégique et opérationnel en systèmes d'information">
+<meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
+<meta property="og:title" content="Oxade | A propos">
+<title>Oxade | A propos</title>
 
+
+<link rel="stylesheet" href="{% static 'vitrine/css/a_propos.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> 
+{% endblock %}
 {% block content %}
 
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/fond_a_propos.webp' %});">
+<section class="hero-wrap hero-wrap-2 fond-defense">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -38,9 +47,9 @@
 				</p>
 			</div>
 			<div class="col-md-6 align-items-stretch d-flex">
-				<div class="img img-video d-flex align-items-center" style="background-image: url({% static 'vitrine/img/fond_defense.jpg' %});">
+				<div class="img img-video d-flex align-items-center fond-defense">
 					<div class="video justify-content-center">
-						<a href="https://www.youtube.com/watch?v=BnrDJq1V4bw" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"><i class="fas fa-play-circle play_button"></i></a>
+						<a aria-label="video-youtube" href="https://www.youtube.com/watch?v=BnrDJq1V4bw" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"><i class="fas fa-play-circle play_button"></i></a>
 					</div>
 				</div>
 			</div>

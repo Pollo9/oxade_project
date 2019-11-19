@@ -6,13 +6,17 @@
 <meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
 <meta property="og:title" content="Oxade | Secteur public">
 <title>Oxade | Secteur public</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/secteurs.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> 	
 {% endblock %}
 
 {% block content %}
 
 
 <!--Nos professionnels du Secteur Public sont en capacité de mobiliser toutes les expertises en audit, conseil en management, en systèmes d’information et conseil financier qui permettent d’appréhender les grandes évolutions du secteur   -->
-		<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/fond_defense.jpg' %});">
+		<section class="hero-wrap hero-wrap-2 fond-defense">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -20,7 +24,7 @@
 						<h1 class="mb-2 bread">Secteur public</h1>
 						<p class="breadcrumbs">
 							<span class="mr-2">
-								<a href="{% url 'index_vitrine' %}#secteurs">Secteurs<i class="fas fa-chevron-right"></i></a>
+								<a aria-label="Secteurs" href="{% url 'index_vitrine' %}#secteurs">Secteurs<i class="fas fa-chevron-right"></i></a>
 							</span>
 							<span>Secteur public<i class="fas fa-chevron-right"></i></span>
 						</p>
@@ -45,15 +49,33 @@
 					</div>
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border ftco-animate">
-							<img src="{% static 'vitrine/img/logo_public.png' %}" alt="logo_public" style="    width: 187px;margin-left: 107px;margin-bottom: 59px;margin-top: 33px;">
+							<picture>
+								<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_public.webp' %}">
+								<source type="image/png" srcset="{% static 'vitrine/img/logo_public.png' %}">
+								<img src="{% static 'vitrine/img/logo_public.png' %}" alt="logo_public" style="    width: 187px;margin-left: 107px;margin-bottom: 59px;margin-top: 33px;">
+							</picture>
+							
 							<div class="text">
 								<h3>Notre vision et notre ambition</h3>
 								<p>
 									Après le lancement en 2007 de la Révision générale des politiques publiques, la modernisation de l’action publique s’accélère, portée par le SGMAP (secrétariat général pour la modernisation de l’action publique). Cette transition numérique monte en puissance avec l’unification du système d’information de l’État autour de la DISIC (direction interministérielle des systèmes d’information), la création d’un administrateur général des données publiques.
 								</p>
 								<p>
-									<a href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+									<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
 								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ftco-section ftco-counter">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2 d-flex">
+					<div class="col-md-10 align-items-stretch d-flex" style="width: 485px;height: 365px;margin-bottom: -68px;margin-top: -111px;">
+						<div class="img img-video d-flex align-items-center fond-defense">
+							<div class="video justify-content-center">
+								<a aria-label="video-youtube" href="https://www.youtube.com/watch?v=BnrDJq1V4bw" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"><i class="fas fa-play-circle play_button"></i></a>
 							</div>
 						</div>
 					</div>

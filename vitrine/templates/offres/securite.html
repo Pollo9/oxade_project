@@ -6,13 +6,18 @@
 <meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
 <meta property="og:title" content="Oxade | Sécurité">
 <title>Oxade | Sécurité</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/offres.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> 
+
 {% endblock %}
 
 {% block content %}
 
 
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/fond_defense.jpg' %});">
+<section class="hero-wrap hero-wrap-2 fond-defense">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -20,7 +25,7 @@
 				<h1 class="mb-2 bread">Sécurité</h1>
 				<p class="breadcrumbs">
 					<span class="mr-2">
-						<a href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
+						<a aria-label="Offres" href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
 					</span>
 					<span>Sécurité <i class="fas fa-chevron-right"></i></span>
 				</p>
@@ -33,7 +38,12 @@
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border ftco-animate">
-							<img src="{% static 'vitrine/img/logo_securite.png' %}" alt="logo_securite" style="    width: 285px;margin-left: 45px;margin-bottom: 29px;margin-top: 33px;">
+							<picture>
+								<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_securite.webp' %}">
+								<source type="image/png" srcset="{% static 'vitrine/img/logo_securite.png' %}">
+								<img src="{% static 'vitrine/img/logo_securite.png' %}" alt="logo_securite" style="    width: 285px;margin-left: 45px;margin-bottom: 29px;margin-top: 33px;">
+							</picture>
+							
 							<div class="text">
 								<h3>Notre vision et notre ambition</h3>
 								<p>
@@ -43,7 +53,7 @@
 									Cette menace couplée à la volatilité des données critiques des sociétés conforte mc²i Groupe dans l’idée que la cybersécurité est une composante utile et nécessaire à tout cycle projet.
 								</p>
 								<p>
-									<a href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+									<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
 								</p>
 							</div>
 						</div>
@@ -57,7 +67,12 @@
 							<div class="col-lg-6">
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_solutions.png' %}" alt="logo_solutions" style="width: 149px;margin-top: -16px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_solutions.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_solutions.png' %}">
+											<img src="{% static 'vitrine/img/logo_solutions.png' %}" alt="logo_solutions" style="width: 149px;margin-top: -16px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Mise en place de plans de sécurité</h3>
@@ -68,7 +83,12 @@
 								</div>
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_cybersecurite.png' %}" alt="logo_cybersecurite" style="width: 139px;margin-top: -16px;margin-bottom: -5px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_cybersecurite.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_cybersecurite.png' %}">
+											<img src="{% static 'vitrine/img/logo_cybersecurite.png' %}" alt="logo_cybersecurite" style="width: 139px;margin-top: -16px;margin-bottom: -5px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Des solutions de cybersécurité</h3>
@@ -81,7 +101,12 @@
 							<div class="col-lg-6">
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_referentiel.png' %}" alt="logo_referentiel" style="width: 144px;margin-top: -32px;margin-bottom: -30px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_referentiel.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_referentiel.png' %}">
+											<img src="{% static 'vitrine/img/logo_referentiel.png' %}" alt="logo_referentiel" style="width: 144px;margin-top: -32px;margin-bottom: -30px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Mise en place de référentiels de sécurité</h3>
@@ -92,7 +117,12 @@
 								</div>
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_industriel.png' %}" alt="logo_industriel" style="    width: 109px;margin-top: -19px;margin-bottom: 27px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_industriel.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_industriel.png' %}">
+											<img src="{% static 'vitrine/img/logo_industriel.png' %}" alt="logo_industriel" style="    width: 109px;margin-top: -19px;margin-bottom: 27px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Environnements industriels</h3>

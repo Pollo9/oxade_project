@@ -6,13 +6,18 @@
 <meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
 <meta property="og:title" content="Oxade | Reglementaire">
 <title>Oxade | Reglementaire</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/offres.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> 
+
 {% endblock %}
 
 {% block content %}
 
 
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/fond_defense.jpg' %});">
+<section class="hero-wrap hero-wrap-2 fond-defense">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -20,7 +25,7 @@
 				<h1 class="mb-2 bread">Réglementaire</h1>
 				<p class="breadcrumbs">
 					<span class="mr-2">
-						<a href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
+						<a aria-label="Offres" href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
 					</span>
 					<span>Réglementaire <i class="fas fa-chevron-right"></i></span>
 				</p>
@@ -33,14 +38,19 @@
 				<div class="row d-flex">
 					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 						<div class="wrap-about-border ftco-animate">
-							<img src="{% static 'vitrine/img/logo_reglementaire.png' %}" alt="logo_reglementaire" style="width: 216px;margin-left: 94px;margin-bottom: 28px;margin-top: 22px;">
+							<picture>
+								<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_reglementaire.webp' %}">
+								<source type="image/png" srcset="{% static 'vitrine/img/logo_reglementaire.png' %}">
+								<img src="{% static 'vitrine/img/logo_reglementaire.png' %}" alt="logo_reglementaire" style="width: 216px;margin-left: 94px;margin-bottom: 28px;margin-top: 22px;">
+							</picture>
+							
 							<div class="text">
 								<h3>Notre vision et notre ambition</h3>
 								<p>
 									Notre métier nous amène fréquemment à accompagner nos clients dans la mise en conformité suite à des évolutions règlementaires, qu’elles soient européennes (DDA, RGPD, Solvabilité II, LCB/FT, IFRS, PRIIPS, IDD,…) ou françaises (prélèvement à la source, ANI, contrats responsables, ACS, TPG, Loi Hamon, Loi Eckert, Loi Sapin 2, …).
 								</p>
 								<p>
-									<a href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+									<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
 								</p>
 							</div>
 						</div>
@@ -54,7 +64,12 @@
 							<div class="col-lg-6">
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_opti-gestion.png' %}" alt="logo_opti-gestion" style="width: 139px;margin-bottom: -23px;margin-top: -26px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_opti-gestion.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_opti-gestion.png' %}">
+											<img src="{% static 'vitrine/img/logo_opti-gestion.png' %}" alt="logo_opti-gestion" style="width: 139px;margin-bottom: -23px;margin-top: -26px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Optimisation des processus de gestion</h3>
@@ -65,7 +80,12 @@
 								</div>
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_suiv-plan.png' %}" alt="logo_suiv-plan" style="width: 149px;margin-top: -24px;margin-bottom: -11px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_suiv-plan.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_suiv-plan.png' %}">
+											<img src="{% static 'vitrine/img/logo_suiv-plan.png' %}" alt="logo_suiv-plan" style="width: 149px;margin-top: -24px;margin-bottom: -11px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Suivi du plan d’actions</h3>
@@ -78,7 +98,12 @@
 							<div class="col-lg-6">
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_externe.png' %}" alt="logo_externe" style="    width: 150px;margin-top: 0px;margin-bottom: 2px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_externe.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_externe.png' %}">
+											<img src="{% static 'vitrine/img/logo_externe.png' %}" alt="logo_externe" style="    width: 150px;margin-top: 0px;margin-bottom: 2px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Communication externe et accompagnement du changement</h3>
@@ -89,7 +114,12 @@
 								</div>
 								<div class="services text-center">
 									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<img src="{% static 'vitrine/img/logo_marketing.png' %}" alt="logo_marketing" style="width: 199px;margin-bottom: -35px;margin-top: -28px;">
+										<picture>
+											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_marketing.webp' %}">
+											<source type="image/png" srcset="{% static 'vitrine/img/logo_marketing.png' %}">
+											<img src="{% static 'vitrine/img/logo_marketing.png' %}" alt="logo_marketing" style="width: 199px;margin-bottom: -35px;margin-top: -28px;">
+										</picture>
+										
 									</div>
 									<div class="text media-body">
 										<h3>Stratégie marketing produits</h3>

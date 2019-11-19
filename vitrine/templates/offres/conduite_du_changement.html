@@ -6,13 +6,21 @@
 <meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
 <meta property="og:title" content="Oxade | Conduite du changement">
 <title>Oxade | Conduite du changement</title>
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/offres.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> 
+{% endblock %}
+
+{% block link %}
 {% endblock %}
 
 {% block content %}
 
 
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/fond_defense.jpg' %});">
+<section class="hero-wrap hero-wrap-2 fond-defense">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -20,7 +28,7 @@
 				<h1 class="mb-2 bread">Conduite du changement</h1>
 				<p class="breadcrumbs">
 					<span class="mr-2">
-						<a href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
+						<a aria-label="Offres" href="{% url 'index_vitrine' %}#offres">Offres <i class="fas fa-chevron-right"></i></a>
 					</span>
 					<span>Conduite du changement <i class="fas fa-chevron-right"></i></span>
 				</p>
@@ -33,7 +41,12 @@
 		<div class="row d-flex">
 			<div class="col-md-5 order-md-last wrap-about align-items-stretch">
 				<div class="wrap-about-border ftco-animate">
-					<img src="{% static 'vitrine/img/logo_conduite.png' %}" alt="logo_conduite" style="width: 235px;margin-left: 75px;margin-bottom: 59px;margin-top: 33px;"> 
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_conduite.webp' %}">
+						<source type="image/png" srcset="{% static 'vitrine/img/logo_conduite.png' %}">
+						<img src="{% static 'vitrine/img/logo_conduite.png' %}" alt="logo_conduite" style="width: 235px;margin-left: 75px;margin-bottom: 59px;margin-top: 33px;"> 
+					</picture>
+					
 					<div class="text">
 						<h3>Notre vision et notre ambition</h3>
 						<p>
@@ -43,7 +56,7 @@
 							Cette agilité permet à Oxade d’accompagner de nombreux clients grands comptes.
 						</p>
 						<p>
-							<a href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+							<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
 						</p>
 					</div>
 				</div>
@@ -57,7 +70,12 @@
 					<div class="col-lg-6">
 						<div class="services text-center">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
-								<img src="{% static 'vitrine/img/logo_analyse.png' %}" alt="logo_analyse" style="width: 89px;"> 
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_analyse.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_analyse.png' %}">
+									<img src="{% static 'vitrine/img/logo_analyse.png' %}" alt="logo_analyse" style="width: 89px;">  
+								</picture>
+								
 							</div>
 							<div class="text media-body">
 								<h3>Analyse</h3>
@@ -68,7 +86,11 @@
 						</div>
 						<div class="services text-center">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
-								<img src="{% static 'vitrine/img/logo_strategie.png' %}" alt="logo_strategie" style="width: 89px;"> 
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_strategie.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_strategie.png' %}">
+									<img src="{% static 'vitrine/img/logo_strategie.png' %}" alt="logo_strategie" style="width: 89px;"> 
+								</picture>
 							</div>
 							<div class="text media-body">
 								<h3>Stratégie</h3>
@@ -81,7 +103,11 @@
 					<div class="col-lg-6">
 						<div class="services text-center">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
-								<img src="{% static 'vitrine/img/logo_communication.png' %}" alt="logo_communication" style="width: 144px;margin-top: -20px; margin-bottom: -28px;"> 
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_communication.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_communication.png' %}">
+									<img src="{% static 'vitrine/img/logo_communication.png' %}" alt="logo_communication" style="width: 144px;margin-top: -20px; margin-bottom: -28px;"> 
+								</picture>
 							</div>
 							<div class="text media-body">
 								<h3>Communication</h3>
@@ -92,7 +118,11 @@
 						</div>
 						<div class="services text-center">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
-								<img src="{% static 'vitrine/img/logo_deploiement.png' %}" alt="logo_deploiement" style="width: 89px;"> 
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_deploiement.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_deploiement.png' %}">
+									<img src="{% static 'vitrine/img/logo_deploiement.png' %}" alt="logo_deploiement" style="width: 89px;"> 
+								</picture>
 							</div>
 							<div class="text media-body">
 								<h3>Deploiement</h3>

@@ -6,11 +6,15 @@
 <meta property="og:description" content="Conseil stratégique et opérationnel en systèmes d'information">
 <meta property="og:title" content="Oxade | Contact ">
 <title>Oxade | Contact </title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/contact.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap" rel="stylesheet"> 
 {% endblock %}
 
 {% block content %}
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'vitrine/img/secteurs_banniere.jpg' %});">
+<section class="hero-wrap hero-wrap-2 fond-contact">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -66,19 +70,24 @@
 				<h2 class="text-center">Une question ? Contactez-nous :</h2>
 				<form action="#" class="bg-light p-5 contact-form">
 					<div class="form-group cases">
-						<input type="text" class="form-control" placeholder="Votre nom">
+						<label for="nom" style="opacity: 0;">A</label>
+						<input id="nom" type="text" class="form-control" placeholder="Votre nom">
 					</div>
 					<div class="form-group cases">
-						<input type="text" class="form-control" placeholder="Votre Email">
+						<label for="mail" style="opacity: 0;">A</label>
+						<input id="mail" type="text" class="form-control" placeholder="Votre Email">
 					</div>
 					<div class="form-group cases">
-						<input type="text" class="form-control" placeholder="Titre">
+						<label for="titre" style="opacity: 0;">A</label>
+						<input id="titre" type="text" class="form-control" placeholder="Titre">
 					</div>
 					<div class="form-group cases">
-						<textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+						<label for="message" style="opacity: 0;">A</label>
+						<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 					</div>
 					<div class="form-group button_send">
-						<input type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
+						<label for="envoyer" style="opacity: 0;">A</label>
+						<input id="envoyer" type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
 					</div>
 				</form>
 			</div>
@@ -87,7 +96,7 @@
 </section>
 
 
-<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.9894897199592!2d2.3364049159123588!3d48.87747690731623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e476bc08471%3A0x95324380f110831a!2s10%20Rue%20Notre%20Dame%20de%20Lorette%2C%2075009%20Paris!5e0!3m2!1sfr!2sfr!4v1574074933088!5m2!1sfr!2sfr" width="1500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<iframe title="carte" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.9894897199592!2d2.3364049159123588!3d48.87747690731623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e476bc08471%3A0x95324380f110831a!2s10%20Rue%20Notre%20Dame%20de%20Lorette%2C%2075009%20Paris!5e0!3m2!1sfr!2sfr!4v1574074933088!5m2!1sfr!2sfr" width="1500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 
 
