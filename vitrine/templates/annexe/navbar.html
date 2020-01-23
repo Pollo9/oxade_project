@@ -1,0 +1,610 @@
+{% load staticfiles %} {% load i18n %}
+
+{% block seo %}
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/navbar.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+.all_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding-left: 0px!important;
+}
+
+/*Quand on appuie sur le hamburger en tel et qu'on repasse en ordi*/
+.container.responsive{
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.links {
+  float: right;
+  padding-right: 21px;
+}
+
+.links_a {
+  display: block;
+  color: #013E5B!important;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px!important;
+}
+
+.fleche_blanche{
+  margin-top: 14px;
+}
+
+.dropdown-content_langues {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 65px;
+    z-index: 2;
+    height: 50px;
+}
+
+.icon_nav{
+  display: none;
+}
+
+.logo_oxade{
+    width: 136px;
+    position: absolute;
+    margin-top: 7px;
+}
+
+.icon_respon{
+    list-style-type: none;
+  }
+
+
+.dropdown-content_tel {
+    display: none;
+    position: unset;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.icon_respon a:hover{
+  color: #30496b;
+}
+
+@media screen and (max-width: 991.98px){
+
+  .all_nav li:not(:last-child){
+    display:none;
+
+  }
+
+  .all_nav{
+    padding-left: 15px!important;
+  }
+
+  .icon_nav{
+    display: block!important;
+    float: right;
+    font-size: 32px;
+    margin-top: 6px;
+  }
+  .display-block {
+    display: flex!important;
+    flex-direction: column;
+    margin-left: 55px;
+}
+
+  .dropdown-content{
+    display: none!important;
+  }
+
+  .container.responsive{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+  }
+
+  .links{
+    float: none;
+    padding: 0px;
+  }
+
+  .logo_oxade{
+    position: unset;
+  }
+
+  .links_a {
+  text-align: left;
+  }
+  .searchform{
+    padding-left: 1px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px){
+    nav .container {
+        max-width: 710px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    nav .container {
+        max-width: 900px;
+    }
+}
+</style>
+<nav style="display: flex;flex-direction: row-reverse;">
+  <div class="icon_respon container" style="position: absolute;width: unset;"><a href="javascript:void(0);" class="icon_nav" onclick="responsive_nav()"><i class="fa fa-bars"></i></a></div>
+  <ul class="all_nav container" id="navbar">
+    
+    <li class="links langues"><form  action="{% url 'set_language' %}" method="post" class="searchform order-lg-last links_a">
+      {% csrf_token %}
+    <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+      <div class="form-group d-flex" >
+        <div class="dropdown_langues" >
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% if LANGUAGE_CODE == 'fr' %}
+                    <a
+                       lang="fr" aria-label="langue-fr" >
+                        <picture>
+                  <source type="image/webp" srcset="{% static 'vitrine/img/webp/drapeau_france.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/drapeau_france.png' %}">
+                  <img alt="logo-français" style="width: 31px;margin-left: 16px;" src="{% static 'vitrine/img/drapeau_france.png' %}">
+                </picture>
+                <i class="fa fa-caret-down " aria-hidden="true"></i>
+                    </a>
+                  <div class="dropdown-content_langues chang_fr">
+                    <a href="/en{{ request.get_full_path|slice:'3:' }}"
+                       lang="en" aria-label="langue-en" class="dropbtn ">
+                       <picture>
+                  <source type="image/webp" srcset="{% static 'vitrine/img/webp/drapeau_anglais.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/drapeau_anglais.png' %}">
+                  <img alt="logo-anglais"style="width: 31px;" src="{% static 'vitrine/img/drapeau_anglais.png' %}">
+                </picture>
+                <p style="float: right;margin-left: 10px;margin-top: 3px;color: #013E5B;">en</p>
+                    </a>
+                   </div>
+
+            {% else %}
+                   <a lang="en" aria-label="langue-en" class="dropbtn_langues chang_fr">
+                        <picture>
+                  <source type="image/webp" srcset="{% static 'vitrine/img/webp/drapeau_anglais.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/drapeau_anglais.png' %}">
+                  <img alt="logo-anglais"style="width: 31px" src="{% static 'vitrine/img/drapeau_anglais.png' %}">
+                </picture>
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-content_langues chang_fr">
+                      <a href="/fr{{ request.get_full_path|slice:'3:' }}"
+                       lang="fr" aria-label="langue-fr" class="dropbtn chang_fr">
+                          <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/drapeau_france.webp' %}">
+                      <source type="image/png" srcset="{% static 'vitrine/img/drapeau_france.png' %}">
+                    <img alt="logo-français" style="width: 31px;" src="{% static 'vitrine/img/drapeau_france.png' %}">
+                  </picture>
+                  <p style="float: right;margin-left: 10px;margin-top: 3px;color: #013E5B;">fr</p>
+                      </a>
+                   </div>
+          {% endif %}
+        </div>
+      </div>
+    </form>
+          </li>
+    <li class="links"><a href="{% url 'a_propos' %}" class="nav-link pl-0 links_a" style="margin-left: 17px;">{% trans 'À propos de nous' %}</a></li>
+    <li class="nav-item item-navbar-dropdown links" id="myDropdown2">
+          <a aria-label="Secteurs" class="nav-link links_a" onclick="display_secteurs()" style="cursor: pointer;">{% trans 'Secteurs' %} 
+            <picture>
+              <source type="image/webp" srcset="{% static 'vitrine/img/webp/fleche_blanche.webp' %}">
+              <source type="image/png" srcset="{% static 'vitrine/img/fleche_blanche.png' %}">
+              <img alt="fleche-blanche" class="fleche_blanche" src="{% static 'vitrine/img/fleche_blanche.png' %}">
+            </picture>
+          </a>
+          <div class="dropdown-content_tel dropdown_content_secteur">
+              <a aria-label="Secteur public" href="{% url 'secteur_public' %}">{% trans 'Secteur public' %}</a>
+              <a aria-label="Assurance" href="{% url 'assurance' %}">{% trans 'Assurance' %}</a>
+              <a aria-label="Banque" href="{% url 'banque' %}">{% trans 'Banque' %}</a>
+              <a aria-label="Energie" href="#">{% trans 'Énergie' %}</a>
+              <a aria-label="Télécommunications" href="#">{% trans 'Télécommunications' %}</a>
+              <a aria-label="Transport & logistique" href="#">{% trans 'Transport & logistique' %}</a>              
+          </div>
+
+          <div class="nav_sub_menu dropdown-content dropdown_content_secteur" style="margin-top: 4px;">
+            <div class="div_sub_menu">
+              <div class="part_sub_menu1">
+                <div class="sub_menu_content">
+                  <h2 class="nav_sub_menu_titre">{% trans 'Secteurs' %}</h2>
+                  <ul class="nav_sub_menu_list">
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction10()"><a aria-label="Secteur public" href="{% url 'secteur_public' %}" >{% trans 'Secteur public' %}</a></li> 
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction12()"><a aria-label="Assurance" href="{% url 'assurance' %}">{% trans 'Assurance' %}</a></li>
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction9()"><a aria-label="Banque" href="{% url 'banque' %}">{% trans 'Banque' %}</a></li>               
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction13()"><a aria-label="Energie" href="#">{% trans 'Énergie' %}</a></li>
+                    <li  class="nav_sub_menu_list_item professionnel" onmouseover="myFunction14()"><a aria-label="Télécommunications" href="#">{% trans 'Télécommunications' %}</a></li>
+                    <li style="margin-bottom: 24px;" class="nav_sub_menu_list_item professionnel" onmouseover="myFunction11()"><a aria-label="Transport & logistique" href="#">{% trans 'Transport & logistique' %}</a></li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <div class="part_sub_menu2 part_sub_menu2_j show" id="j">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Secteur public' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Nous intervenons depuis plus de 25 années dans le secteur public mobilisant notre expérience du secteur avec des professionnels expérimentés.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_public.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_public.png' %}">
+                    <img class="pc-particulier" style="width: 168px;margin-top: 74px;margin-left: 147px;" src="{% static 'vitrine/img/logo_public.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+              </div>
+              <div class="part_sub_menu2 part_sub_menu2_i" id="i">
+                <div style="width: 50%;">
+                  <h2 class="titre_sub_menu_a">{% trans 'Banque' %}</h2>
+                  <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Dans un contexte où l’univers financier doit faire face à des bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles économiques.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_banque.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_banque.png' %}">
+                    <img class="pc-particulier" style="width: 370px;margin-top: 35px;margin-left: 54px;" src="{% static 'vitrine/img/logo_banque.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+                </div>
+                
+                  <div class="part_sub_menu2 part_sub_menu2_k" id="k">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Transport et logistique' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Accompagnement depuis de très nombreuses années des acteurs de la mobilité, des infrastructures, du fret et de la logistique au travers d’approches adaptées et innovantes' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_logistique.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_logistique.png' %}">
+                    <img class="pc-particulier" style="width: 370px;margin-top: 66px;margin-left: 55px;" src="{% static 'vitrine/img/logo_logistique.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_l" id="l">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Assurance' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans "Nos équipes combinent des experts métiers ainsi que des professionnels du conseil. Cette expertise nous permet de prendre en charge des projets complexes et le cas échéant d’intervenir sur des postes opérationnels." %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_assurance.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_assurance.png' %}">
+                    <img class="pc-particulier" style="width: 140px;margin-top: 64px;margin-left: 160px;" src="{% static 'vitrine/img/logo_assurance.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_m" id="m">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Energie' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Nous intervenons pour les grands groupes sur leurs enjeux de transformation.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_energie.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_energie.png' %}">
+                    <img class="pc-particulier" style="    width: 241px;margin-left: 108px;margin-top: 36px;" src="{% static 'vitrine/img/logo_energie.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_n" id="n">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Télécommunications' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Nous proposons des solutions innovantes pour accompagner les transformations des acteurs du secteur.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_telecom.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_telecom.png' %}">
+                    <img class="pc-particulier" style="width: 293px;margin-top: 50px;margin-left: 91px;" src="{% static 'vitrine/img/logo_telecom.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+
+                    </li>
+                    <li class="nav-item item-navbar-dropdown links" id="myDropdown1">
+          <a aria-label="Offres" class="nav-link links_a" onclick="display_offres()" style="cursor: pointer;">{% trans 'Offres' %}
+            <picture>
+              <source type="image/webp" srcset="{% static 'vitrine/img/webp/fleche_blanche.webp' %}">
+                <source type="image/png" srcset="{% static 'vitrine/img/fleche_blanche.png' %}">
+              <img class="fleche_blanche" alt="fleche-blanche" src="{% static 'vitrine/img/fleche_blanche.png' %}">
+            </picture>
+          </a>
+            <div class="dropdown-content_tel dropdown_content_offres">
+              <a aria-label="Risk management & sécurité de l’information" href="{% url 'securite' %}">{% trans 'Risk management sécurité de l’information' %}</a>
+              <a aria-label="Innovation digitale" href="{% url 'digitalisation' %}">{% trans 'Innovation digitale' %}</a>
+              <a aria-label="Architecture des systèmes d’information​" href="{% url 'architecture' %}">{% trans 'Systèmes d’information​' %}</a>
+              <a aria-label="Transformation" href="{% url 'transformation' %}">{% trans 'Transformation' %}</a>
+              <a aria-label="Excellence opérationnelle" href="{% url 'digitalisation' %}">{% trans 'Excellence opérationnelle' %}</a>
+              <a aria-label="Coaching" href="{% url 'coaching' %}">{% trans 'Coaching' %}</a>
+              <a aria-label="AMOA" href="{% url 'amoa' %}">{% trans 'AMOA' %}</a>           
+              <a aria-label="Divers 1" href="{% url 'autres' %}">{% trans 'Autres' %}</a>            
+                                             
+              </div>
+          <div class="nav_sub_menu dropdown-content dropdown_content_offres" style="margin-top: 4px;">
+            <div class="div_sub_menu">
+              <div class="part_sub_menu1">
+                <div class="sub_menu_content">
+                  <h2 class="nav_sub_menu_titre">{% trans 'Offres' %}</h2>
+                  <ul class="nav_sub_menu_list">
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction4()"><a aria-label="Risk management & sécurité de l’information" href="{% url 'securite' %}">{% trans 'Risk management sécurité de l’information' %}</a></li>
+                    <li  class="nav_sub_menu_list_item professionnel" onmouseover="myFunction8()"><a aria-label="Innovation digitale" href="{% url 'digitalisation' %}">{% trans 'Innovation digitale' %}</a></li>
+                    <li  class="nav_sub_menu_list_item particulier green" onmouseover="myFunction1()"><a aria-label="Architecture des systèmes d’information​" href="{% url 'architecture' %}">{% trans 'Systèmes d’information​' %}</a></li>
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction3()"><a aria-label="Transformation" href="{% url 'transformation' %}">{% trans 'Transformation' %}</a></li>
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction7()"><a aria-label="Excellence opérationnelle" href="{% url 'excellence_operationnelle' %}">{% trans 'Excellence opérationnelle' %}</a></li>
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction6()"><a aria-label="Coaching" href="{% url 'coaching' %}">{% trans 'Coaching' %}</a></li>
+                    <li class="nav_sub_menu_list_item professionnel" onmouseover="myFunction5()"><a aria-label="AMOA" href="{% url 'amoa' %}">{% trans 'AMOA' %}</a></li>                                                                     
+                    <li style="margin-bottom: 24px;" class="nav_sub_menu_list_item professionnel" onmouseover="myFunction2()"><a aria-label="Divers 1" href="{% url 'autres' %}">{% trans 'Autres' %}</a></li>                                                      
+                  </ul>
+                </div>
+              </div>
+              <div class="part_sub_menu2 part_sub_menu2_a" id="a">
+                <div style="width: 50%;">
+                  <h2 class="titre_sub_menu_a">{% trans 'Systèmes d’information​' %}</h2>
+                  <p style="margin-left: 68px; margin-top: 21px;">{% trans 'À l’interface de nombreux métiers de l’entreprise, nous conçevons et organisons l’ensemble des serveurs, des systèmes d’exploitation, des ordinateurs, des logiciels, etc. Afin de les adapter aux besoins des utilisateurs' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_conduite.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_conduite.png' %}">
+                    <img class="pc-particulier" style="width: 250px;margin-top: 81px;margin-left: 86px;" src="{% static 'vitrine/img/logo_conduite.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+              </div>
+
+                  <div class="part_sub_menu2 part_sub_menu2_b" id="b">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Autres' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Gestion de projet' %}</br>
+                        {% trans 'Finance d’entreprise' %}</br>
+                        <!-- {% trans 'Lean & Six Sigma' %} -->
+                      </p>
+                </div>
+              </div>
+
+                  <div class="part_sub_menu2 part_sub_menu2_c" id="c">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Transformation' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Nous appuyons les directions projets et les instances dirigeantes pour faciliter le suivi de l’avancement et la prise de décisions.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_transformation.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_transformation.png' %}">
+                    <img class="pc-particulier" src="{% static 'vitrine/img/logo_transformation.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+              </div>
+
+                  <div class="part_sub_menu2 part_sub_menu2_d show" id="d">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Risk management & sécurité de l’information' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Découvrez comment nous pouvons simplifier la sécurité des accès au système d’information de votre établissement.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_securite.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_securite.png' %}">
+                    <img class="pc-particulier" style="width: 330px;margin-top: 109px;margin-left: 79px;" src="{% static 'vitrine/img/logo_securite.png' %}" alt="logo_securite">
+                  </picture>
+                </div>
+
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_e" id="e">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'AMOA' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_amoa.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_amoa.png' %}">
+                    <img class="pc-particulier" style="width: 228px; margin-left: 76px;" src="{% static 'vitrine/img/logo_amoa.png' %}" alt="logo_amoa">
+                  </picture>
+                </div>
+
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_f" id="f">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Coaching' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Nous proposons un processus d’accompagnement et de facilitation qui vise à vous permettre de trouver vous-même la solution à une problématique professionnelle opérationnelle ou managériale tout en travaillant sur votre épanouissement personnel' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_coaching.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_coaching.png' %}">
+                    <img class="pc-particulier" style="width: 400px;margin-top: 81px;margin-left: 16px;" src="{% static 'vitrine/img/logo_coaching.png' %}" alt="logo_coaching">
+                  </picture>
+
+                    </div>
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_g" id="g">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Excellence opérationnelle' %}</h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Levier puissant de compétitivité pour les entreprises, et ce d’autant plus qu’elles évoluent dans un environnement extrêmement concurrentiel' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_excellence.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_excellence.png' %}">
+                    <img class="pc-particulier" style="width: 222px;margin-top: 75px;margin-left: 99px;" src="{% static 'vitrine/img/logo_excellence.png' %}" alt="logo_excellence">
+                  </picture>
+                </div>
+                  </div>
+                  <div class="part_sub_menu2 part_sub_menu2_h" id="h">
+                    <div style="width: 50%;">
+                      <h2 class="titre_sub_menu_a">{% trans 'Innovation digitale' %}
+
+                      </h2>
+                      <p style="margin-left: 68px; margin-top: 21px;">{% trans 'Les entreprises du secteur financier mettent en œuvre les changements exigés par les nouvelles réglementations. Elles s’efforcent en même temps de réagir face à la croissance de la numérisation' %}</p>
+                </div>
+                <div style="text-align: center; margin-right: 50px;">
+                  <picture>
+                    <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_digital.webp' %}">
+                    <source type="image/png" srcset="{% static 'vitrine/img/logo_digital.png' %}">
+                    <img class="pc-particulier" style="width: 263px; margin-top: 71px;margin-left: 91px;" src="{% static 'vitrine/img/logo_digital.png' %}" alt="logo_conduite-du-changement">
+                  </picture>
+                </div>
+                  </div>
+
+                    </li>
+                <li class="links" style="float:left">
+                  <a aria-label="Logo oxade"  href="{% url 'index_vitrine' %}">
+                    <picture>
+                      <source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_oxade.webp' %}">
+                        <source type="image/png" srcset="{% static 'vitrine/img/logo_oxade.png' %}">
+                      <img alt="bandeau-oxade-consulting"src="{% static 'vitrine/img/logo_oxade.png' %}" class="logo_oxade">
+                    </picture>
+                  </a>
+                </li>
+    
+  </ul>
+</nav>
+
+
+<script>
+// function myFunction() {
+//   var x = document.getElementById("myNav");
+//   var y = document.getElementById("myDropdown1");
+//   var z = document.getElementById("myDropdown2");
+//   var a = document.getElementsByClassName("dropdown_content_offres");
+//   var b = document.getElementsByClassName("dropdown_content_secteur");
+//   a[1].className = "nav_sub_menu dropdown-content dropdown_content_offres";
+//   b[1].className = "nav_sub_menu dropdown-content dropdown_content_secteur";
+//   if (x.className === "navbar-nav mr-auto") {
+//     x.className += " responsive";
+//     document.getElementById("mt1").className = "icon_nav mt1";
+//     document.getElementById("drapeau").className = "drapeau2";
+//     document.getElementById("mt2").className = "mt2";
+//     document.getElementById("mt3").className = "logo_oxade_tel mt2";
+//   } else {
+//     x.className = "navbar-nav mr-auto";
+//     document.getElementById("mt1").className = "icon_nav";
+//     document.getElementById("drapeau").className = "drapeau";
+//     document.getElementById("mt2").className = "";
+//     document.getElementById("mt3").className = "logo_oxade_tel";
+//   }
+
+//   if (y.className === "nav-item item-navbar-dropdown") {
+//     y.className = "nav-item hover";
+//   } else {
+//     y.className = "nav-item item-navbar-dropdown";
+//   }
+
+//   if (z.className === "nav-item item-navbar-dropdown") {
+//     z.className = "nav-item hover";
+//   } else {
+//     z.className = "nav-item item-navbar-dropdown";
+//   }
+
+// }
+var x = document.getElementById("navbar");
+  if(window.innerWidth >= 991){
+        var x = document.getElementById("navbar");
+        x.className = "all_nav container";
+  }
+  
+function responsive_nav(){
+  var x = document.getElementById("navbar");
+    if (x.className === "all_nav container"){
+      x.className = "container responsive";
+    }
+    else{
+      x.className = "all_nav container";
+    }
+}
+
+function debug()
+{
+    if(window.innerWidth >= 991)
+    {
+        var x = document.getElementById("navbar");
+        var y = document.getElementById("myDropdown1");
+        var z = document.getElementById("myDropdown2");
+        x.className = "all_nav container";
+        y.className = "nav-item item-navbar-dropdown";
+        z.className = "nav-item item-navbar-dropdown";
+    }
+}
+
+function display_offres(){
+  var x = document.getElementsByClassName("dropdown_content_offres");
+  var y = document.getElementsByClassName("dropdown_content_secteur");
+  if(window.innerWidth <= 991)
+  {
+    if(x[0].className == "dropdown-content_tel dropdown_content_offres")
+    {
+      
+      x[0].className = "dropdown-content_tel dropdown_content_offres display-block";
+      y[0].className = "dropdown-content_tel dropdown_content_secteur";
+    }
+    else
+    {
+      x[0].className = "dropdown-content_tel dropdown_content_offres";
+    }
+  }
+  return;
+}
+function display_secteurs(){
+  var y = document.getElementsByClassName("dropdown_content_offres");
+  var x = document.getElementsByClassName("dropdown_content_secteur");
+  if(window.innerWidth <= 991)
+  {
+    if(x[0].className == "dropdown-content_tel dropdown_content_secteur")
+    {
+      
+      x[0].className = "dropdown-content_tel dropdown_content_secteur display-block";
+      y[0].className = "dropdown-content_tel dropdown_content_offres";
+    }
+    else
+    {
+      x[0].className = "dropdown-content_tel dropdown_content_secteur";
+    }
+  }
+  return;
+}
+function display_langue()
+{
+  {% if LANGUAGE_CODE == 'fr' %}
+  if(document.getElementById("langue2").className == "dropdown-content_langues")
+  {
+    document.getElementById("langue2").className = "dropdown-content_langues display-block";
+  }
+  else
+  {
+    document.getElementById("langue2").className = "dropdown-content_langues"
+  }
+  {% else %}
+  if(document.getElementById("langue3").className == "dropdown-content_langues")
+  {
+    document.getElementById("langue3").className = "dropdown-content_langues display-block";
+  }
+  else
+  {
+    document.getElementById("langue3").className = "dropdown-content_langues"
+  }
+  {% endif %}
+}
+</script>
+{% endblock %}

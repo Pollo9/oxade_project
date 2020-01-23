@@ -1,0 +1,329 @@
+{% extends 'base_vitrine.html' %}
+{% load staticfiles %} {% load i18n %}
+
+{% block seo %}
+<meta name="Description" content="{% trans 'Le monde change rapidement et les organisations doivent changer pour libérer leur plein potentiel.' %}">
+<meta property="og:description" content="{% trans 'Le monde change rapidement et les organisations doivent changer pour libérer leur plein potentiel.' %}">
+<meta property="og:title" content="OXADE Consulting | {% trans 'Innovation digitale' %}">
+<title>OXADE Consulting | {% trans 'Innovation digitale' %}</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/offres.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
+
+{% endblock %}
+
+{% block content %}
+<style type="text/css">
+	.container_contact_us{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border:4px solid #d1ebf9;
+	}
+
+	.text_contact{
+		display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    justify-content: center;
+	}
+
+	.container_bouton{
+		display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-bottom: 26px;
+	}
+
+	.liste_offres{
+		margin-top: 0;
+	    text-align: left;
+	    margin-bottom: 1rem;
+	    color: grey;
+	}
+
+	.secteurs:hover {
+    background: #1b9ce300;
+	}
+
+	@media screen and (max-width: 991.98px){
+		.container_contact_us {
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    border: 4px solid #d1ebf9;
+		    flex-wrap: wrap;
+		}
+
+		.text_contact {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    text-align: center;
+		    padding: 30px;
+		}
+
+		.liste_offres {
+		    margin-left: 11%;
+		}
+	}
+
+
+	.img_offres_secteurs_digital{
+		width: 262px;
+		margin: 45px;
+	}
+</style>
+
+
+
+<section class="hero-wrap hero-wrap-2 fond-defense">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+			<div class="col-md-9 ftco-animate text-center">
+				<h1 class="mb-2 bread">{% trans 'Innovation digitale' %} </h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section style="margin-top: 125px;">
+	<div class="container">
+		<div class="row no-gutters">
+			<a aria-label="Conduite du changement" class="col-lg-6 d-flex test">
+				<div class="services-2 noborder-left text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_deploiement.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_deploiement.png' %}">
+							<img src="{% static 'vitrine/img/logo_deploiement.png' %}" alt="logo_deploiement" style="width: 89px;"> 
+						</picture>
+					</div>
+					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
+						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Connectivité et mobilité​' %}</h3>
+						<ul class="liste_offres">
+							<li>{% trans 'Assurer la connectivité des collaborateurs en situation de mobilité : cloud ready networks, réseaux industriels, réseaux d’objets connectés, mobile device management​' %}</li>
+							<li>{% trans 'Améliorer la performance des directions télécoms​' %}
+								<ul class="liste_offres">
+									<li>{% trans 'Performance assessment' %}</li>
+									<li>{% trans 'Target Operating Model​' %}</li>
+									<li>{% trans 'Sourcing télécoms​' %}</li>
+								</ul>
+							</li>
+							<li>{% trans 'Centres de relation client​' %}
+								<ul class="liste_offres">
+									<li>{% trans 'Sourcing infrastructures et solutions​' %}</li>
+									<li>{% trans 'Intégration du multi-canal' %}</li>
+									<li>{% trans 'Performance des CRC' %}</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Fusions et acquisitions" class="col-lg-6 d-flex test">
+				<div class="services-2 text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_analyse.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_analyse.png' %}">
+							<img src="{% static 'vitrine/img/logo_analyse.png' %}" alt="logo_analyse" style="width: 89px;">
+						</picture>
+					</div>
+					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
+						
+						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Digital working​' %}</h3>
+						<ul class="liste_offres">
+							<li>{% trans 'Faire émerger les usages et pratiques digitales​' %}</li>
+							<li>{% trans 'Mettre en place, installer et dynamiser l’adoption des outils digitaux​' %}
+								<ul class="liste_offres">
+									<li>{% trans 'Dispositifs sociaux et collaboratifs​' %}</li>
+									<li>{% trans 'Intranets​' %}</li>
+									<li>{% trans 'Mobilité & apps​' %}</li>
+								</ul>
+							</li>
+							<li>{% trans 'Diffuser la culture digitale​' %}
+								<ul class="liste_offres">
+									<li>{% trans 'Formations, sensibilisation, communication​' %}</li>
+									<li>{% trans 'Nouveaux espaces de travail (flex)​' %}</li>
+									<li>{% trans 'Gouvernance de la transformation​' %}</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Transformation" class="col-lg-12 d-flex test">
+				<div class="services-2 text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_strategie.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_strategie.png' %}">
+							<img src="{% static 'vitrine/img/logo_strategie.png' %}" alt="logo_strategie" style="width: 89px;"> 
+						</picture>
+					</div>
+					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
+						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Digital customer experience' %}</h3>
+						<ul class="liste_offres">
+							<li>{% trans 'Concevoir les interfaces digitales via des processus agiles et collaboratifs' %}
+								<ul class="liste_offres">
+									<li>{% trans 'Ateliers de créativité' %}</li>
+									<li>{% trans 'Design fonctionnel, ergonomique et graphique' %}</li>
+									<li>{% trans 'Maquettage dynamique / démonstrateur​' %}</li>
+									<li>{% trans 'Tests utilisateurs et focus group​' %}</li>
+								</ul>
+							</li>
+							<li>{% trans 'Concrétiser l’innovation par l’implémentation / le prototypage (POC)​' %}
+								<ul class="liste_offres">
+									<li>{% trans 'Interfaces Web / responsive / ergonomie' %}</li>
+									<li>{% trans 'Objets connectés' %}</li>
+									<li>{% trans 'Apps mobiles​' %}</li>
+								</ul>
+							</li>
+							<li>{% trans 'Animer les dispositifs de relation client digitale de la conception à la vie courant en passant par la production​' %}</li>
+						</ul>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+
+<section style="margin-top: 125px;margin-bottom: 125px;">
+	<div class="container">
+		<div class="container_contact_us">
+			<div class="container_bouton">
+				<picture>
+					<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_digital.webp' %}">
+					<source type="image/png" srcset="{% static 'vitrine/img/logo_digital.png' %}">
+					<img src="{% static 'vitrine/img/logo_digital.png' %}" alt="logo_digital" class="img_offres_secteurs_digital">
+				</picture>
+				<p>
+					<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+				</p>
+			</div>
+			
+			<div class="text_contact">
+				<h3>{% trans 'Notre vision et notre ambition' %}</h3>
+				<p>
+					{% trans 'Le monde change rapidement et les organisations doivent changer pour libérer leur plein potentiel.' %}
+				</p>
+				<p>
+					{% trans 'Pourtant, les recherches montrent que la plupart des efforts pour changer fondamentalement la trajectoire d’une organisation échouent. La gamme d’offres de transformation d’Oxade aide les clients à inverser les obstacles afin d’obtenir des résultats extraordinaires pour leur entreprise' %}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- <section class="ftco-section ftco-no-pb" >
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-5 order-md-last wrap-about align-items-stretch">
+				<div class="wrap-about-border ftco-animate">
+					<picture>
+						<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_digital.webp' %}">
+						<source type="image/png" srcset="{% static 'vitrine/img/logo_digital.png' %}">
+						<img src="{% static 'vitrine/img/logo_digital.png' %}" alt="logo_digital" class="img_offres_secteurs"> 
+					</picture>
+					 
+					<div class="text">
+						<h3>Notre vision et notre ambition</h3>
+						<p>
+							Les nouvelles technologies, l’évolution des usages et comportements et les nouveaux modèles sous-jacents provoquent des ruptures : les champs concurrentiels évoluent, la vitesse et l’expérience client deviennent des facteurs clés de performance et la transformation, qu’on l’appelle digitale ou non, est devenue une nécessité.
+						</p>
+						<p>
+							Elle suscite encore néanmoins beaucoup d’interrogations. 
+						</p>
+						<p>
+							<a aria-label="Contactez-nous"href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 wrap-about pr-md-4 ftco-animate">
+				<h2 class="mb-4">Mise en place de plusieurs leviers</h2>
+				<p>
+					La digitalisation de notre économie amène les entreprises et organisations à repenser leurs stratégies tant internes qu’externes. Les gains pour l’entreprise peuvent s’avérer nombreux, mais cette modernisation implique de réorganiser celle-ci en profondeur et repenser la gestion de l’information et des compétences.
+				</p>
+				<div class="row mt-5">
+					<div class="col-lg-6">
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_acquisition.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_acquisition.png' %}">
+									<img src="{% static 'vitrine/img/logo_acquisition.png' %}" alt="logo_acquisition" style="    width: 354px;margin-top: -89px;margin-bottom: -143px;">
+								</picture>
+								
+							</div>
+							<div class="text media-body">
+								<h3>Acquisition</h3>
+								<p>
+									Traitement & publication de l'information
+								</p>
+							</div>
+						</div>
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_interactions.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_interactions.png' %}">
+									<img src="{% static 'vitrine/img/logo_interactions.png' %}" alt="logo_interactions" style="width: 354px;margin-top: -124px;margin-bottom: -102px;">
+								</picture>
+								
+							</div>
+							<div class="text media-body">
+								<h3>Intéractions</h3>
+								<p>
+									Simplification des interactions avec vos clients
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_optimisation.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_optimisation.png' %}">
+									<img src="{% static 'vitrine/img/logo_optimisation.png' %}" alt="logo_optimisation" style="    width: 119px;margin-top: -12px;margin-bottom: -37px;">
+								</picture>
+								
+							</div>
+							<div class="text media-body">
+								<h3>Optimisation</h3>
+								<p>
+									De l'experience client sur tout le parcours
+								</p>
+							</div>
+						</div>
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_personnalisation.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_personnalisation.png' %}">
+									<img src="{% static 'vitrine/img/logo_personnalisation.png' %}" alt="logo_personnalisation" style="width: 126px;margin-top: -21px;margin-bottom: -20px;">
+								</picture>
+								
+							</div>
+							<div class="text media-body">
+								<h3>Personnalisation</h3>
+								<p>
+									De vos offres et de tout le cyle de vente
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+{% endblock %}

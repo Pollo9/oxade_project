@@ -1,0 +1,536 @@
+{% extends 'base_vitrine.html' %} 
+{% load staticfiles %} {% load i18n %}
+
+{% block seo %}
+<meta name="Description" content="{% trans 'OXADE Consulting se positionne comme un cabinet combinant expertise métier, expertise en systèmes d’information et en organisation. Nous proposons à nos clients des interventions intégrant l’ensemble des enjeux auxquels ils font face avec des solutions sur mesure.' %} ">
+<meta property="og:description" content="{% trans 'OXADE Consulting se positionne comme un cabinet combinant expertise métier, expertise en systèmes d’information et en organisation. Nous proposons à nos clients des interventions intégrant l’ensemble des enjeux auxquels ils font face avec des solutions sur mesure.' %} ">
+<meta property="og:title" content="{% trans 'OXADE Consulting - Conseil stratégique, métier et opérationnel'%}">
+<title>{% trans 'OXADE Consulting - Conseil stratégique, métier et opérationnel'%}</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/accueil.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script> 
+{% endblock %}
+
+{% block link %}
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+@media (max-width: 991.98px){
+	.owl-carousel.home-slider .slider-item .slider-text h2{
+		font-size: 40px !important;
+	}
+}
+
+.owl-carousel.home-slider .slider-item .slider-text h2{
+	font-size: 60px;
+	color: #fff;
+	line-height: 1.2;
+	font-weight: 900;
+}
+
+
+@media screen and (max-width: 991.98px){
+	.owl-carousel{
+		display:none!important;
+	}
+	.carousel_tel{
+		display:block!important;
+	}
+}
+
+@media (max-width: 991.98px){
+	#marg-t-acceuil-carrousel {
+	    margin-top: 0px!important;
+	}
+
+	.sauts{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.textes_carousel{
+	    text-align: center;
+	    align-items: center;
+	    margin-left: 0!important;
+	    width: 100%!important;
+	}
+}
+
+@media screen and (max-width: 459px){
+	.sous_titre {
+    font-size: 11px!important;
+	}
+	.titre_accueil_tel {
+	    font-size: 32px!important;
+	}
+}
+
+.carousel_tel{
+	display:none;
+}
+
+.img_accueil{
+	width: 100%;
+    height: 615px;
+    object-fit: cover;
+    position: inherit;
+    filter: brightness(0.7);
+    z-index: 1;
+}
+
+.sous_titre{
+    font-size:14px;
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+.textes_carousel{
+	position: absolute;
+	color: white;
+    height: 615px;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8%;
+    z-index: 2;
+}
+
+.titre_accueil_tel{
+	font-size: 41px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 900;
+    width: 80%;
+}
+
+/*.sous_titre {
+    font-size: 10px;
+}
+.titre_accueil_tel {
+    font-size: 26px;
+}
+*/
+
+</style>
+
+<section id="accueil-carrousel-tel" class="home-slider owl-carousel">
+	<div class="slider-item fond-webp">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+				<div class="col-md-7 ftco-animate">
+					<span class="subheading">{% trans 'Le cœur de métier d’OXADE' %}</span>
+					<h1 class="mb-4">{% trans 'Conseil stratégique, métier et opérationnel' %}</h1>
+					<p>
+						<a aria-label="Nos secteurs" href="#secteurs" class="btn btn-primary px-4 py-3 mt-3">{% trans 'Nos secteurs' %}</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item fond-webp-2">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+				<div class="col-md-7 ftco-animate">
+					<span class="subheading">{% trans 'Domaines fonctionnels' %}</span>
+					<h2 class="mb-4 titre_accueil">{% trans 'Une maîtrise des grandes fonctions de l’entreprise' %}</h2>
+					<p>
+						<a aria-label="Nos offres" href="#offres" class="btn btn-primary px-4 py-3 mt-3">{% trans 'Nos offres' %}</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="carousel_tel"> 
+
+	<div class="textes_carousel">
+		<span class="sous_titre">{% trans 'Le cœur de métier d’OXADE' %}</span>
+		<h2 class="mb-4 titre_accueil_tel">{% trans 'Conseil stratégique, métier et opérationnel' %}</h2>
+		<p>
+			<a aria-label="Nos secteurs" href="#secteurs"  class="btn btn-primary px-4 py-3 mt-3">{% trans 'Nos secteurs' %}</a>
+		</p>
+
+	</div>
+	
+	<picture>
+			<source type="image/webp" srcset="{% static 'vitrine/img/webp/fond_consulting.webp' %}">
+			<source type="image/png" srcset="{% static 'vitrine/img/fond_consulting.png' %}">
+			<img class="img_accueil" alt="fond_consulting_tel" src ="{% static 'vitrine/img/fond_consulting.png' %}">
+	</picture>
+	
+</section>
+
+<section id="marg-t-acceuil-carrousel" class="ftco-section">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-12 wrap-about pr-md-4 ftco-animate">
+				<h2 id="secteurs" class="mb-4 titre_secteurs_index">{% trans 'Nos secteurs d’activités' %}</h2>
+                <p class="titre_secteurs_index">
+                    {% trans 'OXADE Consulting se positionne comme un cabinet combinant expertise métier, expertise en systèmes d’information et en organisation. Nous proposons à nos clients des interventions intégrant l’ensemble des enjeux auxquels ils font face avec des solutions sur mesure.' %} 
+                </p>
+				<div class="row mt-5">
+					<div class="col-lg-4">
+
+						<a aria-label="Public" href="{% url 'secteur_public' %}" class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_public.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_public.png' %}">
+									<img style="width:66px; margin-bottom: 8px;" alt="logo-public" src="{% static 'vitrine/img/logo_public.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Secteur public' %}</h3>
+								<p class="color_grey">
+									{% trans 'Nous intervenons depuis plus de 25 années dans le secteur public mobilisant notre expérience du secteur avec des professionnels expérimentés.' %}
+									{% get_current_language as LANGUAGE_CODE %}
+						            {% get_available_languages as LANGUAGES %}
+						            {% get_language_info_list for LANGUAGES as languages %}
+						            {% if LANGUAGE_CODE == 'fr' %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% else %}
+											<br class="sauts"><br class="sauts">
+									{% endif %}
+								</p>
+							</div>
+						</a>
+						
+						<a aria-label="Energie" href="#" class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_energie.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_energie.png' %}">
+									<img style="width: 82px;margin-bottom: -1px;" alt="logo-energie" src="{% static 'vitrine/img/logo_energie.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Énergie' %}</h3>
+								<p class="color_grey">
+									{% trans 'Nous intervenons pour les grands groupes sur leurs enjeux de transformation.' %}
+									{% get_current_language as LANGUAGE_CODE %}
+						            {% get_available_languages as LANGUAGES %}
+						            {% get_language_info_list for LANGUAGES as languages %}
+						            {% if LANGUAGE_CODE == 'fr' %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% else %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% endif %}
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4">
+						
+						<a aria-label="Assurance" href="{% url 'assurance' %}" class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_assurance.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_assurance.png' %}">
+									<img style="width:47px; margin-bottom: 20px;" alt="logo-assurance"src="{% static 'vitrine/img/logo_assurance.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Assurance' %}</h3>
+								<p class="color_grey">
+									{% trans 'Nos équipes combinent des experts métiers ainsi que des professionnels du conseil. Cette expertise nous permet de prendre en charge des projets complexes et le cas échéant d’intervenir sur des postes opérationnels.' %}
+								</p>
+							</div>
+						</a>
+						
+						<a aria-label="Telecom" href="#" class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_telecom.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_telecom.png' %}">
+									<img style="width:110px; margin-bottom: 7px;" alt="logo-telecom" src="{% static 'vitrine/img/logo_telecom.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3 >{% trans 'Télécommunications' %}</h3>
+								<p class="color_grey">
+									{% trans 'Nous proposons des solutions innovantes pour accompagner les transformations des acteurs du secteur.' %}
+									{% get_current_language as LANGUAGE_CODE %}
+						            {% get_available_languages as LANGUAGES %}
+						            {% get_language_info_list for LANGUAGES as languages %}
+						            {% if LANGUAGE_CODE == 'fr' %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% else %}
+											<br class="sauts"><br class="sauts">
+									{% endif %}
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4">
+						
+						
+						<a aria-label="Banque" href="{% url 'banque' %}" class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_banque.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_banque.png' %}">
+									<img class="logo_banque" alt="logo-banque" src="{% static 'vitrine/img/logo_banque.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Banque' %}</h3>
+								<p class="color_grey">
+									{% trans 'Dans un contexte où l’univers financier doit faire face à des bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles économiques.' %}
+									{% get_current_language as LANGUAGE_CODE %}
+						            {% get_available_languages as LANGUAGES %}
+						            {% get_language_info_list for LANGUAGES as languages %}
+						            {% if LANGUAGE_CODE == 'fr' %}
+											<br class="sauts"><br class="sauts">
+									{% else %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% endif %}
+								</p>
+							</div>
+						</a>
+						<a aria-label="Logistique" href="#" class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_logistique.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_logistique.png' %}">
+									<img style="width: 164px;margin-bottom: 0px;" alt="logo-logistique" src="{% static 'vitrine/img/logo_logistique.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Transport & logistique' %}</h3>
+								<p class="color_grey">
+									{% trans 'Accompagnement depuis de très nombreuses années des acteurs de la mobilité, des infrastructures, du fret et de la logistique au travers d’approches adaptées et innovantes.' %}
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="ftco-intro ftco-no-pb img fond-webp">
+	<div class="container">
+		<div class="row justify-content-center mb-5">
+			<div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
+				<h2 class="mb-0">{% trans 'Nos chiffres clés' %}</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+{% if LANGUAGE_CODE == 'fr' %}
+
+<section class="ftco-counter" id="section-counter">
+	<div class="container">
+		<div class="row d-md-flex align-items-center justify-content-center">
+			<div class="wrapper">
+				<div class="row d-md-flex align-items-center">
+					{% for nombre in chiffre %}
+					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate" style="text-align: center;">
+						<div class="block-18">
+							<div class="icon">
+								<span class="flaticon-doctor"></span>
+							</div>
+							<div class="text">
+								<strong class="number" data-number="{{ nombre.nombre }}">0</strong>
+								<span>{{ nombre.nom }}</span>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% else %}
+	
+<section class="ftco-counter" id="section-counter">
+	<div class="container">
+		<div class="row d-md-flex align-items-center justify-content-center">
+			<div class="wrapper">
+				<div class="row d-md-flex align-items-center">
+					{% for nombre in chiffre_en %}
+					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate" style="text-align: center;">
+						<div class="block-18">
+							<div class="icon">
+								<span class="flaticon-doctor"></span>
+							</div>
+							<div class="text">
+								<strong class="number" data-number="{{ nombre.nombre }}">0</strong>
+								<span>{{ nombre.nom }}</span>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endif %}
+
+
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-2">
+			<div class="col-md-8 text-center heading-section ftco-animate">
+				<h2 id="offres" class="mb-4">{% trans 'Nos offres' %}</h2>
+				<p>
+					{% trans 'Oxade consulting s’appuie sur des offres structurées portées par des directeurs expérimentés.' %}
+				</p>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<a aria-label="Sécurité" href="{% url 'securite' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 noborder-left noborder-bottom text-center ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_securite.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_securite.png' %}">
+							<img style="width: 158px;margin-bottom: 7px;margin-top: -1px;" alt="logo-securite" src="{% static 'vitrine/img/logo_securite.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'Risk management sécurité de l’information' %}</h3>
+						<p class="color_grey">
+							{% trans 'Découvrez comment nous pouvons simplifier la sécurité des accès au système d’information de votre établissement' %}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Digitaliation" href="{% url 'digitalisation' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 text-center noborder-bottom ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_digital.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_digital.png' %}">
+							<img style="width: 116px;margin-bottom: -14px;margin-top: -18px;" alt="logo-digital" src="{% static 'vitrine/img/logo_digital.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'Innovation digitale' %}</h3>
+						<p class="color_grey">
+							 {% trans 'Les entreprises du secteur financier mettent en œuvre les changements exigés par les nouvelles réglementations. Elles s’efforcent en même temps de réagir face à la croissance de la numérisation' %}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Digitaliation" href="{% url 'architecture' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 text-center noborder-bottom ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_conduite.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_conduite.png' %}">
+							<img style="width: 93px;margin-bottom: 17px;margin-top: 4px;" alt="logo-conduite" src="{% static 'vitrine/img/logo_conduite.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'Systèmes d’information' %}</h3>
+						<p class="color_grey">
+							{% trans 'À l’interface de nombreux métiers de l’entreprise, nous conçevons et organisons l’ensemble des serveurs, des systèmes d’exploitation, des ordinateurs, des logiciels, etc. Afin de les adapter aux besoins des utilisateurs' %}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Transformation" href="{% url 'transformation' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 text-center ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_transformation.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_transformation.png' %}">
+							<img style="width: 111px; margin-bottom: 17px;" alt="logo-transformation" src="{% static 'vitrine/img/logo_transformation.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'Transformation' %}</h3>
+						<p class="color_grey">
+							{% trans 'Nous appuyons les directions projets et les instances dirigeantes pour faciliter le suivi de l’avancement et la prise de décisions' %}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Coaching" href="{% url 'excellence_operationnelle' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 text-center ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_excellence.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_excellence.png' %}">
+							<img style="width: 85px;margin-bottom: 3px;margin-top: -3px;" alt="logo-excellence" src="{% static 'vitrine/img/logo_excellence.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'Excellence opérationnelle' %}</h3>
+						<p class="color_grey">
+							{% trans 'Levier puissant de compétitivité pour les entreprises, et ce d’autant plus qu’elles évoluent dans un environnement extrêmement concurrentiel' %}
+						</p>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Coaching" href="{% url 'coaching' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 text-center ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_coaching.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_coaching.png' %}">
+							<img style="width: 154px;margin-bottom: -3px;margin-top: -7px;" alt="logo-coaching" src="{% static 'vitrine/img/logo_coaching.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'Coaching' %}</h3>
+						<p class="color_grey">
+							{% trans 'Nous proposons un processus d’accompagnement et de facilitation qui vise à vous permettre de trouver vous-même la solution à une problématique professionnelle opérationnelle ou managériale' %}
+						</p>
+					</div>
+				</div>
+			</a>
+
+			<a aria-label="AMOA" href="{% url 'amoa' %}" class="col-lg-4 d-flex test">
+				<div class="services-2 text-center ftco-animate">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_amoa.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_amoa.png' %}">
+							<img style="width: 94px;margin-bottom: -3px;margin-top: -7px;" alt="logo-amoa" src="{% static 'vitrine/img/logo_amoa.png' %}">
+						</picture>
+					</div>
+					<div class="text media-body">
+						<h3>{% trans 'AMOA' %}</h3>
+						<p class="color_grey">
+							{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}
+						</p>
+					</div>
+				</div>
+			</a>
+				
+				
+			<a aria-label="Autres" href="{% url 'autres' %}" class="col-lg-4 d-flex test" style="color: #ffffff00;">
+				<div class="services-2 text-center ftco-animate" style="background: #1b9ce300;box-shadow: none;">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_fleche.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_fleche.png' %}">
+							<img style="width: 66px;margin-top: 77px;" alt="logo-fleche" src="{% static 'vitrine/img/logo_fleche.png' %}">
+						</picture>
+					</div>
+					
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+{% endblock %}

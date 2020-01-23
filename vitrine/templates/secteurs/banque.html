@@ -1,0 +1,276 @@
+{% extends 'base_vitrine.html' %}
+{% load staticfiles %}{% load i18n %}
+
+{% block seo %}
+<meta name="Description" content="{% trans 'Dans un contexte où l’univers financier doit faire face à des bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles économiques.' %}">
+<meta property="og:description" content="{% trans 'Dans un contexte où l’univers financier doit faire face à des bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles économiques.' %}">
+<meta property="og:title" content="OXADE Consulting | {% trans 'Banque' %}">
+<title>OXADE Consulting | {% trans 'Banque' %}</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/secteurs.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script> 	
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+.img_offres_secteurs{
+	width: 275px; 
+	margin-left: auto ;
+	margin-right: auto;
+	margin-bottom: 59px;
+	margin-top: 33px;
+	display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.img_offres_secteurs{
+	width: 222px; 
+	}
+}
+.services:hover {
+    background: #1b9ce300;
+}
+
+.middle{
+	margin-top: 361px;
+}
+
+@media screen and (max-width: 991.98px) {
+	.middle{
+	margin-top: 0px!important;
+}
+}
+
+</style>
+
+		<section class="hero-wrap hero-wrap-2 fond-defense"> 
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row no-gutters slider-text align-items-center justify-content-center">
+					<div class="col-md-9 ftco-animate text-center">
+						<h1 class="mb-2 bread">{% trans 'Banque' %} </h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ftco-section ftco-no-pb" style="padding-bottom: 48px;">
+			<div class="container">
+				<div class="row d-flex">
+					<div class="col-md-7 wrap-about pr-md-4 ftco-animate">
+						<h2 class="mb-4">{% trans 'Vos enjeux' %}</h2>
+						<p>
+							{% trans 'À l’heure actuelle, outre le Brexit, le secteur bancaire français est confronté à trois défis majeurs.' %}</br></br>
+
+							{% trans 'En premier lieu, un édifice réglementaire qui tend à fortement s’enrichir. Par ailleurs, le secteur doit s’adapter à l’accélération des transformations portées par les technologies numériques qui viennent profondément réinventer les parcours client et la mise en musique des processus internes des établissements bancaires. Enfin, ses pratiques managériales s’inscrivent dans un environnement RH caractérisé par un renouvellement des générations et un cadre d’intervention particulièrement normé.' %}</br></br>
+
+							{% trans 'Organisation des marchés, connaissance et information des clients, maîtrise des risques, protection des données personnelles, distribution de l’assurance mais aussi rémunération des produits d’investissement… Les nombreux enjeux de conformité sont à la source de multiples et nouvelles réglementations bancaires. Parmi elles : Bâle III, IFRS 9, ANACREDIT, MIF2, PRIIPs, IDD, RGPD, DSP2, Sapin II. À l’instar de celle en cours des autorités de contrôle européennes, elles sont couplées à diverses réformes.' %}</br> </br>
+
+							{% trans 'L’intelligence artificielle se met également au service de la banque. Elle le fait, par exemple, par l’intermédiaire de robots arbitres en banque privée. L’année 2018 est celle de l’avènement de la blockchain, technologie considérée à court terme comme une opportunité par les banques. Le secteur souhaite en effet s’en servir pour accélérer et sécuriser certains processus. C’est par exemple le cas du transfert, du stockage, des échanges et de la gestion d’actifs financiers.' %}</br></br>
+						</p>
+
+
+					</div>
+					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
+						<div class="wrap-about-border ftco-animate">
+							<picture>
+								<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_banque.webp' %}">
+								<source type="image/png" srcset="{% static 'vitrine/img/logo_banque.png' %}">
+								<img src="{% static 'vitrine/img/logo_banque.png' %}" alt="logo_banque" class="img_offres_secteurs">
+							</picture>
+							
+							<div class="text">
+								<h3>{% trans 'Notre vision et notre ambition' %}</h3>
+								<p>
+									{% trans 'Dans un contexte où l’univers financier doit faire face à des bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles économiques.' %}
+								</p>
+								<p>
+									<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">{% trans 'Contactez-nous' %}</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<section class="ftco-section ftco-no-pb" style="padding-top: 0px;">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-12 wrap-about pr-md-4 ftco-animate">
+				<div class="row mt-5">
+					<div class="col-lg-4">
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_management.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_management.png' %}">
+									<img src="{% static 'vitrine/img/logo_management.png' %}" alt="logo_management" style="width: 65px;margin-bottom: 18px;"> 
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3 style="margin-bottom: 27px;">{% trans 'Management et Performance des Processus​' %}</h3>
+								<p>
+									{% trans 'Cartographie des processus' %} 
+								</p>
+								<p>
+									{% trans 'Mise en place de dispositif de management par les processus' %}
+								</p>
+								<p>
+									{% trans 'Optimisation et refonte de processus et de filières' %}
+								</p>
+								<p>
+									{% trans 'Démarches Lean 6 Sigma​' %}
+								</p>
+								<p>
+									{% trans 'Système d’engagements Client' %}
+								</p>
+
+							</div>
+						</div>
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_rouages.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_rouages.png' %}">
+									<img src="{% static 'vitrine/img/logo_rouages.png' %}" alt="logo_rouages" style="width: 65px;margin-bottom: 18px;"> 
+								</picture>
+							</div>
+							<div class="text media-body">
+
+								<h3 style="margin-bottom: 27px;">{% trans 'Efficacité Opérationnelle​' %}</h3>
+								<p>
+									{% trans 'Refonte de structures​' %} 
+								</p>
+								<p>
+									{% trans 'Évolution d’organigramme siège​' %}
+								</p>
+								<p>
+									{% trans 'Réalisation de projet de mutualisation' %}
+								</p>
+								<p>
+									{% trans 'Benchmark sur la performance des activités' %}
+								</p>
+								<p>
+									{% trans 'Benchmark sur les dépenses de fonctionnement​' %}
+								</p>
+								<p>
+									{% trans 'Accompagnement de chantier d’économie​' %}
+								</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 middle" >
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_cadenat.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_cadenat.png' %}">
+									<img src="{% static 'vitrine/img/logo_cadenat.png' %}" alt="logo_cadenat" style="width: 65px;margin-bottom: 18px;"> 
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3 style="margin-bottom: 27px;">{% trans 'Formation​' %}</h3>
+								<p>
+									{% trans 'Stratégie de distribution multicanal​' %} 
+								</p>
+								<p>
+									{% trans 'Management de projet​' %}
+								</p>
+								<p>
+									{% trans 'Processus​' %}
+								</p>
+								<p>
+									{% trans 'Accompagnement du changement​' %} ​
+								</p>
+							</div>
+						</div>
+					</div>
+				<div class="col-lg-4">
+					<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_marche.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_marche.png' %}">
+									<img src="{% static 'vitrine/img/logo_marche.png' %}" alt="logo_marche" style="width: 65px;margin-bottom: 18px;"> 
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3 style="margin-bottom: 27px;">{% trans 'Distribution et Efficacité de la Relation Client' %}</h3>
+								<p>
+									{% trans 'Stratégie de distribution multicanal​' %} 
+								</p>
+								<p>
+									{% trans 'Maillage du réseau d’agences​' %}
+								</p>
+								<p>
+									{% trans 'Métiers commerciaux​' %}
+								</p>
+								<p>
+									{% trans 'Parcours client' %}
+								</p>
+								<p>
+									{% trans 'Allégement des charges administratives en agence' %}
+								</p>
+								<p>
+									{% trans 'Allégement des charges administratives en agence' %}
+								</p>
+
+							</div>
+						</div>
+						<div class="services text-center">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_fiole.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_fiole.png' %}">
+									<img src="{% static 'vitrine/img/logo_fiole.png' %}" alt="logo_fiole" style="width: 65px;margin-bottom: 18px;"> 
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3 style="margin-bottom: 27px;">{% trans 'Accompagnement​ Projet​' %}</h3>
+								<p>
+									{% trans 'Construction de méthodologie projet​' %}
+								</p>
+								<p>
+									{% trans 'Accompagnement du changement' %}
+								</p>
+								<p>
+									{% trans 'Accompagnement du changement' %}
+								</p>
+								<p>
+									{% trans 'Définition et cadrage de projets complexes​' %}
+								</p>
+								<p>
+									{% trans 'Direction opérationnelle de projets' %}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+ 
+<!-- <section class="ftco-counter" style="padding-bottom: 93px;padding-top: 55px;">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-2 d-flex">
+			<div class="col-md-6 align-items-stretch d-flex">
+				<div class="img img-video d-flex align-items-center fond-defense">
+					<div class="video justify-content-center">
+						<a href="https://www.youtube.com/watch?v=BnrDJq1V4bw" class="icon-video popup-vimeo d-flex justify-content-center align-items-center"><i class="fas fa-play-circle play_button"></i></a></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 heading-section ftco-animate pl-lg-5 pt-md-0 pt-5 fadeInUp ftco-animated">
+				<h2 class="mb-4">Lorem ipsum dolor sit amet </h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio quam, sollicitudin at molestie ut, luctus ac enim. Suspendisse egestas lacinia dolor a sollicitudin. Donec efficitur, felis ac scelerisque semper, massa lorem facilisis lacus, eget faucibus sapien diam ut ex. Donec quis mattis odio, in fringilla elit.Ut accumsan felis a est fringilla hendrerit. Mauris ornare elit ac diam sagittis faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur odio quam, sollicitudin at molestie ut, luctus ac enim. 
+				</p>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+
+{% endblock %}
