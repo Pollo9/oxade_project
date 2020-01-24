@@ -6,6 +6,33 @@
 	font-weight: 900;
 	margin-top: 0;
 }
+.discours_president
+{
+    height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.div_photo_discours_president
+{
+	width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+}
+.div_texte_discours_president
+{
+	width: 50%;
+}
+
+
+
+
+
+
 @media screen and (max-width: 991.98px) {}
 /*!* Bootstrap v4.3.1 (https://getbootstrap.com/)* Copyright 2011-2019 The Bootstrap Authors* Copyright 2011-2019 Twitter, Inc.* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)*/
 
@@ -978,16 +1005,16 @@ transition:all .3s ease
 	margin-bottom:20px
 }
 }
-.webp .fond-webp {
+.webp .fond-webp-2 {
 	background-image:url(../img/webp/fond_consulting.webp)
 }
-.no-webp .fond-webp {
+.no-webp .fond-webp-2 {
 	background-image:url(../img/fond_consulting.png)
 }
-.webp .fond-webp-2 {
+.webp .fond-webp {
 	background-image:url(../img/webp/fond_reunion.webp)
 }
-.no-webp .fond-webp-2 {
+.no-webp .fond-webp {
 	background-image:url(../img/fond_reunion.png)
 }
 .owl-carousel,

@@ -7,27 +7,38 @@
 <meta property="og:title" content="OXADE Consulting | {% trans 'AMOA' %}">
 <title>OXADE Consulting | {% trans 'AMOA' %}</title>
 
-<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/offres.css' %}">
-<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/secteurs.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>	
 {% endblock %}
 
 {% block content %}
 
 <style type="text/css">
-	.container_contact_us{
+	.img_offres_secteurs_public{
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 43px;
+    margin-top: 33px;
+    display: block;
+	}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.img_offres_secteurs_public{
+		width: 152px; 
+	}
+}
+
+.container_contact_us{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		border:4px solid #d1ebf9;
+		padding-top: 30px;
+    	padding-bottom: 19px;
 	}
 
-	.text_contact{
-		display: flex;
-	    flex-direction: column;
-	    align-items: flex-start;
-	    justify-content: center;
-	}
+
 
 	.container_bouton{
 		display: flex;
@@ -35,6 +46,9 @@
 	    flex-direction: column;
 	    align-items: center;
 	    margin-bottom: 26px;
+	    margin-left: 75px;
+    	margin-right: 75px;
+
 	}
 
 	.liste_offres{
@@ -69,9 +83,19 @@
 		.liste_offres {
 		    margin-left: 11%;
 		}
+
+		.liste_contact{
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
-
+	.double_listes{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
 </style>
 
 <section class="hero-wrap hero-wrap-2 fond-defense">
@@ -79,54 +103,21 @@
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
 			<div class="col-md-9 ftco-animate text-center">
-				<h1 class="mb-2 bread">{% trans 'AMOA' %} </h1>
+				<h1 class="mb-2 bread">Conseil et AMOA</h1>
 			</div>
 		</div>
-	</div>
-</section>
-
-<section style="text-align: center;margin-top: 65px;">
-	<div class="container">
-		<h2>
-			{% trans 'Notre vision de l’AMOA : des valeurs et des hommes' %}
-		</h2>
 	</div>
 </section>
 
 <section class="ftco-section ftco-no-pb" style="padding:0px;margin-top: 85px;">
 	<div class="container">
 		<div class="row d-flex">
-			<div class="col-md-8 wrap-about pr-md-4 ftco-animate">
-				<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Des valeurs partagées' %}</h3>
-				<p>
-					{% trans 'Notre approche se veut avant tout basée sur l’humain : bien des difficultés peuvent être vaincues et des challenges gagnés par l’instauration de relations de confiance et la mise en place d’objectifs communs ou de valeurs partagées.' %} <br><br>
+			<div class="col-md-12 wrap-about pr-md-4 ftco-animate">
+				<p style="text-align: justify;">
+					OXADE Consulting possède une expérience avérée des prestations de conseil qui s'inscrivent dans la durée et ce, pour les grands donneurs d'ordres. Notre apport se situe à la croisée des chemins entre une connaissance fonctionnelle métier et une expertise d'ordre méthodologique et technique en Systèmes d'Information.
 
-					{% trans 'Il s’agit là de valeurs partagées par l’ensemble de nos Consultants :' %}
 				</p>
-				<ul>
-					<li>{% trans 'Le savoir : l’expertise en Systèmes d’Information et dans une ou plusieurs fonctions de l’entreprise,' %}</li>
-					<li>{% trans 'Le savoir-faire : la maîtrise de l’intervention et la capacité méthodologique,' %}</li>
-					<li>{% trans 'Le savoir être : la capacité d’adaptation au client et à son environnement.' %}</li>
-				</ul>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section style="margin-top: 35px;margin-bottom: 95px;
-">
-	<div class="container">
-		<div class="row no-gutters">
-			<a aria-label="Conduite du changement" class="col-md-12 d-flex test">
-						<div class="services-2 noborder-left text-center ftco-animate secteurs">
-							<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
-								<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Un même esprit' %}</h3>
-								<p class="liste_offres">
-									{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}
-								</p>
-							</div>
-						</div>
-					</a>
 		</div>
 	</div>
 </section>
@@ -136,150 +127,82 @@
 		<div class="row no-gutters">
 			<a aria-label="Conduite du changement" class="col-lg-6 d-flex test">
 				<div class="services-2 noborder-left text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_analyse.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_analyse.png' %}">
+							<img src="{% static 'vitrine/img/logo_analyse.png' %}" alt="logo_analyse" style="width: 89px;"> 
+						</picture>
+					</div>
 					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
-						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'La dimension de nos Consultants' %}</h3>
-						<p class="liste_offres">
-							{% trans 'Nos Consultants sont à même d’assister les décideurs et acteurs-clefs de nos clients (Direction de la Stratégie, Directions opérationnelles, DSI).' %}<br><br>
-
-							{% trans 'Ils interviennent notamment dans la caractérisation des métiers et valeurs présents chez nos clients, les mettent en perspective avec leurs objectifs et leurs enjeux, pour émettre des recommandations quant à l’évolution de leurs Systèmes d’Information.' %}<br><br>
-
-							{% trans 'Tous nos Consultants sont des professionnels du conseil, et présentent une très forte expérience dans le domaine des Systèmes d’Information.' %}<br><br>
-
-							{% trans 'Ils ont largement abordé les problématiques organisationnelles selon une démarche systémique, se rapportant à la définition des processus et des solutions en cohérence avec les axes stratégiques. De plus, ils maîtrisent parfaitement la conduite de projets à multiples acteurs.' %}<br><br>
-
-							{% trans 'Nos Consultants abordent les problématiques du Système d’Information non seulement sur un plan « technique », mais également sur un plan économique et organisationnel. Ainsi, ils élaborent les dossiers économiques des projets (argumentaire, risques, ressources à mobiliser…), appuyant la prise de décision.' %}
+						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Conseil stratégique' %}</h3>
+						<p>
+							Schéma directeur, Gouvernance de Systèmes d’Information, Audit et proposition de solutions (organisationnelles, techniques, urbanisation du Système d’Information), etudes d’opportunité.
 						</p>
 					</div>
 				</div>
 			</a>
 			<a aria-label="Fusions et acquisitions" class="col-lg-6 d-flex test">
 				<div class="services-2 text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_croissance.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_croissance.png' %}">
+							<img src="{% static 'vitrine/img/logo_croissance.png' %}" alt="logo_croissance" style="width: 89px;">
+						</picture>
+					</div>
 					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
 						
 						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Conseil opérationnel' %}</h3>
-						<p class="liste_offres">
-							{% trans 'Les Consultants OXADE Consulting sont tous de formation supérieure filière informatique ou Systèmes d’Information, complétée par des formations de type MBA, Master… – en management, finances et gestion, logistique ou d’autres métiers « opérationnels ». Ils sont aguerris aux chantiers inhérents à la construction ou la convergence de Systèmes d’Information.' %}<br><br>
-
-							{% trans 'Leur parcours et leur envergure leur permettent de disposer de la maîtrise d’un large panel de connaissance, et donc d’assurer divers types de prestations.' %}<br>
-							{% trans 'Chacun a toutefois un ou plusieurs domaines d’excellence. La composition de nos équipes projet tient compte à la fois de cette maîtrise transverse et des domaines de prédilection.' %}<br><br>
-
-							{% trans 'Nos intervenants sont pluridisciplinaires, et peuvent prendre en charge tout ou partie des divers chantiers inhérents à la construction de Systèmes d’Information urbanisés :' %}
-
+						<p>
+							Nos interventions s’exercent en Assistance à la Maîtrise d’Ouvrage (AMOA) ou en Maîtrise d’Ouvrage (MOA) Déléguée, tant dans les phases amont d’instruction fonctionnelle que dans les phases aval d’accompagnement : <br>
+							modélisation des processus métier, définition des besoins, définition de solutions, pilotage et coordination de projets, conduite d’appels d’offres, conduite de projets en Systèmes d’Information.
 
 						</p>
-						<ul class="liste_offres">
-							<li>{% trans 'au niveau global ou de façon « transverse » : en « Conseil et assistance en management de projet et en organisation »: études amont, conseil en organisation, urbanisation de Systèmes d’Information, définition de dispositifs de Systèmes d’Information (études préalables, études de faisabilité, expression de besoins, cahiers des charges fonctionnels…), cohérence globale… ;' %}</li>
-							<li>{% trans 'au niveau global ou de façon « transverse » : en « Conseil et assistance en management de projet et en organisation »: études amont, conseil en organisation, urbanisation de Systèmes d’Information, définition de dispositifs de Systèmes d’Information (études préalables, études de faisabilité, expression de besoins, cahiers des charges fonctionnels…), cohérence globale… ;' %}</li>
-						</ul>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="row no-gutters">
+			<a aria-label="Conduite du changement" class="col-lg-6 d-flex test">
+				<div class="services-2 noborder-left text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_communication.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_communication.png' %}">
+							<img src="{% static 'vitrine/img/logo_communication.png' %}" alt="logo_communication" style="width: 89px;"> 
+						</picture>
+					</div>
+					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
+						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Accompagnement ' %}</h3>
+						<p>
+							Refonte et optimisation de processus, conduite du changement, aide à l'obtention de consensus, pilotage et coordination de projets et de programmes, coaching, management de transition.
+
+						</p>
+					</div>
+				</div>
+			</a>
+			<a aria-label="Fusions et acquisitions" class="col-lg-6 d-flex test">
+				<div class="services-2 text-center ftco-animate secteurs">
+					<div class="icon mt-2 d-flex justify-content-center align-items-center">
+						<picture>
+							<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_deploiement.webp' %}">
+							<source type="image/png" srcset="{% static 'vitrine/img/logo_deploiement.png' %}">
+							<img src="{% static 'vitrine/img/logo_deploiement.png' %}" alt="logo_deploiement" style="width: 89px;">
+						</picture>
+					</div>
+					<div class="text media-body" style="display: flex;flex-direction: column;align-items: center;">
+						
+						<h3 style="margin-bottom: 29px; color:#013E5B">{% trans 'Pilotage de la transformation digitale' %}</h3>
+						<p>
+							Accompagnement des projets de Systèmes d'Information : définition des besoins, préconisation / choix de solutions (progiciels / ERP, intégrateur), cahiers des charges, conception, conduite d'appels d'offres, pilotage de projets, accompagnement des phases projet aval...
+
+						</p>
 					</div>
 				</div>
 			</a>
 		</div>
 	</div>
 </section>
-<!-- <section class="ftco-section ftco-no-pb">
-			<div class="container">
-				<div class="row d-flex">
-					<div class="col-md-5 order-md-last wrap-about align-items-stretch">
-						<div class="wrap-about-border ftco-animate">
-							<picture>
-								<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_securite.webp' %}">
-								<source type="image/png" srcset="{% static 'vitrine/img/logo_securite.png' %}">
-								<img src="{% static 'vitrine/img/logo_securite.png' %}" alt="logo_securite" class="img_offres_secteurs">
-							</picture>
-							
-							<div class="text">
-								<h3>Notre vision et notre ambition</h3>
-								<p>
-									L’intelligence artificielle, l’internet des objets ou la réalité augmentée représentent des leviers de différenciation importants pour les sociétés qui souhaitent innover. Toutefois, chaque révolution a son lot de complexité et la hausse de la cybercriminalité, ces dernières années, en est la preuve.
-								</p>
-								<p>
-									Cette menace couplée à la volatilité des données critiques des sociétés conforte mc²i Groupe dans l’idée que la cybersécurité est une composante utile et nécessaire à tout cycle projet.
-								</p>
-								<p>
-									<a aria-label="Contactez-nous" href="{% url 'contact' %}" class="btn btn-primary py-3 px-4">Contactez-nous</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-7 wrap-about pr-md-4 ftco-animate">
-						<h2 class="mb-4">Nos domaines d’intervention</h2>
-						<p>
-							Le domaine de la cybersécurité reste obscur pour le grand public, mais aussi pour grand nombre d’entreprises.Il devient désormais primordial d’acculturer les employés aux risques de cyberattaques et d’inscrire ces démarches dans la conduite du changement de chaque projet afin d’aboutir à une adoption plus large et plus rapide des bonnes pratiques.
-						</p>
-						<div class="row mt-5">
-							<div class="col-lg-6">
-								<div class="services text-center">
-									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<picture>
-											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_solutions.webp' %}">
-											<source type="image/png" srcset="{% static 'vitrine/img/logo_solutions.png' %}">
-											<img src="{% static 'vitrine/img/logo_solutions.png' %}" alt="logo_solutions" style="width: 149px;margin-top: -16px;">
-										</picture>
-										
-									</div>
-									<div class="text media-body">
-										<h3>Mise en place de plans de sécurité</h3>
-										<p>
-											Accompagner ces plans en respectant les normes et directives (PSSI, RGPD, LPM, ANSSI…),
-										</p>
-									</div>
-								</div>
-								<div class="services text-center">
-									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<picture>
-											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_cybersecurite.webp' %}">
-											<source type="image/png" srcset="{% static 'vitrine/img/logo_cybersecurite.png' %}">
-											<img src="{% static 'vitrine/img/logo_cybersecurite.png' %}" alt="logo_cybersecurite" style="width: 139px;margin-top: -16px;margin-bottom: -5px;">
-										</picture>
-										
-									</div>
-									<div class="text media-body">
-										<h3>Des solutions de cybersécurité</h3>
-										<p style="margin-bottom: 45px;">
-											Conseiller à les choisir et les déployer.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="services text-center">
-									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<picture>
-											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_referentiel.webp' %}">
-											<source type="image/png" srcset="{% static 'vitrine/img/logo_referentiel.png' %}">
-											<img src="{% static 'vitrine/img/logo_referentiel.png' %}" alt="logo_referentiel" style="width: 144px;margin-top: -32px;margin-bottom: -30px;">
-										</picture>
-										
-									</div>
-									<div class="text media-body">
-										<h3>Mise en place de référentiels de sécurité</h3>
-										<p>
-											Accompagner les RSSI (Responsables Sécurité des Systèmes d’Information) dasn cette mise en place
-										</p>
-									</div>
-								</div>
-								<div class="services text-center">
-									<div class="icon mt-2 d-flex justify-content-center align-items-center">
-										<picture>
-											<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_industriel.webp' %}">
-											<source type="image/png" srcset="{% static 'vitrine/img/logo_industriel.png' %}">
-											<img src="{% static 'vitrine/img/logo_industriel.png' %}" alt="logo_industriel" style="    width: 109px;margin-top: -19px;margin-bottom: 27px;">
-										</picture>
-										
-									</div>
-									<div class="text media-body">
-										<h3>Environnements industriels</h3>
-										<p>
-											Garantir le déploiement de solutions de cybersécurité dans ces environnements
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
- -->
+
 {% endblock %}

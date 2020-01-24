@@ -33,26 +33,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="col-md-6 col-lg-3">
-						<div class="ftco-footer-widget mb-5">
-							<h2 class="ftco-heading-2 t-a-c">{% trans 'Événement récent' %}</h2>
-							<div class="block-21 mb-4 d-flex js-se flex-center">
-								<a aria-label="Événements récents" class="blog-img mr-4 flex-center-img" style="margin-top: auto;margin-bottom: auto;height: 67px;width: 100px;" href="{% url 'evenements' %}">
-									<img style="width: 100px;" alt="discours" src="{{ evenement.img.url }}">
-								</a>
-								<div class="text" style="max-width: 300px;">
-									<h3 class="heading"><a aria-label="evenements" href="{% url 'evenements' %}">
-									{{ evenement.titre }}</a></h3>
-									<div class="meta">
-										<i class="fas fa-calendar-alt"></i>
-										<div>
-											<a aria-label="evenements" href="#"> {{ evenement.date|date:"d M Y" }}</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
 					<div class="col-md-6 col-lg-4 t-a-c">
 						<div class="ftco-footer-widget mb-5 ml-md-4">
 							<h2 class="ftco-heading-2">{% trans 'Pages' %}</h2>
@@ -86,24 +66,11 @@
 					</div>
 					<div class="col-md-6 col-lg-4 t-a-c">
 						<div class="ftco-footer-widget mb-5">
-							<h2 class="ftco-heading-2">{% trans 'Abonnez-vous !' %}</h2>
-							<form id="form_abonnement" action="#" class="subscribe-form" method="POST"> {% csrf_token %}
-								<div class="form-group">
-									<label for="mail" style="opacity: 0">A</label>
-									<input type="email" id="mail" name="mail" class="form-control mb-2 text-center" placeholder="{% trans 'Entrer votre mail' %}" autocomplete="off" required="" style="margin-top: -20px">
-									<label for="mail2" style="opacity: 0">Z</label>
-									<input type="submit" id="sv" name="sv" class="form-control submit px-3" value="{% trans 'Valider' %}" style="margin-top: -25px;">
-								</div>
-							</form>
-						</div>
-						<div class="ftco-footer-widget mb-5">
-							<h2 class="ftco-heading-2 mb-0">{% trans 'Nos réseaux sociaux' %}</h2>
+							<h2 class="ftco-heading-2 mb-0">{% trans 'Notre réseau' %}</h2>
 							<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-								{% for reseau in reseaux %}
-									<li class="ftco-animate">
-										<a aria-label="{{ reseau.nom }}" href="{{ reseau.lien }}"><i class="fab fa-{{ reseau.nom }} reseaux"></i></a>
-									</li>
-								{% endfor %}
+								<li class="ftco-animate">
+									<a aria-label="Linkedin" href="https://www.linkedin.com/in/rudybaddhamouradi/"><i class="fab fa-linkedin reseaux"></i></a>
+								</li>
 							</ul>
 						</div>
 					</div>

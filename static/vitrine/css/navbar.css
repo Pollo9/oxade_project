@@ -3183,7 +3183,8 @@ background-position:top center!important}
 	-o-transition:all .3s ease;
 	-webkit-transition:all .3s ease;
 	-ms-transition:all .3s ease;
-transition:all .3s ease}
+transition:all .3s ease
+}
 
 .services:after
 {
@@ -3736,9 +3737,6 @@ margin-left:5px}
 	background-color:#557157}
 }
 
-.display-block
-{
-display:block!important}
 
 @media screen and (max-width: 992px)
 {
