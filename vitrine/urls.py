@@ -9,7 +9,7 @@ urlpatterns = [
 	url(r'^robots\.txt/$', TemplateView.as_view(template_name='robots.txt',content_type='text/plain')),
 	url(r'^sitemap\.xml/$', TemplateView.as_view(template_name='sitemap.xml',content_type='text/xml')),
 
-	url(r'^a-propos-de-nous/', views.a_propos, name='a_propos'),
+	url(r'^qui-sommes-nous', views.a_propos, name='a_propos'),
 	url(r'^evenements/', views.evenements, name='evenements'),
 	url(r'^nous-rejoindre/', views.nous_rejoindre, name='nous_rejoindre'),
 	url(r'^contact/', views.contact, name='contact'),

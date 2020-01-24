@@ -28,8 +28,34 @@
 	width: 50%;
 }
 
+@media screen and (max-width: 991.98px) {
+	.div_photo_discours_president
+	{
+		display: none;
+	}
+	.div_texte_discours_president
+	{
+		width: 100%;
+		padding: 20px;
+		text-align: justify;
+	}
+	#marg-t-acceuil-carrousel
+	{
+		padding-bottom: 0!important;
+	}
+	#tel_modif
+	{
+		margin-top: 20px!important;
+	}
+}
 
-
+@media screen and (max-width: 420px) {
+.div_texte_discours_president
+	{
+		
+		font-size: 14px;
+	}
+}
 
 
 
