@@ -96,7 +96,18 @@
 		</div>
 	</div>
 </section>
-<section style="margin-bottom:100px;">
+<section class="ftco-intro ftco-no-pb img fond-webp">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
+				<h2 class="mb-0">{% trans 'Oxade consulting ?' %}</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section style="margin-bottom:100px;margin-top:100px;">
 	<div class="container">
 		<div class="row no-gutters">
 			<a aria-label="Conduite du changement" class="col-lg-6 d-flex test">
@@ -143,74 +154,6 @@
 		</div>
 	</div>
 </section>
-
-<section class="ftco-intro ftco-no-pb img fond-webp">
-	<div class="container">
-		<div class="row justify-content-center mb-5">
-			<div class="col-md-10 text-center heading-section heading-section-white ftco-animate">
-				<h2 class="mb-0">{% trans 'Oxade consulting ?' %}</h2>
-			</div>
-		</div>
-	</div>
-</section>
-
-
-{% get_current_language as LANGUAGE_CODE %}
-{% get_available_languages as LANGUAGES %}
-{% get_language_info_list for LANGUAGES as languages %}
-{% if LANGUAGE_CODE == 'fr' %}
-
-<section class="ftco-counter" id="section-counter" style="margin-bottom: 68px;">
-	<div class="container">
-		<div class="row d-md-flex align-items-center justify-content-center">
-			<div class="wrapper">
-				<div class="row d-md-flex align-items-center">
-					{% for nombre in chiffre %}
-					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate" style="text-align: center;">
-						<div class="block-18">
-							<div class="icon">
-								<span class="flaticon-doctor"></span>
-							</div>
-							<div class="text">
-								<strong class="number" data-number="{{ nombre.nombre }}">0</strong>
-								<span>{{ nombre.nom }}</span>
-							</div>
-						</div>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-{% else %}
-	
-<section class="ftco-counter" id="section-counter" style="margin-bottom: 68px;">
-	<div class="container">
-		<div class="row d-md-flex align-items-center justify-content-center">
-			<div class="wrapper">
-				<div class="row d-md-flex align-items-center">
-					{% for nombre in chiffre_en %}
-					<div class="col-md d-flex justify-content-center counter-wrap ftco-animate" style="text-align: center;">
-						<div class="block-18">
-							<div class="icon">
-								<span class="flaticon-doctor"></span>
-							</div>
-							<div class="text">
-								<strong class="number" data-number="{{ nombre.nombre }}">0</strong>
-								<span>{{ nombre.nom }}</span>
-							</div>
-						</div>
-					</div>
-					{% endfor %}
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-{% endif %}
 
 
 {% endblock %}
