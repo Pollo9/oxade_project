@@ -32,7 +32,7 @@ SECRET_KEY = '+*fmtt)s^nz-u@9jax7#3ye7!1fp@4y^l6gtf)z-clwlp3b=2r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['51.75.123.92', 'localhost','63324fb9.ngrok.io']
+ALLOWED_HOSTS = ['51.75.123.92', 'localhost','www.oxade.com','oxade.com']
 
 
 
