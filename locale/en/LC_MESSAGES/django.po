@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-28 11:06+0100\n"
+"POT-Creation-Date: 2020-02-19 02:25+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Erreur 404"
 msgstr "Error 404"
 
 #: vitrine/templates/a_propos.html:4 vitrine/templates/a_propos.html:5
-#: vitrine/templates/a_propos.html:59
 msgid ""
 "OXADE Consulting se présente comme une société indépendante de tout acteur "
 "du marché des systèmes d’information (éditeur, intégrateur, prestataire de "
@@ -38,14 +37,20 @@ msgstr ""
 "thus brings its objectivity, especially in engineering projects based on "
 "software packages."
 
-#: vitrine/templates/a_propos.html:6 vitrine/templates/a_propos.html:7
-#: vitrine/templates/a_propos.html:34 vitrine/templates/a_propos.html:39
-#: vitrine/templates/annexe/footer.html:70
-#: vitrine/templates/annexe/navbar.html:212
+#: vitrine/templates/a_propos.html:6 vitrine/templates/annexe/footer.html:47
 msgid "À propos de nous"
 msgstr "About us"
 
-#: vitrine/templates/a_propos.html:37 vitrine/templates/annexe/footer.html:61
+#: vitrine/templates/a_propos.html:7 vitrine/templates/annexe/navbar.html:213
+msgid "Qui sommes-nous ?"
+msgstr "About us"
+
+#: vitrine/templates/a_propos.html:34 vitrine/templates/a_propos.html:39
+#: vitrine/templates/index_vitrine.html:150
+msgid "Qui sommes nous ?"
+msgstr "About us"
+
+#: vitrine/templates/a_propos.html:37 vitrine/templates/annexe/footer.html:41
 #: vitrine/templates/contact.html:24 vitrine/templates/evenements.html:24
 #: vitrine/templates/nous_rejoindre.html:24
 msgid "Accueil"
@@ -60,32 +65,109 @@ msgid " Une société indépendante"
 msgstr "An independent company"
 
 #: vitrine/templates/a_propos.html:56
-msgid "OXADE Consulting tient à indiquer son indépendance totale :"
-msgstr "OXADE Consulting wishes to indicate its total independence:"
-
-#: vitrine/templates/a_propos.html:60
 msgid ""
-"Sur le plan financier, le capital d’OXADE Consulting est entièrement détenu "
-"par ses dirigeants."
+"OXADE Consulting est un cabinet de conseil ayant plus de 25 années "
+"d’expérience."
 msgstr ""
-"On the financial level, the capital of OXADE Consulting is entirely owned by "
-"its directors."
+"OXADE Consulting is a consulting firm with more than 25 years of experience."
 
-#: vitrine/templates/a_propos.html:63
+#: vitrine/templates/a_propos.html:59
 msgid ""
-"Notre indépendance et notre neutralité sont, avec les profils de nos "
-"Consultants, parmi nos points forts quant à la qualité de nos prestations, "
-"lorsque nous sommes amenés à comparer différentes propositions."
+"Nous intervenons dans le cadre de projets et de programmes de "
+"transformation, d’accompagnement de nos clients sur des sujets de stratégie "
+"et de gouvernance et en pilotage de projets autour des Systèmes "
+"d’information."
 msgstr ""
-"Our independence and our neutrality are, with the profiles of our "
-"Consultants, among our strong points as for the quality of our services, "
-"when we are brought to compare different proposals."
+"We intervene in projects and programs of transformation, supporting our "
+"clients on strategic topics and governance and project management around "
+"Information Systems."
+
+#: vitrine/templates/a_propos.html:62
+msgid "Notre approche se veut avant tout basée sur l’humain."
+msgstr "Our approach is primarily human-based."
+
+#: vitrine/templates/a_propos.html:65
+msgid ""
+"Nous sommes persuadés que bien des difficultés peuvent être vaincues et des "
+"challenges gagnés par l’instauration de relations de confiance et la mise en "
+"place d’objectifs communs ou de valeurs partagées."
+msgstr ""
+"Our approach aims above all to be based on people: many difficulties can be "
+"overcome and challenges won by the establishment of relationships of trust "
+"and the establishment of common objectives or shared values."
+
+#: vitrine/templates/a_propos.html:68
+msgid ""
+"Nos consultants sont avant tout des facilitateurs. Savoir, Savoir-faire et "
+"Savoir-être sont plus que jamais les piliers des hommes et des femmes "
+"d’OXADE Consulting."
+msgstr ""
+"Our consultants are primarily facilitators. Savoir-faire, Savoir-faire and "
+"Savoir-être are more than ever the pillars of the men and women of OXADE "
+"Consulting."
+
+#: vitrine/templates/a_propos.html:71
+msgid ""
+"Nous nous retrouvons pleinement dans l’étymologie du mot « conseil », qui "
+"vient du latin « consilium - consiliaris » et qui signifie ‘avis donné ou "
+"demandé sur ce qu’il convient de faire’."
+msgstr ""
+"We find ourselves fully in the etymology of the word “advice”, which comes "
+"from the Latin word “consilium - consiliaris” and means “advice given or "
+"requested on what to do”."
 
 #: vitrine/templates/a_propos.html:84
+msgid "L’écosystème d’OXADE Consulting"
+msgstr "Discover the events of OXADE Consulting"
+
+#: vitrine/templates/a_propos.html:86
+msgid ""
+" La complexité croissante des systèmes, les exigences des utilisateurs, le "
+"nombre de plus en plus important d’acteurs, conduisent à ce qu’aucun "
+"opérateur, fut-il international, ne puisse en toute circonstance répondre "
+"seul aux appels d’offres qui émanent des grands donneurs d’ordres."
+msgstr ""
+"The increasing complexity of the systems, the demands of the users, the "
+"increasing number of actors, lead to the fact that no operator, even "
+"international, can in all circumstances respond alone to calls for tenders "
+"that come from large contractors."
+
+#: vitrine/templates/a_propos.html:88
+msgid ""
+" OXADE CONSULTING a compris depuis de nombreuses années qu’il était "
+"nécessaire de s’associer pour répondre au mieux aux besoins de ses clients."
+msgstr ""
+"OXADE CONSULTING has understood for many years that it is necessary to work "
+"together to best meet the needs of its clients."
+
+#: vitrine/templates/a_propos.html:90
+msgid ""
+" C’est pourquoi OXADE CONSULTING a mis en place un réseau de partenariats "
+"solides, fondés sur une longue expérience."
+msgstr ""
+"This is why OXADE CONSULTING has established a network of strong "
+"partnerships, based on long experience."
+
+#: vitrine/templates/a_propos.html:92
+msgid ""
+" Chaque partenaire apporte son expertise sous le pilotage unique d’OXADE "
+"Consulting qui est et reste maître des opérations qui lui sont confiées par "
+"ses clients, et assume donc l’entière responsabilité de l’opération et du "
+"suivi de la prestation."
+msgstr ""
+"In these agreements, the basic principle is: OXADE Consulting is and remains "
+"master of the operations entrusted to it by its customers, and thus assumes "
+"full responsibility for the operation and monitoring of the service."
+
+#: vitrine/templates/a_propos.html:103
+msgid "Oxade consulting ?"
+msgstr "Oxade consulting ?"
+
+#: vitrine/templates/a_propos.html:116
 msgid "Relations Clients"
 msgstr "Client relationship"
 
-#: vitrine/templates/a_propos.html:86
+#: vitrine/templates/a_propos.html:118
 msgid ""
 "Nos relations avec nos clients s’inscrivent dans un véritable « partenariat "
 "» d’enrichissement mutuel et de relations saines et transparentes (Accords-"
@@ -102,11 +184,11 @@ msgstr ""
 "consiliaris », which means notice given or asked about what should be done. "
 "The consulting activity exists only in a Client-Consulting relationship."
 
-#: vitrine/templates/a_propos.html:95
+#: vitrine/templates/a_propos.html:127
 msgid "Compétences"
 msgstr "Skills"
 
-#: vitrine/templates/a_propos.html:97
+#: vitrine/templates/a_propos.html:129
 msgid ""
 "OXADE Consulting se positionne en tant qu’Expert des Systèmes d’Information, "
 "en osmose avec l’Expertise dans vos métiers. De plus, nous savons construire "
@@ -118,25 +200,26 @@ msgstr ""
 "multidisciplinary project teams (Business line - Organization axis - "
 "Information System axis - Architecture axis and IT solutions)."
 
-#: vitrine/templates/a_propos.html:105
+#: vitrine/templates/a_propos.html:137
 msgid "Pérennité"
 msgstr "Sustainability"
 
-#: vitrine/templates/a_propos.html:107
+#: vitrine/templates/a_propos.html:139
 msgid ""
 "OXADE Consulting existe depuis 1993 et peut se targuer d’avoir traversé avec "
 "succès des périodes parfois très difficiles pour nos métiers. Sa pérennité "
 "est donc établie et ne représente aucun facteur de risque."
 msgstr ""
-"OXADE Consulting existe depuis 1993 et peut se targuer d’avoir traversé avec "
-"succès des périodes parfois très difficiles pour nos métiers. Sa pérennité "
-"est donc établie et ne représente aucun facteur de risque."
+"OXADE Consulting has been in existence since 1993 and can boast of having "
+"successfully gone through sometimes very difficult periods for our "
+"businesses. Its sustainability iis therefore established and does not "
+"represent any risk factor."
 
-#: vitrine/templates/a_propos.html:115
+#: vitrine/templates/a_propos.html:147
 msgid "Réactivité"
 msgstr "Reactivity"
 
-#: vitrine/templates/a_propos.html:117
+#: vitrine/templates/a_propos.html:149
 msgid ""
 "Sa taille est un atout par la réactivité qui l’accompagne, notamment dans "
 "des périodes de fortes fluctuations économiques."
@@ -144,126 +227,30 @@ msgstr ""
 "Its size is an asset because of the reactivity that accompanies it, "
 "especially in periods of strong economic fluctuations."
 
-#: vitrine/templates/a_propos.html:130
-msgid "Réseau de partenaires"
-msgstr "Network of partners"
-
-#: vitrine/templates/a_propos.html:132
-msgid ""
-"Pour mieux répondre aux besoins de ses clients, OXADE Consulting peut "
-"s’appuyer sur un réseau de partenaires."
-msgstr ""
-"To better meet the needs of its customers, OXADE Consulting can rely on a "
-"network of partners."
-
-#: vitrine/templates/a_propos.html:134
-msgid ""
-"Nous constituons régulièrement des équipes pluridisciplinaires, composées, "
-"outre de nos Consultants, d’un panel d’experts permettant de répondre « sur "
-"mesure » aux demandes de nos clients : architectes techniques, experts "
-"sécurité, juristes, communicants..."
-msgstr ""
-"We regularly build multidisciplinary teams, composed, besides our "
-"Consultants, of a panel of experts to respond « tailor-made » to the "
-"requests of our customers: technical architects, security experts, lawyers, "
-"communicators ..."
-
-#: vitrine/templates/a_propos.html:136
-msgid ""
-"Il s’agit d’une pratique bien installée, obéissant à des règles communes "
-"issues du constat suivant :"
-msgstr ""
-"This is a well established practice, obeying common rules from the following "
-"observation:"
-
-#: vitrine/templates/a_propos.html:138
-msgid ""
-"La complexité croissante des systèmes, les exigences des utilisateurs, le "
-"nombre de plus en plus important d’acteurs, conduisent à ce qu’aucun "
-"opérateur, fut-il international, ne puisse en toute circonstance répondre "
-"seul aux appels d’offres qui émanent de grand donneurs d’ordres."
-msgstr ""
-"The increasing complexity of the systems, the demands of the users, the "
-"increasing number of actors, lead to the fact that no operator, even "
-"international, can in all circumstances respond alone to calls for tenders "
-"that come from large contractors."
-
-#: vitrine/templates/a_propos.html:140
-msgid ""
-"OXADE Consulting a compris depuis de nombreuses années qu’il était "
-"nécessaire de s’associer pour répondre au mieux et réussir le projet de ses "
-"clients dans des conditions d’association équilibrées en respectant des "
-"règles simples de comportement et d’éthique. C’est pourquoi OXADE Consulting "
-"a mis en place des partenariats solides, fondés sur une longue expérience et "
-"dont les principes sont : transparence, compétence, implication, qualité, "
-"durée, équilibre, confiance, non-exclusivité mais périmètres respectifs "
-"définis et délimités."
-msgstr ""
-"OXADE Consulting has understood for many years that it is necessary to join "
-"forces to best meet and succeed the project of its customers in conditions "
-"of balanced association by respecting simple rules of behavior and ethics. "
-"This is why OXADE Consulting has established solid partnerships, based on "
-"long experience and whose principles are: transparency, competence, "
-"involvement, quality, duration, balance, trust, non-exclusivity but defined "
-"and delimited respective perimeters."
-
-#: vitrine/templates/a_propos.html:142
-msgid ""
-"Cette démarche permet que tous les partenaires, clients inclus, travaillent "
-"en synergie et puissent se partager un bénéfice accru : une stratégie de "
-"gagnant-gagnant."
-msgstr ""
-"This approach ensures that all partners, including clients, work in synergy "
-"and can share an increased profit: a win-win strategy."
-
-#: vitrine/templates/a_propos.html:144
-msgid ""
-"Dans ces accords, le principe de base primordial est : OXADE Consulting est "
-"et reste maître des opérations qui lui sont confiées par ses clients, et "
-"assume donc l’entière responsabilité de l’opération et du suivi de la "
-"prestation."
-msgstr ""
-"In these agreements, the basic principle is: OXADE Consulting is and remains "
-"master of the operations entrusted to it by its customers, and thus assumes "
-"full responsibility for the operation and monitoring of the service."
-
-#: vitrine/templates/a_propos.html:157 vitrine/templates/index_vitrine.html:323
-msgid "Nos chiffres clés"
-msgstr "Our key figures"
-
 #: vitrine/templates/annexe/footer.html:13
 msgid "Une question ?"
 msgstr "A question ?"
 
 #: vitrine/templates/annexe/footer.html:38
-msgid "Événement récent"
-msgstr "Events"
-
-#: vitrine/templates/annexe/footer.html:58
 msgid "Pages"
 msgstr "Pages"
 
-#: vitrine/templates/annexe/footer.html:64
-#: vitrine/templates/annexe/navbar.html:214
+#: vitrine/templates/annexe/footer.html:44
+#: vitrine/templates/annexe/navbar.html:217
 #: vitrine/templates/annexe/navbar.html:234
-msgid "Secteurs"
-msgstr "Sectors"
+#: vitrine/templates/index_vitrine.html:136
+#: vitrine/templates/index_vitrine.html:164
+#: vitrine/templates/index_vitrine.html:181
+msgid "Nos prestations"
+msgstr "Our services"
 
-#: vitrine/templates/annexe/footer.html:67
-#: vitrine/templates/annexe/navbar.html:327
-#: vitrine/templates/annexe/navbar.html:349
-#: vitrine/templates/offres/divers1.html:89
-#: vitrine/templates/offres/divers2.html:89
-msgid "Offres"
-msgstr "Offers"
-
-#: vitrine/templates/annexe/footer.html:73 vitrine/templates/evenements.html:7
+#: vitrine/templates/annexe/footer.html:50 vitrine/templates/evenements.html:7
 #: vitrine/templates/evenements.html:8 vitrine/templates/evenements.html:21
 #: vitrine/templates/evenements.html:26
 msgid "Événements"
 msgstr "Events"
 
-#: vitrine/templates/annexe/footer.html:76
+#: vitrine/templates/annexe/footer.html:53
 #: vitrine/templates/nous_rejoindre.html:7
 #: vitrine/templates/nous_rejoindre.html:8
 #: vitrine/templates/nous_rejoindre.html:21
@@ -271,329 +258,81 @@ msgstr "Events"
 msgid "Nous rejoindre"
 msgstr "Join us"
 
-#: vitrine/templates/annexe/footer.html:79 vitrine/templates/contact.html:7
+#: vitrine/templates/annexe/footer.html:56 vitrine/templates/contact.html:7
 #: vitrine/templates/contact.html:8 vitrine/templates/contact.html:21
 #: vitrine/templates/contact.html:26
 msgid "Contact"
 msgstr "Contact"
 
-#: vitrine/templates/annexe/footer.html:82
+#: vitrine/templates/annexe/footer.html:59
 #: vitrine/templates/mentions_legales.html:7
 #: vitrine/templates/mentions_legales.html:8
 msgid "Mentions légales"
 msgstr "Legal Notice"
 
-#: vitrine/templates/annexe/footer.html:89
-msgid "Abonnez-vous !"
-msgstr "Subscribe !"
+#: vitrine/templates/annexe/footer.html:66
+msgid "Notre réseau"
+msgstr "Our expertise"
 
-#: vitrine/templates/annexe/footer.html:93
-msgid "Entrer votre mail"
-msgstr "Enter your email"
-
-#: vitrine/templates/annexe/footer.html:95
-msgid "Valider"
-msgstr "Validate"
-
-#: vitrine/templates/annexe/footer.html:100
-msgid "Nos réseaux sociaux"
-msgstr "Our social networks"
-
-#: vitrine/templates/annexe/footer.html:119
+#: vitrine/templates/annexe/footer.html:83
 msgid "Tous droits réservés"
 msgstr "All rights reserved"
 
-#: vitrine/templates/annexe/navbar.html:222
-#: vitrine/templates/annexe/navbar.html:236
-#: vitrine/templates/annexe/navbar.html:248
-#: vitrine/templates/index_vitrine.html:191
-#: vitrine/templates/secteurs/secteur_public.html:7
-#: vitrine/templates/secteurs/secteur_public.html:8
-msgid "Secteur public"
-msgstr "Public sector"
-
-#: vitrine/templates/annexe/navbar.html:223
-#: vitrine/templates/annexe/navbar.html:237
-#: vitrine/templates/annexe/navbar.html:288
-#: vitrine/templates/index_vitrine.html:241
-#: vitrine/templates/offres/coaching.html:173
-#: vitrine/templates/secteurs/assurance.html:7
-#: vitrine/templates/secteurs/assurance.html:8
-#: vitrine/templates/secteurs/assurance.html:54
-msgid "Assurance"
-msgstr "Insurance"
-
-#: vitrine/templates/annexe/navbar.html:224
-#: vitrine/templates/annexe/navbar.html:238
-#: vitrine/templates/annexe/navbar.html:261
-#: vitrine/templates/index_vitrine.html:284
-#: vitrine/templates/secteurs/banque.html:7
-#: vitrine/templates/secteurs/banque.html:8
-#: vitrine/templates/secteurs/banque.html:52
-msgid "Banque"
-msgstr "Bank"
+#: vitrine/templates/annexe/navbar.html:212
+msgid "Nous contacter"
+msgstr "Contact us"
 
 #: vitrine/templates/annexe/navbar.html:225
-#: vitrine/templates/annexe/navbar.html:239
-#: vitrine/templates/index_vitrine.html:215
-#: vitrine/templates/secteurs/energie.html:7
-#: vitrine/templates/secteurs/energie.html:8
-msgid "Énergie"
-msgstr "Energy"
-
-#: vitrine/templates/annexe/navbar.html:226
-#: vitrine/templates/annexe/navbar.html:240
-#: vitrine/templates/annexe/navbar.html:314
-#: vitrine/templates/index_vitrine.html:257
-#: vitrine/templates/secteurs/telecommunications.html:7
-#: vitrine/templates/secteurs/telecommunications.html:8
-msgid "Télécommunications"
-msgstr "Telecommunications"
-
-#: vitrine/templates/annexe/navbar.html:227
-#: vitrine/templates/annexe/navbar.html:241
-#: vitrine/templates/index_vitrine.html:307
-#: vitrine/templates/secteurs/transport_et_logistique.html:7
-#: vitrine/templates/secteurs/transport_et_logistique.html:8
-msgid "Transport & logistique"
-msgstr "Logistic & transport"
-
-#: vitrine/templates/annexe/navbar.html:249
-#: vitrine/templates/index_vitrine.html:193
-#: vitrine/templates/secteurs/secteur_public.html:5
-#: vitrine/templates/secteurs/secteur_public.html:6
-msgid ""
-"Nous intervenons depuis plus de 25 années dans le secteur public mobilisant "
-"notre expérience du secteur avec des professionnels expérimentés."
-msgstr ""
-"We have been involved in the public sector for over 25 years, leveraging our "
-"industry experience with experienced professionals."
-
-#: vitrine/templates/annexe/navbar.html:262
-#: vitrine/templates/index_vitrine.html:286
-#: vitrine/templates/secteurs/banque.html:5
-#: vitrine/templates/secteurs/banque.html:6
-#: vitrine/templates/secteurs/banque.html:85
-msgid ""
-"Dans un contexte où l’univers financier doit faire face à des "
-"bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles "
-"économiques."
-msgstr ""
-"In a context where the financial world is facing major upheavals, we support "
-"you in the evolution of business models."
-
-#: vitrine/templates/annexe/navbar.html:275
-msgid "Transport et logistique"
-msgstr "Transport and logistics"
-
-#: vitrine/templates/annexe/navbar.html:276
-msgid ""
-"Accompagnement depuis de très nombreuses années des acteurs de la mobilité, "
-"des infrastructures, du fret et de la logistique au travers d’approches "
-"adaptées et innovantes"
-msgstr ""
-"Accompanying many years of mobility, infrastructure, freight and logistics "
-"actors through adapted and innovative approaches"
-
-#: vitrine/templates/annexe/navbar.html:289
-#: vitrine/templates/index_vitrine.html:243
-#: vitrine/templates/secteurs/assurance.html:5
-#: vitrine/templates/secteurs/assurance.html:6
-#: vitrine/templates/secteurs/assurance.html:95
-msgid ""
-"Nos équipes combinent des experts métiers ainsi que des professionnels du "
-"conseil. Cette expertise nous permet de prendre en charge des projets "
-"complexes et le cas échéant d’intervenir sur des postes opérationnels."
-msgstr ""
-"Our teams combine business experts as well as consulting professionals. This "
-"expertise enables us to take on complex projects and, if necessary, to "
-"intervene on operational positions."
-
-#: vitrine/templates/annexe/navbar.html:301
-msgid "Energie"
-msgstr "Energy"
-
-#: vitrine/templates/annexe/navbar.html:302
-#: vitrine/templates/index_vitrine.html:217
-#: vitrine/templates/secteurs/energie.html:5
-#: vitrine/templates/secteurs/energie.html:6
-msgid ""
-"Nous intervenons pour les grands groupes sur leurs enjeux de transformation."
-msgstr "We work for large groups on their transformation issues."
-
-#: vitrine/templates/annexe/navbar.html:315
-#: vitrine/templates/index_vitrine.html:259
-#: vitrine/templates/secteurs/telecommunications.html:5
-#: vitrine/templates/secteurs/telecommunications.html:6
-msgid ""
-"Nous proposons des solutions innovantes pour accompagner les transformations "
-"des acteurs du secteur."
-msgstr ""
-"We propose innovative solutions to support the transformations of the actors "
-"of the sector."
-
-#: vitrine/templates/annexe/navbar.html:335
-#: vitrine/templates/annexe/navbar.html:351
-#: vitrine/templates/index_vitrine.html:409
-#: vitrine/templates/offres/securite.html:7
-#: vitrine/templates/offres/securite.html:8
-#: vitrine/templates/offres/securite.html:81
-msgid "Risk management sécurité de l’information"
-msgstr "Risk management & information security"
-
-#: vitrine/templates/annexe/navbar.html:336
-#: vitrine/templates/annexe/navbar.html:352
-#: vitrine/templates/annexe/navbar.html:457
-#: vitrine/templates/index_vitrine.html:426
-#: vitrine/templates/offres/digitalisation.html:7
-#: vitrine/templates/offres/digitalisation.html:8
-#: vitrine/templates/offres/digitalisation.html:87
-msgid "Innovation digitale"
-msgstr "Digital innovation"
-
-#: vitrine/templates/annexe/navbar.html:337
-#: vitrine/templates/annexe/navbar.html:353
-#: vitrine/templates/annexe/navbar.html:364
-msgid "Systèmes d’information​"
-msgstr "Information systems"
-
-#: vitrine/templates/annexe/navbar.html:338
-#: vitrine/templates/annexe/navbar.html:354
-#: vitrine/templates/annexe/navbar.html:388
-#: vitrine/templates/index_vitrine.html:460
-#: vitrine/templates/offres/transformation.html:7
-#: vitrine/templates/offres/transformation.html:8
-#: vitrine/templates/offres/transformation.html:80
-msgid "Transformation"
-msgstr "Transformation"
-
-#: vitrine/templates/annexe/navbar.html:339
-#: vitrine/templates/annexe/navbar.html:355
-#: vitrine/templates/annexe/navbar.html:444
-#: vitrine/templates/index_vitrine.html:477
-#: vitrine/templates/offres/excellence_operationnelle.html:7
-#: vitrine/templates/offres/excellence_operationnelle.html:8
-#: vitrine/templates/offres/excellence_operationnelle.html:86
-msgid "Excellence opérationnelle"
-msgstr "Operational effectiveness"
-
-#: vitrine/templates/annexe/navbar.html:340
-#: vitrine/templates/annexe/navbar.html:356
-#: vitrine/templates/annexe/navbar.html:430
-#: vitrine/templates/index_vitrine.html:494
+#: vitrine/templates/annexe/navbar.html:236
+#: vitrine/templates/annexe/navbar.html:274
+#: vitrine/templates/index_vitrine.html:197
 #: vitrine/templates/offres/coaching.html:7
 #: vitrine/templates/offres/coaching.html:8
-#: vitrine/templates/offres/coaching.html:88
+#: vitrine/templates/offres/coaching.html:52
 msgid "Coaching"
 msgstr "Coaching"
 
-#: vitrine/templates/annexe/navbar.html:341
-#: vitrine/templates/annexe/navbar.html:357
-#: vitrine/templates/annexe/navbar.html:416
-#: vitrine/templates/index_vitrine.html:512
-#: vitrine/templates/offres/amoa.html:7 vitrine/templates/offres/amoa.html:8
-#: vitrine/templates/offres/amoa.html:82
-msgid "AMOA"
-msgstr "Business project management"
+#: vitrine/templates/annexe/navbar.html:226
+#: vitrine/templates/annexe/navbar.html:237
+#: vitrine/templates/annexe/navbar.html:260
+#: vitrine/templates/offres/amoa.html:8
+msgid "Conseil & AMOA"
+msgstr "Consulting & Business project management"
 
-#: vitrine/templates/annexe/navbar.html:342
-#: vitrine/templates/annexe/navbar.html:358
-#: vitrine/templates/annexe/navbar.html:378
-#: vitrine/templates/offres/autres.html:7
-#: vitrine/templates/offres/autres.html:8
-#: vitrine/templates/offres/autres.html:95
-msgid "Autres"
-msgstr "Other"
+#: vitrine/templates/annexe/navbar.html:227
+#: vitrine/templates/annexe/navbar.html:238
+#: vitrine/templates/annexe/navbar.html:246
+#: vitrine/templates/index_vitrine.html:240
+msgid "Formation"
+msgstr "Training"
 
-#: vitrine/templates/annexe/navbar.html:365
-#: vitrine/templates/index_vitrine.html:445
-#: vitrine/templates/offres/architecture.html:180
+#: vitrine/templates/annexe/navbar.html:248
+msgid "Page en cours de construction"
+msgstr "Page under construction"
+
+#: vitrine/templates/annexe/navbar.html:261
 msgid ""
-"À l’interface de nombreux métiers de l’entreprise, nous conçevons et "
-"organisons l’ensemble des serveurs, des systèmes d’exploitation, des "
-"ordinateurs, des logiciels, etc. Afin de les adapter aux besoins des "
-"utilisateurs"
+"OXADE Consulting possède une expérience avérée des prestations de conseil "
+"qui s’inscrivent dans la durée et ce, pour les grands donneurs d’ordres."
 msgstr ""
-"At the interface of many business lines, we design and organize all servers, "
-"operating systems, computers, software, etc. In order to adapt them to the "
-"needs of users"
+"OXADE Consulting has a proven track record of providing long-term advice to "
+"major contractors."
 
-#: vitrine/templates/annexe/navbar.html:379
-msgid "Gestion de projet"
-msgstr "Project management"
-
-#: vitrine/templates/annexe/navbar.html:380
-msgid "Finance d’entreprise"
-msgstr "Corporate Finance"
-
-#: vitrine/templates/annexe/navbar.html:381
-msgid "Lean & Six Sigma"
-msgstr "Lean & Six Sigma"
-
-#: vitrine/templates/annexe/navbar.html:389
-msgid ""
-"Nous appuyons les directions projets et les instances dirigeantes pour "
-"faciliter le suivi de l’avancement et la prise de décisions."
-msgstr ""
-"We support project directorates and governing bodies to facilitate the "
-"monitoring of progress and decision-making."
-
-#: vitrine/templates/annexe/navbar.html:402
-msgid "Risk management & sécurité de l’information"
-msgstr "Risk management & information security"
-
-#: vitrine/templates/annexe/navbar.html:403
-#: vitrine/templates/offres/securite.html:201
-msgid ""
-"Découvrez comment nous pouvons simplifier la sécurité des accès au système "
-"d’information de votre établissement."
-msgstr ""
-"Find out how we can simplify the security of access to your institution's "
-"information system."
-
-#: vitrine/templates/annexe/navbar.html:417
-#: vitrine/templates/index_vitrine.html:514
-#: vitrine/templates/offres/amoa.html:5 vitrine/templates/offres/amoa.html:6
-#: vitrine/templates/offres/amoa.html:125
-msgid ""
-"Des équipes soudées par un bon esprit, au service d’un même objectif : la "
-"réussite des projets de nos clients."
-msgstr ""
-"Teams united by a good spirit, serving the same objective: the success of "
-"our clients' projects."
-
-#: vitrine/templates/annexe/navbar.html:431
+#: vitrine/templates/annexe/navbar.html:275
+#: vitrine/templates/offres/coaching.html:5
+#: vitrine/templates/offres/coaching.html:6
+#: vitrine/templates/offres/coaching.html:85
 msgid ""
 "Nous proposons un processus d’accompagnement et de facilitation qui vise à "
 "vous permettre de trouver vous-même la solution à une problématique "
 "professionnelle opérationnelle ou managériale tout en travaillant sur votre "
-"épanouissement personnel"
+"épanouissement personnel."
 msgstr ""
 "We propose a process of accompaniment and facilitation which aims to allow "
 "you to find yourself the solution to an operational or managerial "
 "professional problem while working on your personal fulfillment."
 
-#: vitrine/templates/annexe/navbar.html:445
-#: vitrine/templates/index_vitrine.html:479
-msgid ""
-"Levier puissant de compétitivité pour les entreprises, et ce d’autant plus "
-"qu’elles évoluent dans un environnement extrêmement concurrentiel"
-msgstr ""
-"Powerful lever of competitiveness for companies, especially as they operate "
-"in an extremely competitive environment"
-
-#: vitrine/templates/annexe/navbar.html:460
-#: vitrine/templates/index_vitrine.html:428
-msgid ""
-"Les entreprises du secteur financier mettent en œuvre les changements exigés "
-"par les nouvelles réglementations. Elles s’efforcent en même temps de réagir "
-"face à la croissance de la numérisation"
-msgstr ""
-"Financial sector companies are implementing the changes required by the new "
-"regulations. At the same time, they are trying to react to the growth of "
-"digitalisation."
-
-#: vitrine/templates/base_vitrine.html:55
+#: vitrine/templates/base_vitrine.html:64
 msgid "Your browser does not support JavaScript!"
 msgstr "Your browser does not support JavaScript!"
 
@@ -648,7 +387,7 @@ msgstr "Discover the events of OXADE Consulting"
 
 #: vitrine/templates/index_vitrine.html:5
 #: vitrine/templates/index_vitrine.html:6
-#: vitrine/templates/index_vitrine.html:177
+#: vitrine/templates/index_vitrine.html:183
 msgid ""
 "OXADE Consulting se positionne comme un cabinet combinant expertise métier, "
 "expertise en systèmes d’information et en organisation. Nous proposons à nos "
@@ -661,84 +400,32 @@ msgstr ""
 "solutions."
 
 #: vitrine/templates/index_vitrine.html:7
-#: vitrine/templates/index_vitrine.html:8
 msgid "OXADE Consulting - Conseil stratégique, métier et opérationnel"
 msgstr "OXADE Consulting - Strategic, business and operational consulting"
 
-#: vitrine/templates/index_vitrine.html:127
-#: vitrine/templates/index_vitrine.html:155
+#: vitrine/templates/index_vitrine.html:8
+msgid "OXADE Consulting | Conseil stratégique, métier et opérationnel"
+msgstr "OXADE Consulting - Strategic, business and operational consulting"
+
+#: vitrine/templates/index_vitrine.html:133
+#: vitrine/templates/index_vitrine.html:161
 msgid "Le cœur de métier d’OXADE"
 msgstr "The core business of OXADE"
 
-#: vitrine/templates/index_vitrine.html:128
-#: vitrine/templates/index_vitrine.html:156
+#: vitrine/templates/index_vitrine.html:134
+#: vitrine/templates/index_vitrine.html:162
 msgid "Conseil stratégique, métier et opérationnel"
 msgstr "Strategic, business and operational consulting"
 
-#: vitrine/templates/index_vitrine.html:130
-#: vitrine/templates/index_vitrine.html:158
-msgid "Nos secteurs"
-msgstr "Sectors"
-
-#: vitrine/templates/index_vitrine.html:141
+#: vitrine/templates/index_vitrine.html:147
 msgid "Domaines fonctionnels"
 msgstr "Functional domains"
 
-#: vitrine/templates/index_vitrine.html:142
+#: vitrine/templates/index_vitrine.html:148
 msgid "Une maîtrise des grandes fonctions de l’entreprise"
 msgstr "A mastery of the main functions of the company"
 
-#: vitrine/templates/index_vitrine.html:144
-#: vitrine/templates/index_vitrine.html:392
-msgid "Nos offres"
-msgstr "Offers"
-
-#: vitrine/templates/index_vitrine.html:175
-msgid "Nos secteurs d’activités"
-msgstr "Our sectors of activity"
-
-#: vitrine/templates/index_vitrine.html:309
-#: vitrine/templates/secteurs/transport_et_logistique.html:5
-#: vitrine/templates/secteurs/transport_et_logistique.html:6
-msgid ""
-"Accompagnement depuis de très nombreuses années des acteurs de la mobilité, "
-"des infrastructures, du fret et de la logistique au travers d’approches "
-"adaptées et innovantes."
-msgstr ""
-"Accompanying many years of mobility, infrastructure, freight and logistics "
-"actors through adapted and innovative approaches."
-
-#: vitrine/templates/index_vitrine.html:394
-msgid ""
-"Oxade consulting s’appuie sur des offres structurées portées par des "
-"directeurs expérimentés."
-msgstr ""
-"Oxade consulting relies on structured offers from experienced managers."
-
-#: vitrine/templates/index_vitrine.html:411
-msgid ""
-"Découvrez comment nous pouvons simplifier la sécurité des accès au système "
-"d’information de votre établissement"
-msgstr ""
-"Find out how we can simplify the security of access to your institution's "
-"information system"
-
-#: vitrine/templates/index_vitrine.html:443
-#: vitrine/templates/offres/architecture.html:7
-#: vitrine/templates/offres/architecture.html:8
-#: vitrine/templates/offres/architecture.html:86
-msgid "Systèmes d’information"
-msgstr "Information system"
-
-#: vitrine/templates/index_vitrine.html:462
-msgid ""
-"Nous appuyons les directions projets et les instances dirigeantes pour "
-"faciliter le suivi de l’avancement et la prise de décisions"
-msgstr ""
-"We support project directorates and governing bodies to facilitate the "
-"monitoring of progress and decision-making."
-
-#: vitrine/templates/index_vitrine.html:496
+#: vitrine/templates/index_vitrine.html:199
 msgid ""
 "Nous proposons un processus d’accompagnement et de facilitation qui vise à "
 "vous permettre de trouver vous-même la solution à une problématique "
@@ -747,6 +434,61 @@ msgstr ""
 "We propose a process of accompaniment and facilitation which aims at "
 "allowing you to find yourself the solution to a professional problem "
 "operational or managerial"
+
+#: vitrine/templates/index_vitrine.html:223
+#: vitrine/templates/offres/amoa.html:7
+msgid "AMOA"
+msgstr "Business project management"
+
+#: vitrine/templates/index_vitrine.html:225
+#: vitrine/templates/offres/amoa.html:5 vitrine/templates/offres/amoa.html:6
+msgid ""
+"Des équipes soudées par un bon esprit, au service d’un même objectif : la "
+"réussite des projets de nos clients."
+msgstr ""
+"Teams united by a good spirit, serving the same objective: the success of "
+"our clients' projects."
+
+#: vitrine/templates/index_vitrine.html:242
+#: vitrine/templates/secteurs/banque.html:5
+#: vitrine/templates/secteurs/banque.html:6
+#: vitrine/templates/secteurs/banque.html:85
+msgid ""
+"Dans un contexte où l’univers financier doit faire face à des "
+"bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles "
+"économiques."
+msgstr ""
+"In a context where the financial world is facing major upheavals, we support "
+"you in the evolution of business models."
+
+#: vitrine/templates/index_vitrine.html:264
+msgid "Discours du président"
+msgstr "Speech by President"
+
+#: vitrine/templates/index_vitrine.html:280
+msgid ""
+"2020 est une année charnière pour OXADE Consulting. Nouvelle organisation, "
+"nouveau logo, nouveau site, nouvelles ambitions… J’ai réuni autour de moi "
+"une nouvelle équipe de gouvernance pour faire d’OXADE Consulting un acteur "
+"incontournable. Les relations d’OXADE Consulting avec ses clients se sont "
+"toujours inscrites dans un véritable « partenariat » d’enrichissement mutuel "
+"et de relations saines et transparentes. Nous continuerons de travailler "
+"avec vous et pour vous en ce sens. OXADE Consulting est et restera une "
+"société indépendante. Le capital d’OXADE Consulting est détenu par la "
+"nouvelle équipe dirigeante. Cette indépendance, notre neutralité, nos "
+"Consultants, notre réseau de partenaires sont et resteront de réels points "
+"forts pour OXADE Consulting."
+msgstr ""
+"2020 is a pivotal year for OXADE Consulting. New organization, new logo, new "
+"site, new ambitions… I have gathered around me a new governance team to make "
+"OXADE Consulting an essential player. OXADE Consulting’s relationships with "
+"its clients have always been  part of a true “partnership” of mutual "
+"enrichment, always part of a true “partnership” of mutual enrichment and "
+"healthy and transparent relationships. We will continue to work with you and "
+"for you in this regard. OXADE Consulting is and will remain an independent "
+"company. The capital of OXADE Consulting is owned by the new management "
+"team. This independence, our neutrality, our Consultants, our network of "
+"partners are and will remain real strengths for OXADE Consulting."
 
 #: vitrine/templates/mentions_legales.html:5
 #: vitrine/templates/mentions_legales.html:6
@@ -764,7 +506,6 @@ msgid "Bienvenue ! Merci de proposer votre candidature."
 msgstr "Welcome ! Thank you for submitting your application."
 
 #: vitrine/templates/nous_rejoindre.html:136
-#: vitrine/templates/secteurs/secteur_public.html:172
 msgid "Notre expertise"
 msgstr "Our expertise"
 
@@ -941,173 +682,90 @@ msgstr "Submit your CV"
 msgid "Déposer sa lettre de motivation"
 msgstr "Submit a cover letter"
 
-#: vitrine/templates/offres/amoa.html:91
-msgid "Notre vision de l’AMOA : des valeurs et des hommes"
-msgstr "Our vision for AMOA: values ​​and people"
-
-#: vitrine/templates/offres/amoa.html:100
-msgid "Des valeurs partagées"
-msgstr "Shared values"
-
-#: vitrine/templates/offres/amoa.html:102
+#: vitrine/templates/offres/amoa.html:117
 msgid ""
-"Notre approche se veut avant tout basée sur l’humain : bien des difficultés "
-"peuvent être vaincues et des challenges gagnés par l’instauration de "
-"relations de confiance et la mise en place d’objectifs communs ou de valeurs "
-"partagées."
+"OXADE Consulting possède une expérience avérée des prestations de conseil "
+"qui s’inscrivent dans la durée et ce, pour les grands donneurs d’ordres. "
+"Notre apport se situe à la croisée des chemins entre une connaissance "
+"fonctionnelle métier et une expertise d’ordre méthodologique et technique en "
+"Systèmes d’Information."
 msgstr ""
-"Our approach aims above all to be based on people: many difficulties can be "
-"overcome and challenges won by the establishment of relationships of trust "
-"and the establishment of common objectives or shared values."
+"OXADE Consulting has proven experience in consultingwhich are part of the "
+"duration, for major contractors. Our contribution lies at the crossroads "
+"between a business functional knowledge and methodological and technical "
+"expertise in Information Systems. "
 
-#: vitrine/templates/offres/amoa.html:104
-msgid "Il s’agit là de valeurs partagées par l’ensemble de nos Consultants :"
-msgstr "These are values ​​shared by all of our Consultants:"
-
-#: vitrine/templates/offres/amoa.html:107
-msgid ""
-"Le savoir : l’expertise en Systèmes d’Information et dans une ou plusieurs "
-"fonctions de l’entreprise,"
-msgstr ""
-"Knowledge: expertise in Information Systems and in one or more functions of "
-"the company,"
-
-#: vitrine/templates/offres/amoa.html:108
-msgid ""
-"Le savoir-faire : la maîtrise de l’intervention et la capacité "
-"méthodologique,"
-msgstr "Know-how: mastery of the intervention and methodological capacity,"
-
-#: vitrine/templates/offres/amoa.html:109
-msgid ""
-"Le savoir être : la capacité d’adaptation au client et à son environnement."
-msgstr "Social skills: the ability to adapt to the client and his environment."
-
-#: vitrine/templates/offres/amoa.html:123
-msgid "Un même esprit"
-msgstr "One spirit"
+#: vitrine/templates/offres/amoa.html:138
+#: vitrine/templates/secteurs/secteur_public.html:138
+msgid "Conseil stratégique"
+msgstr "Strategic advice"
 
 #: vitrine/templates/offres/amoa.html:140
-msgid "La dimension de nos Consultants"
-msgstr "The size of our Consultants"
-
-#: vitrine/templates/offres/amoa.html:142
 msgid ""
-"Nos Consultants sont à même d’assister les décideurs et acteurs-clefs de nos "
-"clients (Direction de la Stratégie, Directions opérationnelles, DSI)."
+"Schéma directeur, Gouvernance de Systèmes d’Information, Audit et "
+"proposition de solutions (organisationnelles, techniques, urbanisation du "
+"Système d’Information), etudes d’opportunité."
 msgstr ""
-"Our Consultants are able to assist the decision-makers and key players of "
-"our clients (Strategy Department, Operational Departments, CIOs)."
+"Master Plan, Governance of Information Systems, Audit and proposal of "
+"solutions (organisational, technical, urbanisation of the Information "
+"System), opportunity studies. "
 
-#: vitrine/templates/offres/amoa.html:144
-msgid ""
-"Ils interviennent notamment dans la caractérisation des métiers et valeurs "
-"présents chez nos clients, les mettent en perspective avec leurs objectifs "
-"et leurs enjeux, pour émettre des recommandations quant à l’évolution de "
-"leurs Systèmes d’Information."
-msgstr ""
-"They intervene in particular in the characterization of the trades and "
-"values ​​present in our customers, put them in perspective with their "
-"objectives and their challenges, to make recommendations as for the "
-"evolution of their Information Systems."
-
-#: vitrine/templates/offres/amoa.html:146
-msgid ""
-"Tous nos Consultants sont des professionnels du conseil, et présentent une "
-"très forte expérience dans le domaine des Systèmes d’Information."
-msgstr ""
-"All our Consultants are consulting professionals, and have a very strong "
-"experience in the field of Information Systems."
-
-#: vitrine/templates/offres/amoa.html:148
-msgid ""
-"Ils ont largement abordé les problématiques organisationnelles selon une "
-"démarche systémique, se rapportant à la définition des processus et des "
-"solutions en cohérence avec les axes stratégiques. De plus, ils maîtrisent "
-"parfaitement la conduite de projets à multiples acteurs."
-msgstr ""
-"They largely approached organizational problems according to a systemic "
-"approach, relating to the definition of processes and solutions consistent "
-"with the strategic axes. In addition, they perfectly master the management "
-"of projects with multiple actors."
-
-#: vitrine/templates/offres/amoa.html:150
-msgid ""
-"Nos Consultants abordent les problématiques du Système d’Information non "
-"seulement sur un plan « technique », mais également sur un plan économique "
-"et organisationnel. Ainsi, ils élaborent les dossiers économiques des "
-"projets (argumentaire, risques, ressources à mobiliser…), appuyant la prise "
-"de décision."
-msgstr ""
-"Our Consultants tackle Information System issues not only on a « technical » "
-"level, but also on an economic and organizational level. Thus, they develop "
-"economic files for projects (arguments, risks, resources to be mobilized, "
-"etc.), supporting decision-making."
-
-#: vitrine/templates/offres/amoa.html:159
-#: vitrine/templates/secteurs/secteur_public.html:155
+#: vitrine/templates/offres/amoa.html:156
+#: vitrine/templates/secteurs/secteur_public.html:156
 msgid "Conseil opérationnel"
 msgstr "Operational advice"
 
-#: vitrine/templates/offres/amoa.html:161
+#: vitrine/templates/offres/amoa.html:158
 msgid ""
-"Les Consultants OXADE Consulting sont tous de formation supérieure filière "
-"informatique ou Systèmes d’Information, complétée par des formations de type "
-"MBA, Master… – en management, finances et gestion, logistique ou d’autres "
-"métiers « opérationnels ». Ils sont aguerris aux chantiers inhérents à la "
-"construction ou la convergence de Systèmes d’Information."
+"Nos interventions s’exercent en Assistance à la Maîtrise d’Ouvrage (AMOA) ou "
+"en Maîtrise d’Ouvrage (MOA) Déléguée, tant dans les phases amont "
+"d’instruction fonctionnelle que dans les phases aval d’accompagnement :"
 msgstr ""
-"The OXADE Consulting Consultants are all of higher education in IT or "
-"Information Systems, supplemented by MBA, Masters, etc. - in management, "
-"finance and management, logistics or other « operational » professions. They "
-"are experienced in the construction sites inherent in the construction or "
-"the convergence of Information Systems."
+"Our interventions are carried out in Assistance to Project Management (AMOA) "
+"or Delegated Project Management (MOA), both in the upstream phases of "
+"functional instruction and in the downstream phases of support: "
 
-#: vitrine/templates/offres/amoa.html:163
+#: vitrine/templates/offres/amoa.html:159
 msgid ""
-"Leur parcours et leur envergure leur permettent de disposer de la maîtrise "
-"d’un large panel de connaissance, et donc d’assurer divers types de "
-"prestations."
+"modélisation des processus métier, définition des besoins, définition de "
+"solutions, pilotage et coordination de projets, conduite d’appels d’offres, "
+"conduite de projets en Systèmes d’Information."
 msgstr ""
-"Their background and their scope allow them to have the control of a wide "
-"range of knowledge, and therefore to provide various types of services."
+"business process modeling, needs definition, solution definition, project "
+"steering and coordination, tendering, information systems project "
+"management. "
 
-#: vitrine/templates/offres/amoa.html:164
-msgid ""
-"Chacun a toutefois un ou plusieurs domaines d’excellence. La composition de "
-"nos équipes projet tient compte à la fois de cette maîtrise transverse et "
-"des domaines de prédilection."
-msgstr ""
-"Each, however, has one or more areas of excellence. The composition of our "
-"project teams takes into account both this cross-functional expertise and "
-"the preferred areas."
+#: vitrine/templates/offres/amoa.html:177
+#: vitrine/templates/secteurs/secteur_public.html:177
+msgid "Accompagnement "
+msgstr "Project accompaniment"
 
-#: vitrine/templates/offres/amoa.html:166
+#: vitrine/templates/offres/amoa.html:179
 msgid ""
-"Nos intervenants sont pluridisciplinaires, et peuvent prendre en charge tout "
-"ou partie des divers chantiers inhérents à la construction de Systèmes "
-"d’Information urbanisés :"
+"Refonte et optimisation de processus, conduite du changement, aide à "
+"l’obtention de consensus, pilotage et coordination de projets et de "
+"programmes, coaching, management de transition."
 msgstr ""
-"Our stakeholders are multidisciplinary, and can take charge of all or part "
-"of the various sites inherent in the construction of urbanized Information "
-"Systems:"
+"Process redesign and optimization, change management, consensus building, "
+"project and program steering and coordination, coaching, transition "
+"management."
 
-#: vitrine/templates/offres/amoa.html:171
-#: vitrine/templates/offres/amoa.html:172
+#: vitrine/templates/offres/amoa.html:196
+#: vitrine/templates/secteurs/secteur_public.html:196
+msgid "Pilotage de la transformation digitale"
+msgstr "Governance of transformation"
+
+#: vitrine/templates/offres/amoa.html:198
 msgid ""
-"au niveau global ou de façon « transverse » : en « Conseil et assistance en "
-"management de projet et en organisation »: études amont, conseil en "
-"organisation, urbanisation de Systèmes d’Information, définition de "
-"dispositifs de Systèmes d’Information (études préalables, études de "
-"faisabilité, expression de besoins, cahiers des charges fonctionnels…), "
-"cohérence globale… ;"
+"Accompagnement des projets de Systèmes d’Information : définition des "
+"besoins, préconisation / choix de solutions (progiciels / ERP, intégrateur), "
+"cahiers des charges, conception, conduite d’appels d’offres, pilotage de "
+"projets, accompagnement des phases projet aval..."
 msgstr ""
-"at the global level or in a “cross-functional” way: in “Consulting and "
-"assistance in project management and organization”: upstream studies, "
-"organizational advice, urbanization of Information Systems, definition of "
-"Information System devices (preliminary studies, feasibility studies, "
-"expression of needs, functional specifications, etc.), overall consistency, "
-"etc .;"
+"Support of Information Systems projects: definition of needs, "
+"recommendation/ choice of solutions (software packages/ ERP, integrator), "
+"specifications, design, tendering, project management, support for the "
+"downstream project phases..."
 
 #: vitrine/templates/offres/architecture.html:5
 #: vitrine/templates/offres/architecture.html:6
@@ -1118,6 +776,12 @@ msgid ""
 msgstr ""
 "At the interface of many businesses of the company, we design and organize "
 "all servers, operating systems, computers, software ..."
+
+#: vitrine/templates/offres/architecture.html:7
+#: vitrine/templates/offres/architecture.html:8
+#: vitrine/templates/offres/architecture.html:86
+msgid "Systèmes d’information"
+msgstr "Information system"
 
 #: vitrine/templates/offres/architecture.html:110
 msgid "Architecture d’entreprise et data​"
@@ -1173,7 +837,7 @@ msgstr "Mobility and connected objects"
 
 #: vitrine/templates/offres/architecture.html:173
 #: vitrine/templates/offres/autres.html:167
-#: vitrine/templates/offres/coaching.html:202
+#: vitrine/templates/offres/coaching.html:88
 #: vitrine/templates/offres/divers1.html:185
 #: vitrine/templates/offres/divers2.html:154
 #: vitrine/templates/offres/excellence_operationnelle.html:176
@@ -1181,12 +845,11 @@ msgstr "Mobility and connected objects"
 #: vitrine/templates/offres/transformation.html:211
 #: vitrine/templates/secteurs/assurance.html:98
 #: vitrine/templates/secteurs/banque.html:88
-#: vitrine/templates/secteurs/secteur_public.html:200
 msgid "Contactez-nous"
 msgstr "Contact Us"
 
 #: vitrine/templates/offres/architecture.html:178
-#: vitrine/templates/offres/coaching.html:207
+#: vitrine/templates/offres/coaching.html:83
 #: vitrine/templates/offres/digitalisation.html:212
 #: vitrine/templates/offres/divers1.html:190
 #: vitrine/templates/offres/divers2.html:159
@@ -1195,14 +858,30 @@ msgstr "Contact Us"
 #: vitrine/templates/offres/transformation.html:216
 #: vitrine/templates/secteurs/assurance.html:93
 #: vitrine/templates/secteurs/banque.html:83
-#: vitrine/templates/secteurs/secteur_public.html:206
 msgid "Notre vision et notre ambition"
 msgstr "Our vision and ambition"
+
+#: vitrine/templates/offres/architecture.html:180
+msgid ""
+"À l’interface de nombreux métiers de l’entreprise, nous conçevons et "
+"organisons l’ensemble des serveurs, des systèmes d’exploitation, des "
+"ordinateurs, des logiciels, etc. Afin de les adapter aux besoins des "
+"utilisateurs"
+msgstr ""
+"At the interface of many business lines, we design and organize all servers, "
+"operating systems, computers, software, etc. In order to adapt them to the "
+"needs of users"
 
 #: vitrine/templates/offres/autres.html:5
 #: vitrine/templates/offres/autres.html:6
 msgid "Gestion de projets, finance d’entreprise​ et Lean – Six Sigma."
 msgstr "Gestion de projets, finance d’entreprise et Lean - Six Sigma."
+
+#: vitrine/templates/offres/autres.html:7
+#: vitrine/templates/offres/autres.html:8
+#: vitrine/templates/offres/autres.html:95
+msgid "Autres"
+msgstr "Other"
 
 #: vitrine/templates/offres/autres.html:115
 #: vitrine/templates/offres/divers1.html:161
@@ -1263,107 +942,86 @@ msgstr "Lean - Six Sigma"
 msgid "A compléter"
 msgstr "To complete"
 
-#: vitrine/templates/offres/coaching.html:5
-#: vitrine/templates/offres/coaching.html:6
-#: vitrine/templates/offres/coaching.html:209
+#: vitrine/templates/offres/coaching.html:61
+msgid "Le coaching est une offre stratégique pour OXADE Consulting."
+msgstr "Coaching is a strategic offer for OXADE Consulting."
+
+#: vitrine/templates/offres/coaching.html:63
+msgid ""
+"Dans un monde du travail se complexifiant chaque jour, avec toujours plus de "
+"contraintes et de règlementations à prendre en compte, avec un grand nombre "
+"de contributeurs ou de partenaires à gérer pour produire et avec un time to "
+"market toujours plus réduit, l’accompagnement humain est pour OXADE "
+"Consulting une pièce maitresse vers le succès."
+msgstr ""
+"In a world of work becoming more complex every day, with more constraints "
+"and regulations to be taken into account, with a large number of "
+"contributors or partners to manage to produce and with an increasingly "
+"reduced time to market, For OXADE Consulting, human accompaniment is a key "
+"to success."
+
+#: vitrine/templates/offres/coaching.html:65
 msgid ""
 "Nous proposons un processus d’accompagnement et de facilitation qui vise à "
-"vous permettre de trouver vous-même la solution à une problématique "
-"professionnelle opérationnelle ou managériale tout en travaillant sur votre "
-"épanouissement personnel."
+"vous permettre de trouver la solution à une problématique opérationnelle ou "
+"managériale tout en travaillant sur votre épanouissement personnel."
 msgstr ""
 "We propose a process of accompaniment and facilitation which aims to allow "
 "you to find yourself the solution to an operational or managerial "
 "professional problem while working on your personal fulfillment."
 
-#: vitrine/templates/offres/coaching.html:109
-msgid "Périmètre d’intervention​"
-msgstr "Intervention area"
+#: vitrine/templates/offres/coaching.html:67
+msgid ""
+"Nos coachs sont d’anciens membres de Directions générales ou d’anciens "
+"responsables opérationnels : Assurance, Distribution, Finances, Services, "
+"Industrie…"
+msgstr ""
+"Our coaches are former members of Branches or former operational managers: "
+"Insurance, Distribution, Finance, Services, Industry…"
+
+#: vitrine/templates/offres/coaching.html:69
+msgid ""
+"Nous intervenons principalement sur des problématiques de transformation "
+"(Fusion, création d’entités, changement de stratégie…), de prise de fonction "
+"et de développement de talents. Autant de contextes où l’humain est "
+"fondamental pour la réussite de vos projets."
+msgstr ""
+"We are mainly involved in transformation issues (merger, creation of "
+"entities, change of strategy, etc.), take-over of functions and talent "
+"development. So many contexts where the human is fundamental for the success "
+"of your projects."
+
+#: vitrine/templates/offres/coaching.html:71
+msgid ""
+"Nous utilisons les outils reconnus du marché en terme de coaching : HBDI ©, "
+"MBTI ©, Strong © , 360° ©"
+msgstr ""
+"We use the recognized tools of the market in terms of coaching: HBDI ©, MBTI "
+"©, Strong © , 360° ©"
 
 #: vitrine/templates/offres/coaching.html:111
-msgid "Fusion / Transformation"
-msgstr "Transformation"
-
-#: vitrine/templates/offres/coaching.html:112
-msgid "Création d’entités​"
-msgstr "Creating entities"
-
-#: vitrine/templates/offres/coaching.html:113
-#: vitrine/templates/offres/divers1.html:145
-msgid "Changement de business Model​"
-msgstr "Business Model Change"
-
-#: vitrine/templates/offres/coaching.html:114
-msgid "Prise de fonction​"
-msgstr "Taking office"
-
-#: vitrine/templates/offres/coaching.html:115
-msgid "Développeur de talents"
-msgstr "Talent developer"
-
-#: vitrine/templates/offres/coaching.html:131
-msgid "Profils des coachs"
-msgstr "Coach profiles"
-
-#: vitrine/templates/offres/coaching.html:133
-msgid "Anciens membres de direction générale & responsables opérationnels​"
-msgstr "Former members of senior management & operational managers"
-
-#: vitrine/templates/offres/coaching.html:134
-msgid "Coachs spécialisés selon​"
-msgstr "Specialized coaches according"
-
-#: vitrine/templates/offres/coaching.html:135
-msgid "Méthodes : HBDI ©, MBTI ©, Strong © , 360° ©"
-msgstr "Methods: © HBDI, © MBTI, © Strong, 360° ©"
-
-#: vitrine/templates/offres/coaching.html:150
-msgid "Public ciblé​"
-msgstr "Target audience"
-
-#: vitrine/templates/offres/coaching.html:152
-msgid "Direction​"
+msgid "Direction Manager"
 msgstr "Direction​"
 
-#: vitrine/templates/offres/coaching.html:153
-msgid "Managers​"
-msgstr "Managers​"
+#: vitrine/templates/offres/coaching.html:113
+msgid ""
+"Il s’agit de réaliser un véritable accompagnement professionnel hors de la "
+"sphère strictement professionnelle. C’est le coaching stricto sensu."
+msgstr ""
+"It is a question of achieving a true professional accompaniment outside the "
+"strictly professional sphere. It is the coaching strictly sensu."
 
-#: vitrine/templates/offres/coaching.html:154
-msgid "Équipes​"
-msgstr "Teams"
-
-#: vitrine/templates/offres/coaching.html:155
-msgid "Organisations​"
+#: vitrine/templates/offres/coaching.html:129
+msgid "Equipes Organisation"
 msgstr "Organizations"
 
-#: vitrine/templates/offres/coaching.html:170
-msgid "Connaissance sectorielle"
-msgstr "Sectorial knowledge"
-
-#: vitrine/templates/offres/coaching.html:174
-msgid "Distribution​"
-msgstr "Distribution​"
-
-#: vitrine/templates/offres/coaching.html:175
-msgid "Finances"
-msgstr "Finances"
-
-#: vitrine/templates/offres/coaching.html:176
-msgid "Service"
-msgstr "Service"
-
-#: vitrine/templates/offres/coaching.html:179
-msgid "Industrie​"
-msgstr "Industry"
-
-#: vitrine/templates/offres/coaching.html:180
-msgid "Chimie-pétrochimie"
-msgstr "Chemistry and petrochemistry"
-
-#: vitrine/templates/offres/coaching.html:181
-msgid "Automobile​"
-msgstr "Automobile"
+#: vitrine/templates/offres/coaching.html:131
+msgid ""
+"Nous parlerons ici plus de mentoring. Le mentor ayant un rôle de guide et "
+"agissant au contraire du coach pour une organisation."
+msgstr ""
+"Here we will talk more about mentoring. The mentor acting as a guide and "
+"acting on the contrary of the coach for an organization."
 
 #: vitrine/templates/offres/digitalisation.html:5
 #: vitrine/templates/offres/digitalisation.html:6
@@ -1374,6 +1032,12 @@ msgid ""
 msgstr ""
 "The world is changing rapidly and organizations must change to unlock their "
 "full potential."
+
+#: vitrine/templates/offres/digitalisation.html:7
+#: vitrine/templates/offres/digitalisation.html:8
+#: vitrine/templates/offres/digitalisation.html:87
+msgid "Innovation digitale"
+msgstr "Digital innovation"
 
 #: vitrine/templates/offres/digitalisation.html:107
 msgid "Connectivité et mobilité​"
@@ -1541,6 +1205,11 @@ msgstr ""
 msgid "Divers 1"
 msgstr "Various 1"
 
+#: vitrine/templates/offres/divers1.html:89
+#: vitrine/templates/offres/divers2.html:89
+msgid "Offres"
+msgstr "Offers"
+
 #: vitrine/templates/offres/divers1.html:136
 msgid "Coaching​"
 msgstr "Coaching"
@@ -1572,6 +1241,10 @@ msgstr "Fusion / Transformation"
 #: vitrine/templates/offres/divers1.html:144
 msgid "Création d’entité"
 msgstr "Entity creation"
+
+#: vitrine/templates/offres/divers1.html:145
+msgid "Changement de business Model​"
+msgstr "Business Model Change"
 
 #: vitrine/templates/offres/divers1.html:146
 msgid "Prise de fonction"
@@ -1617,6 +1290,12 @@ msgid ""
 msgstr ""
 "Powerful lever of competitiveness for companies, especially as they operate "
 "in an extremely competitive environment."
+
+#: vitrine/templates/offres/excellence_operationnelle.html:7
+#: vitrine/templates/offres/excellence_operationnelle.html:8
+#: vitrine/templates/offres/excellence_operationnelle.html:86
+msgid "Excellence opérationnelle"
+msgstr "Operational effectiveness"
 
 #: vitrine/templates/offres/excellence_operationnelle.html:110
 msgid "Stratégie SI et sourcing"
@@ -1700,6 +1379,12 @@ msgid ""
 msgstr ""
 "Find out how we can simplify the security of access to your institution's "
 "information system."
+
+#: vitrine/templates/offres/securite.html:7
+#: vitrine/templates/offres/securite.html:8
+#: vitrine/templates/offres/securite.html:81
+msgid "Risk management sécurité de l’information"
+msgstr "Risk management & information security"
 
 #: vitrine/templates/offres/securite.html:102
 msgid "Risk Management et gouvernance sécurité"
@@ -1805,6 +1490,14 @@ msgstr "Digital trust services (electronic signature, encryption ...)"
 msgid "Fédération des identités​"
 msgstr "Federation of identities"
 
+#: vitrine/templates/offres/securite.html:201
+msgid ""
+"Découvrez comment nous pouvons simplifier la sécurité des accès au système "
+"d’information de votre établissement."
+msgstr ""
+"Find out how we can simplify the security of access to your institution's "
+"information system."
+
 #: vitrine/templates/offres/transformation.html:5
 #: vitrine/templates/offres/transformation.html:6
 #: vitrine/templates/offres/transformation.html:218
@@ -1814,6 +1507,12 @@ msgid ""
 msgstr ""
 "The world is changing rapidly and organizations must change to unlock their "
 "full potential"
+
+#: vitrine/templates/offres/transformation.html:7
+#: vitrine/templates/offres/transformation.html:8
+#: vitrine/templates/offres/transformation.html:80
+msgid "Transformation"
+msgstr "Transformation"
 
 #: vitrine/templates/offres/transformation.html:103
 msgid "Risques et Conformité"
@@ -1923,6 +1622,24 @@ msgstr "Agile coach and project coach"
 #: vitrine/templates/offres/transformation.html:191
 msgid "Démarche Innovation"
 msgstr "Innovation approach"
+
+#: vitrine/templates/secteurs/assurance.html:5
+#: vitrine/templates/secteurs/assurance.html:6
+#: vitrine/templates/secteurs/assurance.html:95
+msgid ""
+"Nos équipes combinent des experts métiers ainsi que des professionnels du "
+"conseil. Cette expertise nous permet de prendre en charge des projets "
+"complexes et le cas échéant d’intervenir sur des postes opérationnels."
+msgstr ""
+"Our teams combine business experts as well as consulting professionals. This "
+"expertise enables us to take on complex projects and, if necessary, to "
+"intervene on operational positions."
+
+#: vitrine/templates/secteurs/assurance.html:7
+#: vitrine/templates/secteurs/assurance.html:8
+#: vitrine/templates/secteurs/assurance.html:54
+msgid "Assurance"
+msgstr "Insurance"
 
 #: vitrine/templates/secteurs/assurance.html:63
 #: vitrine/templates/secteurs/banque.html:61
@@ -2042,6 +1759,12 @@ msgstr "Control risks and make regulatory changes to opportunities"
 #: vitrine/templates/secteurs/assurance.html:176
 msgid "Favoriser l’innovation, l’expérimentation et les cycles courts​"
 msgstr "Foster innovation, experimentation and short cycles"
+
+#: vitrine/templates/secteurs/banque.html:7
+#: vitrine/templates/secteurs/banque.html:8
+#: vitrine/templates/secteurs/banque.html:52
+msgid "Banque"
+msgstr "Bank"
 
 #: vitrine/templates/secteurs/banque.html:63
 msgid ""
@@ -2218,9 +1941,442 @@ msgstr "Definition and framing of complex projects"
 msgid "Direction opérationnelle de projets"
 msgstr "Operational Direction of Projects"
 
-#: vitrine/templates/secteurs/secteur_public.html:137
-msgid "Conseil stratégique"
-msgstr "Strategic advice"
+#: vitrine/templates/secteurs/energie.html:5
+#: vitrine/templates/secteurs/energie.html:6
+msgid ""
+"Nous intervenons pour les grands groupes sur leurs enjeux de transformation."
+msgstr "We work for large groups on their transformation issues."
+
+#: vitrine/templates/secteurs/energie.html:7
+#: vitrine/templates/secteurs/energie.html:8
+msgid "Énergie"
+msgstr "Energy"
+
+#: vitrine/templates/secteurs/secteur_public.html:5
+#: vitrine/templates/secteurs/secteur_public.html:6
+msgid ""
+"Nous intervenons depuis plus de 25 années dans le secteur public mobilisant "
+"notre expérience du secteur avec des professionnels expérimentés."
+msgstr ""
+"We have been involved in the public sector for over 25 years, leveraging our "
+"industry experience with experienced professionals."
+
+#: vitrine/templates/secteurs/secteur_public.html:7
+#: vitrine/templates/secteurs/secteur_public.html:8
+msgid "Secteur public"
+msgstr "Public sector"
+
+#: vitrine/templates/secteurs/telecommunications.html:5
+#: vitrine/templates/secteurs/telecommunications.html:6
+msgid ""
+"Nous proposons des solutions innovantes pour accompagner les transformations "
+"des acteurs du secteur."
+msgstr ""
+"We propose innovative solutions to support the transformations of the actors "
+"of the sector."
+
+#: vitrine/templates/secteurs/telecommunications.html:7
+#: vitrine/templates/secteurs/telecommunications.html:8
+msgid "Télécommunications"
+msgstr "Telecommunications"
+
+#: vitrine/templates/secteurs/transport_et_logistique.html:5
+#: vitrine/templates/secteurs/transport_et_logistique.html:6
+msgid ""
+"Accompagnement depuis de très nombreuses années des acteurs de la mobilité, "
+"des infrastructures, du fret et de la logistique au travers d’approches "
+"adaptées et innovantes."
+msgstr ""
+"Accompanying many years of mobility, infrastructure, freight and logistics "
+"actors through adapted and innovative approaches."
+
+#: vitrine/templates/secteurs/transport_et_logistique.html:7
+#: vitrine/templates/secteurs/transport_et_logistique.html:8
+msgid "Transport & logistique"
+msgstr "Logistic & transport"
+
+#~ msgid "Accompagnement des projets de Systèmes d"
+#~ msgstr "Management of Information Systems projects,"
+
+#~ msgid "OXADE Consulting tient à indiquer son indépendance totale :"
+#~ msgstr "OXADE Consulting wishes to indicate its total independence:"
+
+#~ msgid ""
+#~ "Sur le plan financier, le capital d’OXADE Consulting est entièrement "
+#~ "détenu par ses dirigeants."
+#~ msgstr ""
+#~ "On the financial level, the capital of OXADE Consulting is entirely owned "
+#~ "by its directors."
+
+#~ msgid ""
+#~ "Notre indépendance et notre neutralité sont, avec les profils de nos "
+#~ "Consultants, parmi nos points forts quant à la qualité de nos "
+#~ "prestations, lorsque nous sommes amenés à comparer différentes "
+#~ "propositions."
+#~ msgstr ""
+#~ "Our independence and our neutrality are, with the profiles of our "
+#~ "Consultants, among our strong points as for the quality of our services, "
+#~ "when we are brought to compare different proposals."
+
+#~ msgid "Réseau de partenaires"
+#~ msgstr "Network of partners"
+
+#~ msgid ""
+#~ "Pour mieux répondre aux besoins de ses clients, OXADE Consulting peut "
+#~ "s’appuyer sur un réseau de partenaires."
+#~ msgstr ""
+#~ "To better meet the needs of its customers, OXADE Consulting can rely on a "
+#~ "network of partners."
+
+#~ msgid ""
+#~ "Nous constituons régulièrement des équipes pluridisciplinaires, "
+#~ "composées, outre de nos Consultants, d’un panel d’experts permettant de "
+#~ "répondre « sur mesure » aux demandes de nos clients : architectes "
+#~ "techniques, experts sécurité, juristes, communicants..."
+#~ msgstr ""
+#~ "We regularly build multidisciplinary teams, composed, besides our "
+#~ "Consultants, of a panel of experts to respond « tailor-made » to the "
+#~ "requests of our customers: technical architects, security experts, "
+#~ "lawyers, communicators ..."
+
+#~ msgid ""
+#~ "Il s’agit d’une pratique bien installée, obéissant à des règles communes "
+#~ "issues du constat suivant :"
+#~ msgstr ""
+#~ "This is a well established practice, obeying common rules from the "
+#~ "following observation:"
+
+#~ msgid ""
+#~ "OXADE Consulting a compris depuis de nombreuses années qu’il était "
+#~ "nécessaire de s’associer pour répondre au mieux et réussir le projet de "
+#~ "ses clients dans des conditions d’association équilibrées en respectant "
+#~ "des règles simples de comportement et d’éthique. C’est pourquoi OXADE "
+#~ "Consulting a mis en place des partenariats solides, fondés sur une longue "
+#~ "expérience et dont les principes sont : transparence, compétence, "
+#~ "implication, qualité, durée, équilibre, confiance, non-exclusivité mais "
+#~ "périmètres respectifs définis et délimités."
+#~ msgstr ""
+#~ "OXADE Consulting has understood for many years that it is necessary to "
+#~ "join forces to best meet and succeed the project of its customers in "
+#~ "conditions of balanced association by respecting simple rules of behavior "
+#~ "and ethics. This is why OXADE Consulting has established solid "
+#~ "partnerships, based on long experience and whose principles are: "
+#~ "transparency, competence, involvement, quality, duration, balance, trust, "
+#~ "non-exclusivity but defined and delimited respective perimeters."
+
+#~ msgid ""
+#~ "Cette démarche permet que tous les partenaires, clients inclus, "
+#~ "travaillent en synergie et puissent se partager un bénéfice accru : une "
+#~ "stratégie de gagnant-gagnant."
+#~ msgstr ""
+#~ "This approach ensures that all partners, including clients, work in "
+#~ "synergy and can share an increased profit: a win-win strategy."
+
+#~ msgid "Nos chiffres clés"
+#~ msgstr "Our key figures"
+
+#~ msgid "Événement récent"
+#~ msgstr "Events"
+
+#~ msgid "Secteurs"
+#~ msgstr "Sectors"
+
+#~ msgid "Abonnez-vous !"
+#~ msgstr "Subscribe !"
+
+#~ msgid "Entrer votre mail"
+#~ msgstr "Enter your email"
+
+#~ msgid "Valider"
+#~ msgstr "Validate"
+
+#~ msgid "Nos réseaux sociaux"
+#~ msgstr "Our social networks"
+
+#~ msgid "Transport et logistique"
+#~ msgstr "Transport and logistics"
+
+#~ msgid ""
+#~ "Accompagnement depuis de très nombreuses années des acteurs de la "
+#~ "mobilité, des infrastructures, du fret et de la logistique au travers "
+#~ "d’approches adaptées et innovantes"
+#~ msgstr ""
+#~ "Accompanying many years of mobility, infrastructure, freight and "
+#~ "logistics actors through adapted and innovative approaches"
+
+#~ msgid "Energie"
+#~ msgstr "Energy"
+
+#~ msgid "Systèmes d’information​"
+#~ msgstr "Information systems"
+
+#~ msgid "Gestion de projet"
+#~ msgstr "Project management"
+
+#~ msgid "Finance d’entreprise"
+#~ msgstr "Corporate Finance"
+
+#~ msgid "Lean & Six Sigma"
+#~ msgstr "Lean & Six Sigma"
+
+#~ msgid ""
+#~ "Nous appuyons les directions projets et les instances dirigeantes pour "
+#~ "faciliter le suivi de l’avancement et la prise de décisions."
+#~ msgstr ""
+#~ "We support project directorates and governing bodies to facilitate the "
+#~ "monitoring of progress and decision-making."
+
+#~ msgid "Risk management & sécurité de l’information"
+#~ msgstr "Risk management & information security"
+
+#~ msgid ""
+#~ "Nous proposons un processus d’accompagnement et de facilitation qui vise "
+#~ "à vous permettre de trouver vous-même la solution à une problématique "
+#~ "professionnelle opérationnelle ou managériale tout en travaillant sur "
+#~ "votre épanouissement personnel"
+#~ msgstr ""
+#~ "We propose a process of accompaniment and facilitation which aims to "
+#~ "allow you to find yourself the solution to an operational or managerial "
+#~ "professional problem while working on your personal fulfillment."
+
+#~ msgid ""
+#~ "Levier puissant de compétitivité pour les entreprises, et ce d’autant "
+#~ "plus qu’elles évoluent dans un environnement extrêmement concurrentiel"
+#~ msgstr ""
+#~ "Powerful lever of competitiveness for companies, especially as they "
+#~ "operate in an extremely competitive environment"
+
+#~ msgid ""
+#~ "Les entreprises du secteur financier mettent en œuvre les changements "
+#~ "exigés par les nouvelles réglementations. Elles s’efforcent en même temps "
+#~ "de réagir face à la croissance de la numérisation"
+#~ msgstr ""
+#~ "Financial sector companies are implementing the changes required by the "
+#~ "new regulations. At the same time, they are trying to react to the growth "
+#~ "of digitalisation."
+
+#~ msgid "Nos secteurs"
+#~ msgstr "Sectors"
+
+#~ msgid "Nos offres"
+#~ msgstr "Offers"
+
+#~ msgid "Nos secteurs d’activités"
+#~ msgstr "Our sectors of activity"
+
+#~ msgid ""
+#~ "Oxade consulting s’appuie sur des offres structurées portées par des "
+#~ "directeurs expérimentés."
+#~ msgstr ""
+#~ "Oxade consulting relies on structured offers from experienced managers."
+
+#~ msgid ""
+#~ "Découvrez comment nous pouvons simplifier la sécurité des accès au "
+#~ "système d’information de votre établissement"
+#~ msgstr ""
+#~ "Find out how we can simplify the security of access to your institution's "
+#~ "information system"
+
+#~ msgid ""
+#~ "Nous appuyons les directions projets et les instances dirigeantes pour "
+#~ "faciliter le suivi de l’avancement et la prise de décisions"
+#~ msgstr ""
+#~ "We support project directorates and governing bodies to facilitate the "
+#~ "monitoring of progress and decision-making."
+
+#~ msgid "Notre vision de l’AMOA : des valeurs et des hommes"
+#~ msgstr "Our vision for AMOA: values ​​and people"
+
+#~ msgid "Des valeurs partagées"
+#~ msgstr "Shared values"
+
+#~ msgid ""
+#~ "Il s’agit là de valeurs partagées par l’ensemble de nos Consultants :"
+#~ msgstr "These are values ​​shared by all of our Consultants:"
+
+#~ msgid ""
+#~ "Le savoir : l’expertise en Systèmes d’Information et dans une ou "
+#~ "plusieurs fonctions de l’entreprise,"
+#~ msgstr ""
+#~ "Knowledge: expertise in Information Systems and in one or more functions "
+#~ "of the company,"
+
+#~ msgid ""
+#~ "Le savoir-faire : la maîtrise de l’intervention et la capacité "
+#~ "méthodologique,"
+#~ msgstr "Know-how: mastery of the intervention and methodological capacity,"
+
+#~ msgid ""
+#~ "Le savoir être : la capacité d’adaptation au client et à son "
+#~ "environnement."
+#~ msgstr ""
+#~ "Social skills: the ability to adapt to the client and his environment."
+
+#~ msgid "Un même esprit"
+#~ msgstr "One spirit"
+
+#~ msgid "La dimension de nos Consultants"
+#~ msgstr "The size of our Consultants"
+
+#~ msgid ""
+#~ "Nos Consultants sont à même d’assister les décideurs et acteurs-clefs de "
+#~ "nos clients (Direction de la Stratégie, Directions opérationnelles, DSI)."
+#~ msgstr ""
+#~ "Our Consultants are able to assist the decision-makers and key players of "
+#~ "our clients (Strategy Department, Operational Departments, CIOs)."
+
+#~ msgid ""
+#~ "Ils interviennent notamment dans la caractérisation des métiers et "
+#~ "valeurs présents chez nos clients, les mettent en perspective avec leurs "
+#~ "objectifs et leurs enjeux, pour émettre des recommandations quant à "
+#~ "l’évolution de leurs Systèmes d’Information."
+#~ msgstr ""
+#~ "They intervene in particular in the characterization of the trades and "
+#~ "values ​​present in our customers, put them in perspective with their "
+#~ "objectives and their challenges, to make recommendations as for the "
+#~ "evolution of their Information Systems."
+
+#~ msgid ""
+#~ "Tous nos Consultants sont des professionnels du conseil, et présentent "
+#~ "une très forte expérience dans le domaine des Systèmes d’Information."
+#~ msgstr ""
+#~ "All our Consultants are consulting professionals, and have a very strong "
+#~ "experience in the field of Information Systems."
+
+#~ msgid ""
+#~ "Ils ont largement abordé les problématiques organisationnelles selon une "
+#~ "démarche systémique, se rapportant à la définition des processus et des "
+#~ "solutions en cohérence avec les axes stratégiques. De plus, ils "
+#~ "maîtrisent parfaitement la conduite de projets à multiples acteurs."
+#~ msgstr ""
+#~ "They largely approached organizational problems according to a systemic "
+#~ "approach, relating to the definition of processes and solutions "
+#~ "consistent with the strategic axes. In addition, they perfectly master "
+#~ "the management of projects with multiple actors."
+
+#~ msgid ""
+#~ "Nos Consultants abordent les problématiques du Système d’Information non "
+#~ "seulement sur un plan « technique », mais également sur un plan "
+#~ "économique et organisationnel. Ainsi, ils élaborent les dossiers "
+#~ "économiques des projets (argumentaire, risques, ressources à mobiliser…), "
+#~ "appuyant la prise de décision."
+#~ msgstr ""
+#~ "Our Consultants tackle Information System issues not only on a « "
+#~ "technical » level, but also on an economic and organizational level. "
+#~ "Thus, they develop economic files for projects (arguments, risks, "
+#~ "resources to be mobilized, etc.), supporting decision-making."
+
+#~ msgid ""
+#~ "Les Consultants OXADE Consulting sont tous de formation supérieure "
+#~ "filière informatique ou Systèmes d’Information, complétée par des "
+#~ "formations de type MBA, Master… – en management, finances et gestion, "
+#~ "logistique ou d’autres métiers « opérationnels ». Ils sont aguerris aux "
+#~ "chantiers inhérents à la construction ou la convergence de Systèmes "
+#~ "d’Information."
+#~ msgstr ""
+#~ "The OXADE Consulting Consultants are all of higher education in IT or "
+#~ "Information Systems, supplemented by MBA, Masters, etc. - in management, "
+#~ "finance and management, logistics or other « operational » professions. "
+#~ "They are experienced in the construction sites inherent in the "
+#~ "construction or the convergence of Information Systems."
+
+#~ msgid ""
+#~ "Leur parcours et leur envergure leur permettent de disposer de la "
+#~ "maîtrise d’un large panel de connaissance, et donc d’assurer divers types "
+#~ "de prestations."
+#~ msgstr ""
+#~ "Their background and their scope allow them to have the control of a wide "
+#~ "range of knowledge, and therefore to provide various types of services."
+
+#~ msgid ""
+#~ "Chacun a toutefois un ou plusieurs domaines d’excellence. La composition "
+#~ "de nos équipes projet tient compte à la fois de cette maîtrise transverse "
+#~ "et des domaines de prédilection."
+#~ msgstr ""
+#~ "Each, however, has one or more areas of excellence. The composition of "
+#~ "our project teams takes into account both this cross-functional expertise "
+#~ "and the preferred areas."
+
+#~ msgid ""
+#~ "Nos intervenants sont pluridisciplinaires, et peuvent prendre en charge "
+#~ "tout ou partie des divers chantiers inhérents à la construction de "
+#~ "Systèmes d’Information urbanisés :"
+#~ msgstr ""
+#~ "Our stakeholders are multidisciplinary, and can take charge of all or "
+#~ "part of the various sites inherent in the construction of urbanized "
+#~ "Information Systems:"
+
+#~ msgid ""
+#~ "au niveau global ou de façon « transverse » : en « Conseil et assistance "
+#~ "en management de projet et en organisation »: études amont, conseil en "
+#~ "organisation, urbanisation de Systèmes d’Information, définition de "
+#~ "dispositifs de Systèmes d’Information (études préalables, études de "
+#~ "faisabilité, expression de besoins, cahiers des charges fonctionnels…), "
+#~ "cohérence globale… ;"
+#~ msgstr ""
+#~ "at the global level or in a “cross-functional” way: in “Consulting and "
+#~ "assistance in project management and organization”: upstream studies, "
+#~ "organizational advice, urbanization of Information Systems, definition of "
+#~ "Information System devices (preliminary studies, feasibility studies, "
+#~ "expression of needs, functional specifications, etc.), overall "
+#~ "consistency, etc .;"
+
+#~ msgid "Périmètre d’intervention​"
+#~ msgstr "Intervention area"
+
+#~ msgid "Fusion / Transformation"
+#~ msgstr "Transformation"
+
+#~ msgid "Création d’entités​"
+#~ msgstr "Creating entities"
+
+#~ msgid "Prise de fonction​"
+#~ msgstr "Taking office"
+
+#~ msgid "Développeur de talents"
+#~ msgstr "Talent developer"
+
+#~ msgid "Profils des coachs"
+#~ msgstr "Coach profiles"
+
+#~ msgid "Anciens membres de direction générale & responsables opérationnels​"
+#~ msgstr "Former members of senior management & operational managers"
+
+#~ msgid "Coachs spécialisés selon​"
+#~ msgstr "Specialized coaches according"
+
+#~ msgid "Méthodes : HBDI ©, MBTI ©, Strong © , 360° ©"
+#~ msgstr "Methods: © HBDI, © MBTI, © Strong, 360° ©"
+
+#~ msgid "Public ciblé​"
+#~ msgstr "Target audience"
+
+#~ msgid "Managers​"
+#~ msgstr "Managers​"
+
+#~ msgid "Équipes​"
+#~ msgstr "Teams"
+
+#~ msgid "Connaissance sectorielle"
+#~ msgstr "Sectorial knowledge"
+
+#~ msgid "Distribution​"
+#~ msgstr "Distribution​"
+
+#~ msgid "Finances"
+#~ msgstr "Finances"
+
+#~ msgid "Service"
+#~ msgstr "Service"
+
+#~ msgid "Industrie​"
+#~ msgstr "Industry"
+
+#~ msgid "Chimie-pétrochimie"
+#~ msgstr "Chemistry and petrochemistry"
+
+#~ msgid "Automobile​"
+#~ msgstr "Automobile"
 
 #~ msgid "Operational advice"
 #~ msgstr "Operational effectiveness"
@@ -2391,9 +2547,6 @@ msgstr "Strategic advice"
 
 #~ msgid "01 42 82 99 38"
 #~ msgstr "+33 1 42 82 99 38"
-
-#~ msgid "Nous contacter"
-#~ msgstr "Contact us"
 
 #~ msgid "Fusions et acquisitions"
 #~ msgstr "Mergers and Acquisitions"

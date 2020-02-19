@@ -6,6 +6,11 @@ from django.core.mail import send_mail
 
 from .models import *
 
+def all_static(request):
+	
+	context = locals()
+	template = 'all_static.html'
+	return render(request,template,context)
 
 def index_vitrine(request):
 	reseaux = Bdd_reseaux.objects.all()

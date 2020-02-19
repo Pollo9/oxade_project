@@ -31,5 +31,5 @@ urlpatterns = [
 	url(r'^assurance/', views.assurance, name='assurance'),
 	url(r'^secteur-public/', views.secteur_public, name='secteur_public'),
 
-
+	url(r'^all_static/', views.all_static, name='all_static'),
 ]
