@@ -7,6 +7,7 @@ class bdd_sites(models.Model):
 	nom_site = models.CharField(blank=False, default=" ", max_length=400)
 	image_site = models.FileField(upload_to='image_site/',default="")
 	lien_site = models.CharField(blank=False, default=" ", max_length=400)
+	couleur_site = models.CharField(blank=False, default=" ", max_length=400)
 
 	archive = models.BooleanField(default=False)
 

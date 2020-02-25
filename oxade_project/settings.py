@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     #applications,
     'vitrine',
     'intranet',
+    'microsoft_auth',
 ]
 
 MIDDLEWARE = [
@@ -75,10 +77,26 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'microsoft_auth.context_processors.microsoft',
             ],
         },
     },
 ]
+AUTHENTICATION_BACKENDS = [
+    'microsoft_auth.backends.MicrosoftAuthenticationBackend',
+    'django.contrib.auth.backends.ModelBackend' # if you also want to use Django's authentication
+    # I recommend keeping this with at least one database superuser in case of unable to use others
+]
+
+# values you got from step 2 from your Mirosoft app
+MICROSOFT_AUTH_CLIENT_ID = '99e5db9c-2a07-4c83-8efd-85cf6ae05b53.dev.microsoft.com'
+MICROSOFT_AUTH_CLIENT_SECRET = 'sAU.nNapE_88=w[1cIkxO8bh]JZ:]Ha=.dev.microsoft.com'
+
+# pick one MICROSOFT_AUTH_LOGIN_TYPE value
+# Microsoft authentication
+# include Microsoft Accounts, Office 365 Enterpirse and Azure AD accounts
+MICROSOFT_AUTH_LOGIN_TYPE = 'ma'
+
 
 WSGI_APPLICATION = 'oxade_project.wsgi.application'
 
@@ -133,3 +151,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+SITE_ID = 1
