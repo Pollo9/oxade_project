@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <title>Intranet | Oxade</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="Content-Language" content="fr">
+  <meta name="format-detection" content="telephone=no">
+
+  {% block link %} {% endblock %}
+
+  <link rel="shortcut icon" type="img/png" href="{% static 'vitrine/img/logo_simple.svg' %}">
+  
+</head>
+
+<body>
+
+{% block content %}
+
+{% endblock %}
+
+{% block script %} 
+
+{% endblock %}
+</body>
+
+</html>
+

@@ -6,92 +6,668 @@
 {% endblock %}
 
 {% block link %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 {% endblock %}
 
 {% block content %}
-
+<style type="text/css">
+	img
+	{
+		width: 400px;
+	}
+	.table td, .table th
+	{
+		vertical-align: inherit;
+		text-align: center;
+	}
+	a
+	{
+		text-decoration: underline!important;
+	}
+</style>
 <div style="display: flex;flex-wrap: wrap;">
-<img src="{% static 'vitrine/img/capture_oxade_consulting_tel.png' %}"/>
-<img src="{% static 'vitrine/img/discours.png' %}"/>
-<img src="{% static 'vitrine/img/drapeau_anglais.png' %}"/>
-<img src="{% static 'vitrine/img/fleche_blanche.png' %}"/>
-<img src="{% static 'vitrine/img/fond_consulting.png' %}"/>
-<img src="{% static 'vitrine/img/fond_defense.png' %}"/>
-<img src="{% static 'vitrine/img/fond_immeuble.png' %}"/>
-<img src="{% static 'vitrine/img/fond_immeubles.png' %}"/>
-<img src="{% static 'vitrine/img/fond_nous_rejoindre.png' %}"/>
-<img src="{% static 'vitrine/img/fond_pont1.png' %}"/>
-<img src="{% static 'vitrine/img/fond_reunion.png' %}"/>
-<img src="{% static 'vitrine/img/logo_acquisition.png' %}"/>
-<img src="{% static 'vitrine/img/logo_amoa.png' %}"/>
-<img src="{% static 'vitrine/img/logo_analyse.png' %}"/>
-<img src="{% static 'vitrine/img/logo_architecture.png' %}"/>
-<img src="{% static 'vitrine/img/logo_assistance.png' %}"/>
-<img src="{% static 'vitrine/img/logo_assurance.png' %}"/>
-<img src="{% static 'vitrine/img/logo_banque.png' %}"/>
-<img src="{% static 'vitrine/img/logo_cadenat.png' %}"/>
-<img src="{% static 'vitrine/img/logo_chgmt.png' %}"/>
-<img src="{% static 'vitrine/img/logo_coaching.png' %}"/>
-<img src="{% static 'vitrine/img/logo_communication.png' %}"/>
-<img src="{% static 'vitrine/img/logo_competences.png' %}"/>
-<img src="{% static 'vitrine/img/logo_conduite.png' %}"/>
-<img src="{% static 'vitrine/img/logo_conseil.png' %}"/>
-<img src="{% static 'vitrine/img/logo_croissance.png' %}"/>
-<img src="{% static 'vitrine/img/logo_cybersecurite.png' %}"/>
-<img src="{% static 'vitrine/img/logo_deploiement.png' %}"/>
-<img src="{% static 'vitrine/img/logo_digital.png' %}"/>
-<img src="{% static 'vitrine/img/logo_diminution.png' %}"/>
-<img src="{% static 'vitrine/img/logo_divers2.png' %}"/>
-<img src="{% static 'vitrine/img/logo_diversification.png' %}"/>
-<img src="{% static 'vitrine/img/logo_energie.png' %}"/>
-<img src="{% static 'vitrine/img/logo_english.png' %}"/>
-<img src="{% static 'vitrine/img/logo_excellence.png' %}"/>
-<img src="{% static 'vitrine/img/logo_experience-client.png' %}"/>
-<img src="{% static 'vitrine/img/logo_experience.png' %}"/>
-<img src="{% static 'vitrine/img/logo_externe.png' %}"/>
-<img src="{% static 'vitrine/img/logo_fiole.png' %}"/>
-<img src="{% static 'vitrine/img/logo_fleche.png' %}"/>
-<img src="{% static 'vitrine/img/logo_france.png' %}"/>
-<img src="{% static 'vitrine/img/logo_fusions.png' %}"/>
-<img src="{% static 'vitrine/img/logo_industriel.png' %}"/>
-<img src="{% static 'vitrine/img/logo_interactions.png' %}"/>
-<img src="{% static 'vitrine/img/logo_logistique.png' %}"/>
-<img src="{% static 'vitrine/img/logo_management-projets.png' %}"/>
-<img src="{% static 'vitrine/img/logo_management.png' %}"/>
-<img src="{% static 'vitrine/img/logo_maquette.png' %}"/>
-<img src="{% static 'vitrine/img/logo_marche.png' %}"/>
-<img src="{% static 'vitrine/img/logo_marketing.png' %}"/>
-<img src="{% static 'vitrine/img/logo_o_oxade.png' %}"/>
-<img src="{% static 'vitrine/img/logo_opti-gestion.png' %}"/>
-<img src="{% static 'vitrine/img/logo_optimisation.png' %}"/>
-<img src="{% static 'vitrine/img/logo_oxade.png' %}"/>
-<img src="{% static 'vitrine/img/logo_oxade_1.png' %}"/>
-<img src="{% static 'vitrine/img/logo_performance.png' %}"/>
-<img src="{% static 'vitrine/img/logo_personas.png' %}"/>
-<img src="{% static 'vitrine/img/logo_personnalisation.png' %}"/>
-<img src="{% static 'vitrine/img/logo_piloter.png' %}"/>
-<img src="{% static 'vitrine/img/logo_projets.png' %}"/>
-<img src="{% static 'vitrine/img/logo_prototypage.png' %}"/>
-<img src="{% static 'vitrine/img/logo_public.png' %}"/>
-<img src="{% static 'vitrine/img/logo_referentiel.png' %}"/>
-<img src="{% static 'vitrine/img/logo_reglementaire.png' %}"/>
-<img src="{% static 'vitrine/img/logo_rouages.png' %}"/>
-<img src="{% static 'vitrine/img/logo_securite.png' %}"/>
-<img src="{% static 'vitrine/img/logo_solutions.png' %}"/>
-<img src="{% static 'vitrine/img/logo_strategie.png' %}"/>
-<img src="{% static 'vitrine/img/logo_suiv-plan.png' %}"/>
-<img src="{% static 'vitrine/img/logo_synergie.png' %}"/>
-<img src="{% static 'vitrine/img/logo_telecom.png' %}"/>
-<img src="{% static 'vitrine/img/logo_transformation-performance.png' %}"/>
-<img src="{% static 'vitrine/img/logo_transformation-strategique.png' %}"/>
-<img src="{% static 'vitrine/img/logo_transformation.png' %}"/>
-<img src="{% static 'vitrine/img/o_oxade.png' %}"/>
-<img src="{% static 'vitrine/img/o_oxade_nav.png' %}"/>
-<img src="{% static 'vitrine/img/oxade_consulting.png' %}"/>
-<img src="{% static 'vitrine/img/photo_president.jpg' %}"/>
-<img src="{% static 'vitrine/img/secteurs_banniere.png' %}"/>
-<img src="{% static 'vitrine/img/logo_oxade.svg' %}"/>
-
+	<table class="table">
+		<thead>
+		    <tr>
+		      	<th scope="col">Image</th>
+		      	<th scope="col">Télécharger image</th>
+		    </tr>
+	  	</thead>
+	  	<tbody>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/capture_oxade_consulting_tel.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/capture_oxade_consulting_tel.png' %}">capture_oxade_consulting_tel</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/discours.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/discours.png' %}">discours</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/drapeau_anglais.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/drapeau_anglais.png' %}">drapeau_anglais</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fleche_blanche.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fleche_blanche.png' %}">fleche_blanche</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fond_consulting.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fond_consulting.png' %}">fond_consulting</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fond_defense.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fond_defense.png' %}">fond_defense</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fond_immeuble.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fond_immeuble.png' %}">fond_immeuble</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fond_nous_rejoindre.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fond_nous_rejoindre.png' %}">fond_nous_rejoindre</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fond_pont1.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fond_pont1.png' %}">fond_pont1</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/fond_reunion.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/fond_reunion.png' %}">fond_reunion</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_acquisition.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_acquisition.png' %}">logo_acquisition</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_amoa.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_amoa.png' %}">logo_amoa</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_analyse.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_analyse.png' %}">logo_analyse</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_architecture.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_architecture.png' %}">logo_architecture</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_assistance.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_assistance.png' %}">logo_assistance</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_assurance.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_assurance.png' %}">logo_assurance</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_banque.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_banque.png' %}">logo_banque</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_cadenat.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_cadenat.png' %}">logo_cadenat</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_chgmt.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_chgmt.png' %}">logo_chgmt</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_coaching.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_coaching.png' %}">logo_coaching</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_communication.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_communication.png' %}">logo_communication</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_competences.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_competences.png' %}">logo_competences</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_conduite.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_conduite.png' %}">logo_conduite</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_conseil.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_conseil.png' %}">logo_conseil</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_croissance.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_croissance.png' %}">logo_croissance</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_cybersecurite.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_cybersecurite.png' %}">logo_cybersecurite</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_deploiement.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_deploiement.png' %}">logo_deploiement</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_digital.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_digital.png' %}">logo_digital</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_diminution.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_diminution.png' %}">logo_diminution</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_divers2.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_divers2.png' %}">logo_divers2</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_diversification.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_diversification.png' %}">logo_diversification</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_energie.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_energie.png' %}">logo_energie</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_english.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_english.png' %}">logo_english</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_excellence.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_excellence.png' %}">logo_excellence</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_experience-client.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_experience-client.png' %}">logo_experience-client</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_experience.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_experience.png' %}">logo_experience</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_externe.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_externe.png' %}">logo_externe</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_fiole.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_fiole.png' %}">logo_fiole</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_fleche.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_fleche.png' %}">logo_fleche</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_france.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_france.png' %}">logo_france</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_fusions.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_fusions.png' %}">logo_fusions</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_industriel.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_industriel.png' %}">logo_industriel</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_interactions.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_interactions.png' %}">logo_interactions</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_logistique.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_logistique.png' %}">logo_logistique</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_management-projets.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_management-projets.png' %}">logo_management-projets</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_management.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_management.png' %}">logo_management</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_maquette.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_maquette.png' %}">logo_maquette</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_marche.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_marche.png' %}">logo_marche</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_marketing.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_marketing.png' %}">logo_marketing</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_o_oxade.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_o_oxade.png' %}">logo_o_oxade</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_opti-gestion.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_opti-gestion.png' %}">logo_opti-gestion</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_optimisation.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_optimisation.png' %}">logo_optimisation</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_oxade.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_oxade.png' %}">logo_oxade</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_oxade_1.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_oxade_1.png' %}">logo_oxade_1</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_performance.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_performance.png' %}">logo_performance</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_personas.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_personas.png' %}">logo_personas</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_personnalisation.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_personnalisation.png' %}">logo_personnalisation</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_piloter.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_piloter.png' %}">logo_piloter</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_projets.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_projets.png' %}">logo_projets</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_prototypage.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_prototypage.png' %}">logo_prototypage</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_public.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_public.png' %}">logo_public</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_referentiel.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_referentiel.png' %}">logo_referentiel</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_reglementaire.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_reglementaire.png' %}">logo_reglementaire</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_rouages.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_rouages.png' %}">logo_rouages</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_securite.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_securite.png' %}">logo_securite</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_solutions.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_solutions.png' %}">logo_solutions</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_strategie.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_strategie.png' %}">logo_strategie</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_suiv-plan.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_suiv-plan.png' %}">logo_suiv-plan</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_synergie.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_synergie.png' %}">logo_synergie</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_telecom.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_telecom.png' %}">logo_telecom</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_transformation-performance.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_transformation-performance.png' %}">logo_transformation-performance</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_transformation-strategique.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_transformation-strategique.png' %}">logo_transformation-strategique</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_transformation.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_transformation.png' %}">logo_transformation</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/o_oxade.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/o_oxade.png' %}">o_oxade</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/o_oxade_nav.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/o_oxade_nav.png' %}">o_oxade_nav</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/oxade_consulting.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/oxade_consulting.png' %}">oxade_consulting</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/photo_president.jpg' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/photo_president.jpg' %}">photo_president</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/secteurs_banniere.png' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/secteurs_banniere.png' %}">secteurs_banniere</a>
+				</td>
+			</tr>
+	    	<tr>
+	    		<th>
+				<img src="{% static 'vitrine/img/logo_oxade.svg' %}"/>
+				</th>
+				<td>
+					<a href="{% static 'vitrine/img/logo_oxade.svg' %}">logo_oxade</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </div>
 
 {% endblock %}
