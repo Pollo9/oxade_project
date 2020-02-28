@@ -60,21 +60,49 @@
 	    color: white;
 	    align-items: center;
 	    justify-content: center;
+	    flex-direction: column;
+
+	}
+	.link_deco
+	{
+		position: absolute;
+    bottom: 0;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #333;
+    text-decoration: none;
+    color: white;
+	}
+	.div_bienvenue
+	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 250px;
+		font-size: 30px;
+	    color: #333;
+	    text-align: center;
+	    padding: 15px;
 	}
 </style>
 <div style="display: flex;height: 100vh;">
 	<section class="leftIntra">
 		<a class="weatherwidget-io" href="https://forecast7.com/fr/48d862d35/paris/" data-label_1="TEMPS" data-label_2="PARIS" data-theme="original" >TEMPS PARIS</a>
 		<div style="text-align:center;padding:1em 0;"><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=medium&timezone=Europe%2FParis" width="100%" height="115" frameborder="0" seamless></iframe> </div>
-		<div>Bienvenue ...</div>
-		<div class="deco">Déconnexion</div>
+		<div class="div_bienvenue">Bienvenue {{user.first_name}} {{user.last_name}} sur la plateforme intranet d'Oxade Consulting</div>
+		<a class="link_deco"href="https://oxade.com/admin/logout/"><div>Déconnexion</div></a>
 	</section>
 	<section class="rightIntra">
 		<div class="divRightIntra">
 			{% for site in liste_sites %}
-			<a href="{{ site.lien_site }}">
+			<a href="{{ site.lien_site }}" target="_blank">
+
 				<div class="blockSite" style="background-color:{{ site.couleur_site }};">
-					{{ site.nom_site }}
+					<div style="height: 40px;width: 40px; background-color: white;border-radius: 50px;display: flex;align-items: center;justify-content: center;"><img src="{{ site.image_site.url }}" style="width: 25px;"></div>
+					<div style="margin-top: 20px;">{{ site.nom_site }}</div>
 				</div>
 			</a>
 			{% endfor %}
