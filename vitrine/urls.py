@@ -20,6 +20,7 @@ urlpatterns = [
 	url(r'^autres/', views.autres, name='autres'),
 	url(r'^coaching/', views.coaching, name='coaching'),
 	url(r'^amoa/', views.amoa, name='amoa'),
+	url(r'^pca/', views.pca, name='pca'),
 	url(r'^innovation-digitale/', views.digitalisation, name='digitalisation'),
 	url(r'^securite/', views.securite, name='securite'),
 	url(r'^transformation/', views.transformation, name='transformation'),

@@ -183,8 +183,24 @@
                     {% trans 'Oxade Consulting se positionne comme un cabinet combinant expertise métier, expertise en systèmes d’information et en organisation. Nous proposons à nos clients des interventions intégrant l’ensemble des enjeux auxquels ils font face avec des solutions sur mesure.' %} 
                 </p>
 				<div class="row mt-5">
+					<div class="col-lg-4">	
+						<a aria-label="Assurance" href="{% url 'amoa' %}" class="services text-center" style="height: 350px!important;">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_assurance.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_assurance.png' %}">
+									<img style="width:47px; margin-bottom: 20px;" alt="logo-assurance"src="{% static 'vitrine/img/logo_assurance.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Conseil & AMOA' %}</h3>
+								<p class="color_grey">
+									{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}
+								</p>
+							</div>
+						</a>
+					</div>
 					<div class="col-lg-4">
-
 						<a aria-label="Public" href="{% url 'coaching' %}" class="services text-center" style="height: 350px!important;">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
 								<picture>
@@ -205,24 +221,6 @@
 									{% else %}
 											<br class="sauts"><br class="sauts">
 									{% endif %}
-								</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-4">
-						
-						<a aria-label="Assurance" href="{% url 'amoa' %}" class="services text-center" style="height: 350px!important;">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center">
-								<picture>
-									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_assurance.webp' %}">
-									<source type="image/png" srcset="{% static 'vitrine/img/logo_assurance.png' %}">
-									<img style="width:47px; margin-bottom: 20px;" alt="logo-assurance"src="{% static 'vitrine/img/logo_assurance.png' %}">
-								</picture>
-							</div>
-							<div class="text media-body">
-								<h3>{% trans 'AMOA' %}</h3>
-								<p class="color_grey">
-									{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}
 								</p>
 							</div>
 						</a>
@@ -277,7 +275,7 @@
 	</div>
 	<div class="div_texte_discours_president">
 		<div class="texte_discours_president">
-			{% trans '2020 est une année charnière pour Oxade Consulting. Nouvelle organisation, nouveau logo, nouveau site, nouvelles ambitions… J’ai réuni autour de moi une nouvelle équipe de gouvernance pour faire d’Oxade Consulting un acteur incontournable. Les relations d’Oxade Consulting avec ses clients se sont toujours inscrites dans un véritable « partenariat » d’enrichissement mutuel et de relations saines et transparentes. Nous continuerons de travailler avec vous et pour vous en ce sens. Oxade Consulting est et restera une société indépendante. Le capital d’Oxade Consulting est détenu par la nouvelle équipe dirigeante. Cette indépendance, notre neutralité, nos Consultants, notre réseau de partenaires sont et resteront de réels points forts pour Oxade Consulting.' %}
+			{% trans '2020 est une année charnière pour Oxade Consulting, créée en 1993.<br>Nouvelle organisation, nouveau logo, nouveau site, nouvelles ambitions… J’ai réuni autour de moi une nouvelle équipe de gouvernance, composée de professionnels du conseil, d’opérationnels et d’experts issus d’entreprises de premier plan, pour faire d’Oxade Consulting un acteur incontournable. Les relations d’Oxade Consulting avec ses clients se sont toujours inscrites dans un véritable « partenariat » d’enrichissement mutuel et de relations saines et transparentes. Nous continuerons de travailler avec vous et pour vous en ce sens. Oxade Consulting est et restera une société indépendante. Le capital d’Oxade Consulting est détenu par la nouvelle équipe dirigeante. Cette indépendance, notre neutralité, nos Consultants, notre réseau de partenaires sont et resteront de réels points forts pour Oxade Consulting.<br><br><strong>Rudy Baddha, Président Oxade Consulting.</strong>' %}
 		</div>
 	</div>
 </section>

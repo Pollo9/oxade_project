@@ -1,0 +1,205 @@
+{% extends 'base_vitrine.html' %}
+{% load staticfiles %}{% load i18n %}
+
+{% block seo %}
+<meta name="Description" content="{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}">
+<meta property="og:description" content="{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}">
+<meta property="og:title" content="Oxade Consulting | {% trans 'AMOA' %}">
+<title>{% trans 'Plan de Continuité d’Activité' %} | Oxade Consulting</title>
+
+<link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/secteurs.css' %}">
+<script src="https://kit.fontawesome.com/b7aa201f58.js" crossorigin="anonymous"></script>	
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+	.img_offres_secteurs_public{
+    width: 165px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 43px;
+    margin-top: 33px;
+    display: block;
+	}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.img_offres_secteurs_public{
+		width: 152px; 
+	}
+}
+
+.container_contact_us{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border:4px solid #d1ebf9;
+		padding-top: 30px;
+    	padding-bottom: 19px;
+	}
+
+
+
+	.container_bouton{
+		display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-bottom: 26px;
+	    margin-left: 75px;
+    	margin-right: 75px;
+
+	}
+
+	.liste_offres{
+		margin-top: 0;
+	    text-align: left;
+	    margin-bottom: 1rem;
+	    color: grey;
+	}
+
+	.secteurs:hover {
+    background: #1b9ce300;
+	}
+
+	@media screen and (max-width: 991.98px){
+		.container_contact_us {
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+		    border: 4px solid #d1ebf9;
+		    flex-wrap: wrap;
+		}
+
+		.text_contact {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    text-align: center;
+		    padding: 30px;
+		}
+
+		.liste_offres {
+		    margin-left: 11%;
+		}
+
+		.liste_contact{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.double_listes{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+	@media screen and (max-width: 667.98px)
+	{
+		.s1
+		{
+			margin-bottom: 20px!important;
+			margin-top: 20px!important;
+		}
+		.s2
+		{
+			margin-top:10px!important;
+			padding: 0!important;
+		}
+	}
+</style>
+
+<section class="hero-wrap hero-wrap-2 fond-defense">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-center justify-content-center">
+			<div class="col-md-9 ftco-animate text-center">
+				<h1 class="mb-2 bread">Plan de Continuité d’Activité</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ftco-section ftco-no-pb s2" style="padding:0px;margin-top: 85px;">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-md-12 wrap-about pr-md-4 ftco-animate" style="padding-right: 0;padding-left: 0;">
+				<p style="text-align: justify;padding:10px;">
+					{% trans "Depuis vingt ans la fréquence et le cout des crises (écologique, financière, sanitaire…) ne fait qu’augmenter. La crise actuelle nous montre combien l’entreprise dépend de son écosystème pour vivre." %}
+
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s1" style="margin-top: 80px;margin-bottom: 100px
+">
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-lg-6" style="display: flex;align-items: center;justify-content: center;">
+				<img style="width: 90%;" src="{% static 'vitrine/img/graphique_pca.jpg' %}">
+			</div>
+			<div class="col-lg-6" style="display: flex;flex-direction: column;justify-content: center;">
+				<p style="text-align: justify;padding:10px;">{% trans "L’impréparation peut être aujourd’hui synonyme de cessation définitive d’activité.<br><br>Et, bien qu’il soit utopique de chercher à tout prévoir et maîtriser, les entreprises se doivent de concevoir et de mettre en œuvre des stratégies de protection de leur capital humain, matériel et immatériel permettant d’éviter certains événements, ou tout du moins d’en limiter les conséquences et d’assurer la continuité de l’activité malgré la perte de ressources critiques.<br><br>Les retours d’expérience des grandes crises récentes montrent que les organisations ayant entrepris une démarche préalable visant à garantir la continuité de leur activité sont les plus résilientes face aux événements déstabilisants." %}</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s2 ftco-section ftco-no-pb" style="padding:0px;margin-top: 45px;">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-lg-12 wrap-about ftco-animate" style="padding-right: 0;padding-left: 0;">
+				<p style="text-align: justify;padding:10px;">
+					{% trans "La démarche de continuité d’activité visant à doter l’entreprise d’un Plan de Continuité d’Activité (PCA) est le moyen d’associer de manière globale et cohérente un ensemble d’outils méthodologiques (gestion des risques, gestion de crise, modélisation des processus métiers et vitaux, PRA…) permettant d’optimiser l’efficience des dispositions prévues, en cohérence avec les objectifs de l’entreprise." %}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s1" style="margin-top: 80px;margin-bottom: 100px;
+">
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-lg-6" style="display: flex;flex-direction: column;justify-content: center;">
+				<p style="text-align: justify;padding:10px;">{% trans "Le PCA représente l’ensemble des mesures visant à assurer, selon divers scénarios de crises, y compris face à des chocs extrêmes, le maintien, le cas échéant de façon temporaire selon un mode dégradé, des prestations de services ou d’autres tâches opérationnelles essentielles ou importantes de l’entreprise, puis la reprise planifiée des activités.<br><br>La continuité d’activité ne peut se passer de PRA correctement dimensionné. Ce point est d’ailleurs très important car il convient, en cas de sinistre, de pouvoir mettre à disposition dans des délais acceptables et convenus des moyens adéquats hors zone sinistrée. Les redondances de moyens doivent s’adapter à la fréquence et à la gravité des risques." %}</p>
+			</div>
+			<div class="col-lg-6" style="display: flex;align-items: center;justify-content: center;">
+				<img style="width: 90%;" src="{% static 'vitrine/img/pcs_pcm_pra.png' %}">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s2 ftco-section ftco-no-pb" style="padding:0px;margin-top: 45px;">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-lg-12 wrap-about ftco-animate" style="padding-right: 0;padding-left: 0;">
+				<p style="text-align: justify;padding:10px;">
+					{% trans "Oxade vous accompagne sur l'ensemble de la chaîne de valeur PCA : définition des besoins, identification et analyse des risques, identification des activités vitales pour votre entreprise, élaboration du PCA proprement dit, scénarios de crise, simulation de crise, identification des signaux faibles, accompagnement..." %}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s1 ftco-section ftco-no-pb" style="padding:0px;margin-top: 80px;margin-bottom: 100px">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-lg-12 wrap-about ftco-animate" style="padding-right: 0;padding-left: 0;display: flex;align-items: center;justify-content: center;">
+				<img style="width: 90%;" src="{% static 'vitrine/img/rt_pca.png' %}">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="s2 ftco-section ftco-no-pb" style="padding:0px;margin-top: 45px;margin-bottom: 75px;">
+	<div class="container">
+		<div class="row d-flex">
+			<div class="col-lg-12 wrap-about ftco-animate" style="padding-right: 0;padding-left: 0;">
+				<p style="text-align: justify;padding:10px;">
+					{% trans "Le PCA pour être efficace doit s’inscrire dans une boucle d’adaptation et d’amélioration continue ainsi que dans une stratégie de communication.<br><br>C’est une évidence mais le délai de réaction entre le démarrage de la crise et l’application des premières mesures doit être le plus réduit possible. Et pour cela, le PCA doit être connu et adopté par tous les acteurs de l’entreprise et il doit être testé régulièrement.<br><br>Oxade vous accompagne également sur des aspects plus opérationnels : simulation de crise, audit de résilience, vérification du dispositif de crise (failles du SI, fuite, perte de données, rupture de processus par exemple), audit post crise, organisation de RETEX, accompagnement pour le retour à la normale, intégration d’une composante PCA au sein des projets…" %}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

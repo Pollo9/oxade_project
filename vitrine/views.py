@@ -94,6 +94,17 @@ def amoa(request):
 
 	return render(request,template,context)
 
+def pca(request):
+	evenement = Bdd_evenement.objects.all().reverse()[0]
+	reseaux = Bdd_reseaux.objects.all()
+
+	if request.POST.get("sv"):
+		Bdd_mail.objects.create(mail=request.POST.get("mail"))
+
+	context= locals()
+	template = 'offres/pca.html'
+	return render(request,template,context)
+
 def evenements(request):	
 	events = Bdd_evenement.objects.all().reverse()
 	evenement = Bdd_evenement.objects.all().reverse()[0]
