@@ -2,9 +2,9 @@
 {% load staticfiles %}{% load i18n %}
 
 {% block seo %}
-<meta name="Description" content="{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}">
-<meta property="og:description" content="{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}">
-<meta property="og:title" content="Oxade Consulting | {% trans 'AMOA' %}">
+<meta name="Description" content="{% trans 'Un PCA (Plan  de Continuité d'Activité) ou PRA (Plan de Reprise d'Activité) est avant tout une organisation et des processus à mettre en place afin de limiter ou de supprimer les impacts  subis par l'entreprise en période de crise. Un PCA  c'est aussi des moyens à engager avant, pendant et après la crise.' %}">
+<meta property="og:description" content="{% trans 'Un PCA (Plan  de Continuité d'Activité) ou PRA (Plan de Reprise d'Activité) est avant tout une organisation et des processus à mettre en place afin de limiter ou de supprimer les impacts  subis par l'entreprise en période de crise. Un PCA  c'est aussi des moyens à engager avant, pendant et après la crise.' %}">
+<meta property="og:title" content="Oxade Consulting | {% trans 'Plan de Continuité d’Activité' %}">
 <title>{% trans 'Plan de Continuité d’Activité' %} | Oxade Consulting</title>
 
 <link rel="stylesheet" type="text/css" href="{% static 'vitrine/css/secteurs.css' %}">
@@ -142,7 +142,7 @@
 				<img style="width: 90%;" src="{% static 'vitrine/img/graphique_pca.jpg' %}">
 			</div>
 			<div class="col-lg-6" style="display: flex;flex-direction: column;justify-content: center;">
-				<p style="text-align: justify;padding:10px;">{% trans "L’impréparation peut être aujourd’hui synonyme de cessation définitive d’activité.<br><br>Et, bien qu’il soit utopique de chercher à tout prévoir et maîtriser, les entreprises se doivent de concevoir et de mettre en œuvre des stratégies de protection de leur capital humain, matériel et immatériel permettant d’éviter certains événements, ou tout du moins d’en limiter les conséquences et d’assurer la continuité de l’activité malgré la perte de ressources critiques.<br><br>Les retours d’expérience des grandes crises récentes montrent que les organisations ayant entrepris une démarche préalable visant à garantir la continuité de leur activité sont les plus résilientes face aux événements déstabilisants." %}</p>
+				<p style="text-align: justify;padding:10px;">{% trans "L’impréparation peut être aujourd’hui synonyme de cessation définitive d’activité." %}<br><br>{% trans "Et, bien qu’il soit utopique de chercher à tout prévoir et maîtriser, les entreprises se doivent de concevoir et de mettre en œuvre des stratégies de protection de leur capital humain, matériel et immatériel permettant d’éviter certains événements, ou tout du moins d’en limiter les conséquences et d’assurer la continuité de l’activité malgré la perte de ressources critiques." %}<br><br>{% trans "Les retours d’expérience des grandes crises récentes montrent que les organisations ayant entrepris une démarche préalable visant à garantir la continuité de leur activité sont les plus résilientes face aux événements déstabilisants." %}</p>
 			</div>
 		</div>
 	</div>
@@ -163,7 +163,7 @@
 	<div class="container">
 		<div class="row no-gutters">
 			<div class="col-lg-6" style="display: flex;flex-direction: column;justify-content: center;">
-				<p style="text-align: justify;padding:10px;">{% trans "Le PCA représente l’ensemble des mesures visant à assurer, selon divers scénarios de crises, y compris face à des chocs extrêmes, le maintien, le cas échéant de façon temporaire selon un mode dégradé, des prestations de services ou d’autres tâches opérationnelles essentielles ou importantes de l’entreprise, puis la reprise planifiée des activités.<br><br>La continuité d’activité ne peut se passer de PRA correctement dimensionné. Ce point est d’ailleurs très important car il convient, en cas de sinistre, de pouvoir mettre à disposition dans des délais acceptables et convenus des moyens adéquats hors zone sinistrée. Les redondances de moyens doivent s’adapter à la fréquence et à la gravité des risques." %}</p>
+				<p style="text-align: justify;padding:10px;">{% trans "Le PCA représente l’ensemble des mesures visant à assurer, selon divers scénarios de crises, y compris face à des chocs extrêmes, le maintien, le cas échéant de façon temporaire selon un mode dégradé, des prestations de services ou d’autres tâches opérationnelles essentielles ou importantes de l’entreprise, puis la reprise planifiée des activités." %}<br><br>{% trans "La continuité d’activité ne peut se passer de PRA correctement dimensionné. Ce point est d’ailleurs très important car il convient, en cas de sinistre, de pouvoir mettre à disposition dans des délais acceptables et convenus des moyens adéquats hors zone sinistrée. Les redondances de moyens doivent s’adapter à la fréquence et à la gravité des risques." %}</p>
 			</div>
 			<div class="col-lg-6" style="display: flex;align-items: center;justify-content: center;">
 				<img style="width: 90%;" src="{% static 'vitrine/img/pcs_pcm_pra.png' %}">
@@ -196,7 +196,7 @@
 		<div class="row d-flex">
 			<div class="col-lg-12 wrap-about ftco-animate" style="padding-right: 0;padding-left: 0;">
 				<p style="text-align: justify;padding:10px;">
-					{% trans "Le PCA pour être efficace doit s’inscrire dans une boucle d’adaptation et d’amélioration continue ainsi que dans une stratégie de communication.<br><br>C’est une évidence mais le délai de réaction entre le démarrage de la crise et l’application des premières mesures doit être le plus réduit possible. Et pour cela, le PCA doit être connu et adopté par tous les acteurs de l’entreprise et il doit être testé régulièrement.<br><br>Oxade vous accompagne également sur des aspects plus opérationnels : simulation de crise, audit de résilience, vérification du dispositif de crise (failles du SI, fuite, perte de données, rupture de processus par exemple), audit post crise, organisation de RETEX, accompagnement pour le retour à la normale, intégration d’une composante PCA au sein des projets…" %}
+					{% trans "Le PCA pour être efficace doit s’inscrire dans une boucle d’adaptation et d’amélioration continue ainsi que dans une stratégie de communication." %}<br><br>{% trans "C’est une évidence mais le délai de réaction entre le démarrage de la crise et l’application des premières mesures doit être le plus réduit possible. Et pour cela, le PCA doit être connu et adopté par tous les acteurs de l’entreprise et il doit être testé régulièrement." %}<br><br>{% trans "Oxade vous accompagne également sur des aspects plus opérationnels : simulation de crise, audit de résilience, vérification du dispositif de crise (failles du SI, fuite, perte de données, rupture de processus par exemple), audit post crise, organisation de RETEX, accompagnement pour le retour à la normale, intégration d’une composante PCA au sein des projets…" %}
 				</p>
 			</div>
 		</div>
