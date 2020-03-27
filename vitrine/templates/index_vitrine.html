@@ -201,6 +201,31 @@
 						</a>
 					</div>
 					<div class="col-lg-4">
+						<a aria-label="Banque" href="{% url 'pca' %}" class="services text-center" style="height: 350px!important;">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_banque.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_banque.png' %}">
+									<img class="logo_banque" alt="logo-banque" src="{% static 'vitrine/img/logo_banque.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans "Plan de Continuité d’Activité" %}</h3>
+								<p class="color_grey">
+									{% trans "Un PCA (Plan  de Continuité d'Activité) ou PRA (Plan de Reprise d'Activité) est avant tout une organisation et des processus à mettre en place afin de limiter ou de supprimer les impacts  subis par l'entreprise en période de crise." %}
+									{% get_current_language as LANGUAGE_CODE %}
+						            {% get_available_languages as LANGUAGES %}
+						            {% get_language_info_list for LANGUAGES as languages %}
+						            {% if LANGUAGE_CODE == 'fr' %}
+											<br class="sauts"><br class="sauts">
+									{% else %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% endif %}
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4">
 						<a aria-label="Public" href="{% url 'coaching' %}" class="services text-center" style="height: 350px!important;">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
 								<picture>
@@ -220,31 +245,6 @@
 											<br class="sauts"><br class="sauts"><br class="sauts">
 									{% else %}
 											<br class="sauts"><br class="sauts">
-									{% endif %}
-								</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-lg-4">
-						<a aria-label="Banque" href="{% url 'index_vitrine' %}" class="services text-center" style="height: 350px!important;">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center">
-								<picture>
-									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_banque.webp' %}">
-									<source type="image/png" srcset="{% static 'vitrine/img/logo_banque.png' %}">
-									<img class="logo_banque" alt="logo-banque" src="{% static 'vitrine/img/logo_banque.png' %}">
-								</picture>
-							</div>
-							<div class="text media-body">
-								<h3>{% trans 'Formation' %}</h3>
-								<p class="color_grey">
-									{% trans 'Dans un contexte où l’univers financier doit faire face à des bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles économiques.' %}
-									{% get_current_language as LANGUAGE_CODE %}
-						            {% get_available_languages as LANGUAGES %}
-						            {% get_language_info_list for LANGUAGES as languages %}
-						            {% if LANGUAGE_CODE == 'fr' %}
-											<br class="sauts"><br class="sauts">
-									{% else %}
-											<br class="sauts"><br class="sauts"><br class="sauts">
 									{% endif %}
 								</p>
 							</div>
