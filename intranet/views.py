@@ -14,3 +14,9 @@ def index_intranet(request):
 	context = locals()
 	template = 'index_intranet.html'
 	return render(request,template,context)
+
+def statistique(request):
+	
+	context = locals()
+	template = 'statistique.html'
+	return render(request,template,context)

@@ -1,0 +1,12 @@
+{% extends 'base_intranet.html' %} {% load staticfiles %} 
+
+{% block link %}
+{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2152_RC02/embed_loader.js"></script>
+<script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"covid","geo":"FR","time":"today 3-m"},{"keyword":"crise","geo":"FR","time":"today 3-m"},{"keyword":"risque","geo":"FR","time":"today 3-m"}],"category":0,"property":""}, {"exploreQuery":"date=today%203-m&geo=FR&q=covid,crise,risque","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2152_RC02/embed_loader.js"></script>
+<script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"confinement","geo":"FR","time":"today 12-m"},{"keyword":"/m/09py1r","geo":"FR","time":"today 12-m"},{"keyword":"/m/0yxzc1z","geo":"FR","time":"today 12-m"},{"keyword":"Oui.sncf","geo":"FR","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"geo=FR&q=confinement,%2Fm%2F09py1r,%2Fm%2F0yxzc1z,Oui.sncf&date=today 12-m,today 12-m,today 12-m,today 12-m","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
+{% endblock %}

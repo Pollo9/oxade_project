@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-27 01:18+0100\n"
+"POT-Creation-Date: 2020-04-03 18:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,17 +298,16 @@ msgstr "Consulting & Business project management"
 
 #: vitrine/templates/annexe/navbar.html:226
 #: vitrine/templates/annexe/navbar.html:238
-#: vitrine/templates/annexe/navbar.html:260 vitrine/templates/offres/pca.html:7
+#: vitrine/templates/annexe/navbar.html:260
+#: vitrine/templates/index_vitrine.html:213 vitrine/templates/offres/pca.html:7
 #: vitrine/templates/offres/pca.html:8
-#, fuzzy
-#| msgid "Continuité d’activité​"
 msgid "Plan de Continuité d’Activité"
 msgstr "Business continuity"
 
 #: vitrine/templates/annexe/navbar.html:227
 #: vitrine/templates/annexe/navbar.html:239
 #: vitrine/templates/annexe/navbar.html:288
-#: vitrine/templates/index_vitrine.html:213
+#: vitrine/templates/index_vitrine.html:238
 #: vitrine/templates/offres/coaching.html:7
 #: vitrine/templates/offres/coaching.html:8
 #: vitrine/templates/offres/coaching.html:52
@@ -318,7 +317,6 @@ msgstr "Coaching"
 #: vitrine/templates/annexe/navbar.html:228
 #: vitrine/templates/annexe/navbar.html:240
 #: vitrine/templates/annexe/navbar.html:248
-#: vitrine/templates/index_vitrine.html:238
 msgid "Formation"
 msgstr "Training"
 
@@ -338,6 +336,22 @@ msgstr ""
 "all an organisation and processes to be set up in order to limit or "
 "eliminate the impacts suffered by the company during the crisis. A BCP is "
 "also a means to be used before, during and after the crisis."
+
+#: vitrine/templates/annexe/navbar.html:261
+msgid "Et le SI est évidemment en première ligne."
+msgstr "And the IS is obviously on the front line."
+
+#: vitrine/templates/annexe/navbar.html:261
+msgid ""
+"Oxade  vous accompagne sur l'ensemble de la chaîne de valeur PCA : "
+"définition des besoins, identification et analyse des risques, "
+"identification des activités vitales pour votre entreprise, élaboration du "
+"PCA, scénarios, simulation de crise, accompagnement..."
+msgstr ""
+"Oxade assits you throughout the entire BCP value chain: definition of needs, "
+"identification and analysis of risks, identification of activities vital to "
+"your company, development of the BCP itself, crisis scenarios, crisis "
+"simulation, identification of weak signals, accompaniment... "
 
 #: vitrine/templates/annexe/navbar.html:275
 msgid ""
@@ -438,8 +452,6 @@ msgstr "Oxade Consulting - Strategic, business and operational consulting"
 
 #: vitrine/templates/index_vitrine.html:133
 #: vitrine/templates/index_vitrine.html:161
-#, fuzzy
-#| msgid "Le cœur de métier d’OXADE"
 msgid "Le cœur de métier Oxade"
 msgstr "The core business of OXADE"
 
@@ -467,6 +479,18 @@ msgstr ""
 
 #: vitrine/templates/index_vitrine.html:215
 msgid ""
+"Un PCA (Plan  de Continuité d'Activité) ou PRA (Plan de Reprise d'Activité) "
+"est avant tout une organisation et des processus à mettre en place afin de "
+"limiter ou de supprimer les impacts  subis par l'entreprise en période de "
+"crise."
+msgstr ""
+"A BCP (Business Continuity Plan) or PRA (Business Resumption Plan)is above "
+"all an organisation and processes to be set up in order to limit or "
+"eliminate the impacts suffered by the company during the crisis. A BCP is "
+"also a means to be used before, during and after the crisis."
+
+#: vitrine/templates/index_vitrine.html:240
+msgid ""
 "Nous proposons un processus d’accompagnement et de facilitation qui vise à "
 "vous permettre de trouver vous-même la solution à une problématique "
 "professionnelle opérationnelle ou managériale"
@@ -475,36 +499,11 @@ msgstr ""
 "allowing you to find yourself the solution to a professional problem "
 "operational or managerial"
 
-#: vitrine/templates/index_vitrine.html:240
-#: vitrine/templates/secteurs/banque.html:5
-#: vitrine/templates/secteurs/banque.html:6
-#: vitrine/templates/secteurs/banque.html:85
-msgid ""
-"Dans un contexte où l’univers financier doit faire face à des "
-"bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles "
-"économiques."
-msgstr ""
-"In a context where the financial world is facing major upheavals, we support "
-"you in the evolution of business models."
-
 #: vitrine/templates/index_vitrine.html:262
-msgid "Discours du président"
-msgstr "Speech by President"
+msgid "Le mot du président"
+msgstr "The word of the President"
 
 #: vitrine/templates/index_vitrine.html:278
-#, fuzzy
-#| msgid ""
-#| "2020 est une année charnière pour Oxade Consulting. Nouvelle "
-#| "organisation, nouveau logo, nouveau site, nouvelles ambitions… J’ai réuni "
-#| "autour de moi une nouvelle équipe de gouvernance pour faire d’Oxade "
-#| "Consulting un acteur incontournable. Les relations d’Oxade Consulting "
-#| "avec ses clients se sont toujours inscrites dans un véritable « "
-#| "partenariat » d’enrichissement mutuel et de relations saines et "
-#| "transparentes. Nous continuerons de travailler avec vous et pour vous en "
-#| "ce sens. Oxade Consulting est et restera une société indépendante. Le "
-#| "capital d’Oxade Consulting est détenu par la nouvelle équipe dirigeante. "
-#| "Cette indépendance, notre neutralité, nos Consultants, notre réseau de "
-#| "partenaires sont et resteront de réels points forts pour Oxade Consulting."
 msgid ""
 "2020 est une année charnière pour Oxade Consulting, créée en 1993."
 "<br>Nouvelle organisation, nouveau logo, nouveau site, nouvelles ambitions… "
@@ -1425,9 +1424,23 @@ msgstr ""
 
 #: vitrine/templates/offres/pca.html:5 vitrine/templates/offres/pca.html:6
 #, fuzzy
-#| msgid "Continuité d’activité​"
-msgid "Un PCA (Plan  de Continuité d"
-msgstr "Business continuity"
+#| msgid ""
+#| "Un PCA (Plan  de Continuité d'Activité) ou PRA (Plan de Reprise "
+#| "d'Activité) est avant tout une organisation et des processus à mettre en "
+#| "place afin de limiter ou de supprimer les impacts  subis par l'entreprise "
+#| "en période de crise. Un PCA  c'est aussi des moyens à engager avant, "
+#| "pendant et après la crise."
+msgid ""
+"Un PCA (Plan  de Continuité d’Activité) ou PRA (Plan de Reprise d’Activité) "
+"est avant tout une organisation et des processus à mettre en place afin de "
+"limiter ou de supprimer les impacts  subis par l’entreprise en période de "
+"crise. Un PCA  c’est aussi des moyens à engager avant, pendant et après la "
+"crise."
+msgstr ""
+"A BCP (Business Continuity Plan) or PRA (Business Resumption Plan)is above "
+"all an organisation and processes to be set up in order to limit or "
+"eliminate the impacts suffered by the company during the crisis. A BCP is "
+"also a means to be used before, during and after the crisis."
 
 #: vitrine/templates/offres/pca.html:130
 msgid ""
@@ -1951,6 +1964,17 @@ msgstr "Control risks and make regulatory changes to opportunities"
 msgid "Favoriser l’innovation, l’expérimentation et les cycles courts​"
 msgstr "Foster innovation, experimentation and short cycles"
 
+#: vitrine/templates/secteurs/banque.html:5
+#: vitrine/templates/secteurs/banque.html:6
+#: vitrine/templates/secteurs/banque.html:85
+msgid ""
+"Dans un contexte où l’univers financier doit faire face à des "
+"bouleversements majeurs, nous vous accompagnons dans l’évolution des modèles "
+"économiques."
+msgstr ""
+"In a context where the financial world is facing major upheavals, we support "
+"you in the evolution of business models."
+
 #: vitrine/templates/secteurs/banque.html:7
 #: vitrine/templates/secteurs/banque.html:8
 #: vitrine/templates/secteurs/banque.html:52
@@ -2185,6 +2209,11 @@ msgstr ""
 #: vitrine/templates/secteurs/transport_et_logistique.html:8
 msgid "Transport & logistique"
 msgstr "Logistic & transport"
+
+#, fuzzy
+#~| msgid "Continuité d’activité​"
+#~ msgid "Un PCA (Plan  de Continuité d"
+#~ msgstr "Business continuity"
 
 #~ msgid "Accompagnement des projets de Systèmes d"
 #~ msgstr "Management of Information Systems projects,"

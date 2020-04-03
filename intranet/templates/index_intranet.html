@@ -15,15 +15,16 @@
 	}
 	.rightIntra
 	{
-		
+		overflow: scroll;
 		width: 66.66666%;
-		padding: 25px;
+		height: 100%;
 	}
 	.divRightIntra
 	{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
+		padding: 25px;
 	}
 	.rightIntra a
 	{
@@ -88,14 +89,14 @@
 	    padding: 15px;
 	}
 </style>
-<div style="display: flex;height: 100vh;">
-	<section class="leftIntra">
+<div style="display: flex;">
+	<section class="leftIntra" style="height: 100vh;">
 		<a class="weatherwidget-io" href="https://forecast7.com/fr/48d862d35/paris/" data-label_1="TEMPS" data-label_2="PARIS" data-theme="original" >TEMPS PARIS</a>
 		<div style="text-align:center;padding:1em 0;"><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=medium&timezone=Europe%2FParis" width="100%" height="115" frameborder="0" seamless></iframe> </div>
 		<div class="div_bienvenue">Bienvenue {{user.first_name}} {{user.last_name}} sur la plateforme intranet d'Oxade Consulting</div>
 		<a class="link_deco"href="https://oxade.com/admin/logout/"><div>Déconnexion</div></a>
 	</section>
-	<section class="rightIntra">
+	<section class="rightIntra" style="height: 100vh;">
 		<div class="divRightIntra">
 			{% for site in liste_sites %}
 			<a href="{{ site.lien_site }}" target="_blank">
@@ -106,6 +107,12 @@
 				</div>
 			</a>
 			{% endfor %}
+			<a href="{% url 'statistique' %}" target="_blank">
+				<div class="blockSite" style="background-color:#6a9bf6;">
+					<div style="height: 40px;width: 40px; background-color: white;border-radius: 50px;display: flex;align-items: center;justify-content: center;"><img src="{% static 'vitrine/img/chart.png' %}" style="width: 25px;"></div>
+					<div style="margin-top: 20px;">Actualité</div>
+				</div>
+			</a>
 		</div>
 	</section>
 </div>
