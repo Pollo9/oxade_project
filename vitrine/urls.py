@@ -10,7 +10,7 @@ urlpatterns = [
 	url(r'^sitemap\.xml/$', TemplateView.as_view(template_name='sitemap.xml',content_type='text/xml')),
 
 	url(r'^qui-sommes-nous', views.a_propos, name='a_propos'),
-	url(r'^evenements/', views.evenements, name='evenements'),
+	url(r'^news/', views.evenements, name='news'),
 	url(r'^nous-rejoindre/', views.nous_rejoindre, name='nous_rejoindre'),
 	url(r'^contact/', views.contact, name='contact'),
 	url(r'^mention-legales/', views.mentions_legales, name='mentions_legales'),
