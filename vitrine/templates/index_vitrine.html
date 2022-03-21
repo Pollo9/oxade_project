@@ -183,7 +183,7 @@
                     {% trans 'Oxade Consulting se positionne comme un cabinet combinant expertise métier, expertise en systèmes d’information et en organisation. Nous proposons à nos clients des interventions intégrant l’ensemble des enjeux auxquels ils font face avec des solutions sur mesure.' %} 
                 </p>
 				<div class="row mt-5">
-					<div class="col-lg-4">	
+					<div class="col-lg-3">	
 						<a aria-label="Assurance" href="{% url 'amoa' %}" class="services text-center" style="height: 350px!important;">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
 								<picture>
@@ -193,15 +193,16 @@
 								</picture>
 							</div>
 							<div class="text media-body">
-								<h3>{% trans 'Conseil & AMOA' %}</h3>
+								<h3>{% trans 'Conseil' %}</h3>
 								<p class="color_grey">
-									{% trans 'Des équipes soudées par un bon esprit, au service d’un même objectif : la réussite des projets de nos clients.' %}
+									{% trans 'Activité historique depuis 1993, nous accompagnons nos clients avec leur proposition des expertises conseil, métiers et en coaching' %}
 								</p>
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4">
-						<a aria-label="Banque" href="{% url 'pca' %}" class="services text-center" style="height: 350px!important;">
+					<div class="col-lg-3">
+						<a aria-label="Banque" ADN Oxade consulting
+						class="services text-center" style="height: 350px!important;">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
 								<picture>
 									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_banque.webp' %}">
@@ -210,9 +211,9 @@
 								</picture>
 							</div>
 							<div class="text media-body">
-								<h3>{% trans "Plan de Continuité d’Activité" %}</h3>
+								<h3>{% trans "Métier" %}</h3>
 								<p class="color_grey">
-									{% trans "Un PCA (Plan  de Continuité d'Activité) ou PRA (Plan de Reprise d'Activité) est avant tout une organisation et des processus à mettre en place afin de limiter ou de supprimer les impacts  subis par l'entreprise en période de crise." %}
+									{% trans "Nous proposons nos expertises dans les fonctions clés de l’entreprise RH et Finance ainsi qu’une expertise complète de l’assurance. " %}
 									{% get_current_language as LANGUAGE_CODE %}
 						            {% get_available_languages as LANGUAGES %}
 						            {% get_language_info_list for LANGUAGES as languages %}
@@ -225,7 +226,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<a aria-label="Public" href="{% url 'coaching' %}" class="services text-center" style="height: 350px!important;">
 							<div class="icon mt-2 d-flex justify-content-center align-items-center">
 								<picture>
@@ -237,7 +238,32 @@
 							<div class="text media-body">
 								<h3>{% trans 'Coaching' %}</h3>
 								<p class="color_grey">
-									{% trans 'Nous proposons un processus d’accompagnement et de facilitation qui vise à vous permettre de trouver vous-même la solution à une problématique professionnelle opérationnelle ou managériale' %}
+									{% trans 'Nous proposons un processus d’accompagnement et de facilitation qui vise à vous permettre de trouver votre solution.' %}
+									{% get_current_language as LANGUAGE_CODE %}
+						            {% get_available_languages as LANGUAGES %}
+						            {% get_language_info_list for LANGUAGES as languages %}
+						            {% if LANGUAGE_CODE == 'fr' %}
+											<br class="sauts"><br class="sauts"><br class="sauts">
+									{% else %}
+											<br class="sauts"><br class="sauts">
+									{% endif %}
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3">
+						<a aria-label="Public" class="services text-center" style="height: 350px!important;">
+							<div class="icon mt-2 d-flex justify-content-center align-items-center">
+								<picture>
+									<source type="image/webp" srcset="{% static 'vitrine/img/webp/logo_amoa.webp' %}">
+									<source type="image/png" srcset="{% static 'vitrine/img/logo_amoa.png' %}">
+									<img style="width:66px; margin-bottom: 8px;" alt="logo-public" src="{% static 'vitrine/img/logo_amoa.png' %}">
+								</picture>
+							</div>
+							<div class="text media-body">
+								<h3>{% trans 'Facility Management' %}</h3>
+								<p class="color_grey">
+									{% trans 'Nous prenons en charge vos fonctions supports ou techniques en les digitalisant et en les optimisation complètement.' %}
 									{% get_current_language as LANGUAGE_CODE %}
 						            {% get_available_languages as LANGUAGES %}
 						            {% get_language_info_list for LANGUAGES as languages %}
@@ -275,9 +301,8 @@
 	</div>
 	<div class="div_texte_discours_president">
 		<div class="texte_discours_president" style="text-align:justify">
-			<span style="font-weight: bold;">{% trans "Tous nos voeux pour l'année 2022." %}</span>
-			<br><br>
-			{% trans "2021 a confirmé l’accélération de la transformation de nos organisations. Modification de nos habitudes de travail, modifications de nos comportements sociaux et économiques. La digitalisation, le changement de paradigme vis-à-vis du travail, le besoin d’une expérience client toujours plus riche … les défis ne manquent pas." %}
+			<span style="font-weight: bold;">{% trans "ADN Oxade consulting" %}</span>			
+			<br>
 			<br>
 			{% trans "Oxade Consulting accompagne ses clients sur l’ensemble de ces enjeux mais également sur la transformation de sujets d’apparences techniques tels que blockchain, NFS, metavers en enjeux business pour vos organisations. L’ambition d’Oxade Consulting est de vous accompagner pour définir un nouvel horizon et construire ensemble une nouvelle vision du futur de la phase stratégique à la mise en œuvre opérationnelle." %}
 			<br><br><strong>{% trans 'Rudy Baddha, Président Oxade Consulting.' %}</strong>

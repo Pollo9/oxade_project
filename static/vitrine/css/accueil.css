@@ -803,7 +803,11 @@ transition:all .3s ease
 .services .media-body h3 {
 	font-weight:700;
 	font-size:20px;
-	color:#233e62
+	color:#233e62;
+	height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .services:hover {
 	background:#1b9ce3
